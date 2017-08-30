@@ -1,190 +1,3 @@
-pwd
-sl -a
-ls -a
-ls | grep histo
-pwd
-cat .bash_history
-cat .bash_history |grep python
-cd ~
-pwd
-python /home/tete/ssr-linux/shadowsocks/local.py -c /home/tete/ssr-linux/shadowsocks/shadowsocks.json &
-ps -e | grep python
-kill -9 2684
-nohup python /home/tete/ssr-linux/shadowsocks/local.py -c /home/tete/ssr-linux/shadowsocks/shadowsocks.json & 
-google-chrome --proxy-server=socks5://127.0.0.1:1080
-sudo autoremovw
-sudo autoremove
-sudo apt autoremove
-sudo apt update 
-sudo apt autoremove
-ls /var/cache/
-ls /var/cache/deepin/
-ls /var/cache/apt/
-ls /var/cache/apt/archives/
-fdisk
-pytho
-python
-ps -e | grep pyth
-cd /media/tete/E
-ls
-cd backup/
-ls
-cd preC/
-ls
-cd ./home/tete/
-ls
-cat installed-tools-log.log 
-ls
-cat Music/
-cd Music/CloudMusic/meta/
-ls
-cd ../
-ls
-cd ~
-ls
-ls -a
-ls -a | grep hist
-gedit .bash_history
-cd Downloads/
-ls
-rm ./*
-ls
-history 
-cd /media/tete/
-cd ~
-cd /etc/apt/sources.list.d
-sudo echo "deb http://tinyprod.net/repos/debian squeeze main" >> tinyprod-debian.list
-su
-sudo echo "deb http://tinyprod.net/repos/debian squeeze main" >> tinyprod-debian.list
-ls
-pwd
-sudo echo "deb http://tinyprod.net/repos/debian squeeze main" >> tinyprod-debian.list
-rm tinyprod-debian.list 
-cd /etc/apt/sources.list.d
-sudo echo "deb http://tinyprod.net/repos/debian squeeze main" >> tinyprod-debian.list
-su
-su -
-su root
-sudo passwd root
-su -
-ls
-cat tinyprod-debian.list 
-ls ../
-sudo apt-get update
-g
-dpkg --list
-dpkg -L zoo
-dpkg -h
-dpkg --help
-man 
-man dpkg 
-cd /media/tete/F/tinyos-main/apps/Blink/
-make telosb
-sudo apt-get install nesc tinyos-tools msp430-46 avr-tinyos
-make teloab
-cd ../../tools/
-ls
-make
-make telosb
-cat README.md 
-./Bootstrap 
-ls
-make
-make isntall
-make install
-ls
-cat Bootstrap 
-./Bootstrap 
-sudo apt install aclocal
-./Bootstrap 
-sudo apt install automake
-./Bootstrap 
-ls
-./configure
-make
-sudo make install
-cd ../apps/Blink/
-make telosb
-cd ../../tools/
-ls
-cd ../ls
-cd ../ && ls
-cat /media/tete/E/backup/preC/home/tete/
-cat /media/tete/E/backup/preC/home/tete/.bashr
-cat /media/tete/E/backup/preC/home/tete/.bashrc
-cd apps/
-ls
-cd Blink/
-make avr
-make telosb
-cd ../../tools/
-cat README.md 
-./Bootstrap 
-./configure
-make 
-make install
-sudo make install
-g++
-sudo make
-./Bootstrap 
-./configure
-sudo make
-make
-gc
-gcc
-sudo apt install g++
-g++
-make
-java
-java --version
-java -version
-sudo make telosb
-sudo make install
-cd ../apps/Blink/
-make telosb
-motelist
-make telosb reinstall /dev/ttyUSB0
-sudo apt install ant
-ls ../../../contiki/tools/
-cd ../../tools/
-ks
-ls
-ls m4
-cd tinyos/
-lks
-ls
-ls c
-ls
-cd ../../
-ls
-cd ../
-ls
-cd nesc/tools/editor-modes/
-ls
-cd gedit/
-ls
-cat readme.txt 
-cp ncc.lang  /usr/share/gtksourceview-3.0/language-specs/
-sudo cp ncc.lang  /usr/share/gtksourceview-3.0/language-specs/
-ls
-cd ../
-ls
-cd emacs/
-ls
-cat readme.txt 
-cd ../../../
-ls
-cd ..
-cd contiki/tools/cooja/
-ant
-gpg --keyserver keyserver.ubuntu.com --recv-keys A9B913B9
-sudo gpg --keyserver keyserver.ubuntu.com --recv-keys A9B913B9
-ls /usr/share/gnupg/
-cat /usr/share/gnupg/gpg-conf.skel 
-sudo apt update
-sudo gpg --keyserver keyserver.ubuntu.com --recv-keys A9B913B9
-touch /usr/bin/dirmngr
-sudo touch /usr/bin/dirmngr
 sudo gpg --keyserver keyserver.ubuntu.com --recv-keys A9B913B9
 ls /root/.gnupg
 sudo ls /root/.gnupg
@@ -1948,3 +1761,240 @@ exit
 emacs -nw paper.tex 
 ipython
 exit
+ls
+ls -a
+ls -a | grep hist
+cd /media/tete/
+ls
+cd DEEPINOS/
+cp ~/.bash_history 
+cp ~/.bash_history ./
+cd ~
+git add .bash_history 
+git commit -m "add history"
+git push
+history nohup
+history | grep nohup
+cd /media/tete/E/
+ls
+cd computermath-thsis/
+ls
+cat 1.py
+cd ..
+ls
+cd /media/tete/F
+ls
+cd My-notebook/
+ls
+touch deepinlearing.txt
+ls
+mkdir Zephyr
+cd Zephyr/
+ls
+touch 1.txt
+emacs -nw 1.txt 
+cd /media/tete/E/pre-paper/
+git *.tex
+git add *.tex
+git commit -m "2"
+git push
+dd
+f
+df
+cd /media/tete/
+ls
+cd MYLINUXLIVE/
+ls
+cp linuxmint-18.2-xfce-32bit.iso ~/Desktop/
+rm linuxmint-18.2-xfce-32bit.iso 
+ls
+cd ~
+cd Desktop/
+ls
+sudo dd if=linuxmint-18.2-xfce-32bit.iso of=/dev/sdb1 bs=2M
+df -h
+df
+umount /dev/sdb1 
+sudo dd if=linuxmint-18.2-xfce-32bit.iso of=/dev/sdb1 bs=2M
+umount /dev/sdb1 
+mount /dev/sdb1 
+umount /dev/sdb1 
+sudo dd if=/home/tete/Desktop/linuxmint-18.2-xfce-32bit.iso of=/dev/sdb1 bs=2M
+disk
+ls /sbin/
+cat /sbin/init 
+xelatex paper.tex 
+cat paper.log 
+cat paper.log | lesss
+cat paper.log | less
+xelatex paper.tex 
+(./paper.bbl) [3] (./paper.aux) )
+(see the transcript file for additional information)
+Output written on paper.pdf (3 pages).
+Transcript written on paper.log.
+tete@tete-PC:/media/tete/E/pre-paper$ 
+xelatex paper.tex 
+Transcript written on paper.log.
+tete@tete-PC:/media/tete/E/pre-paper$ 
+xelatex paper.tex 
+(/usr/share/texlive/texmf-dixest/tex/latex/sectsty/sectsty.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty) (./paper.aux)
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
+ABD: EverySelectfont initializing macros
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) (./abstract.tex)
+(./introduction.tex; Underfull \vbox (badness 4072) has occurred while \output is active [1]
+<use  "img/1.png" >) (./related.tex) (./section3.tex <use  "img/2.png" >
+[2]) (./paper.bbl
+Underfull \vbox (badness 5374) has occurred while \output is active) [3]
+(./paper.aux) )
+(see the transcript file for additional information)
+Output written on paper.pdf (3 pages).
+Transcript written on paper.log.
+tete@tete-PC:/media/tete/E/pre-paper$ 
+xelatex paper.tex 
+xel
+xelatex paper.tex 
+ls
+cd /media/tete/E/pre-paper/
+lks
+ls
+emacs -nw introduction.tex 
+emacs paper.pdf 
+git add *.tex
+ls
+git add img/*
+git commit -m "2"
+git push
+emacs -nw introduction.tex 
+emacs introduction.tex 
+emacs -nw introduction.tex 
+emacs introduction.tex 
+git add *.tex
+git commit -m "3"
+git push
+exit
+ipython
+cd /media/tete/E/pre-paper/
+xelatex paper.tex 
+bibtex paper.aux 
+xelatex paper.
+xelatex paper.tex 
+bibtex paper.aux 
+xelatex paper.tex 
+ls
+git init
+git remote add origin https://git.oschina.net/zysn/paper.git
+git add img/1.png 
+git paper.tex
+git add paper.tex
+git add *.tex
+git add *.bib
+git commit -m "frist"
+git push -u origin master 
+sudo poweroff 
+ls
+ls
+cd /media/tete/E/pre-paper/
+ls
+xelatex paper.tex 
+ls
+rm paper.pdf 
+xelatex paper.tex 
+emacs paper.pdf 
+bibtex paper.aux 
+git add refer.bib 
+git commit -m "add .bib"
+git push
+ls
+history 
+cd /media/tete/E/pre-paper/
+ls
+emacs -nw paper.tex 
+ls
+ls -al
+ls
+sudo apt autoremove 
+sudo apt list --upgradable 
+sudo apt upgrade 
+ls
+bibtex
+xelatex 
+history | grep ssh
+ssh pi@192.168.1.100
+ls
+history 
+ssh pi@192.168.1.100
+xelatex paper.tex 
+bibtex paper.aux 
+xelatex paper.tex 
+git pull
+ls
+ls img/
+sudo git pull
+rm *pdf
+sudo git pull
+ls img/
+emacs -nw paper.tex 
+emacs paper.tex 
+sudo git pull
+git add *tex
+git add *pdf
+git commit -m "update"
+git push
+ifconfig 
+ping 192.168.1.100
+history | grep ssh
+ssh pi@192.168.1.109
+ssh pi@192.168.1.100
+xelatex paper.tex 
+cd contiki/tools/cooja/
+ant
+bibtex paper.aux 
+bibtex refer.bib 
+bibtex paper.aux 
+xelatex paper.tex 
+bibtex paper.aux 
+xelatex paper.tex 
+bibtex paper.aux 
+xelatex paper.tex 
+git add *tex
+git add *bib
+git commit -m "update"
+git push
+git add *pdf
+git commit -m "update"
+git psu
+git push
+xelatex paper.tex 
+git add *tex
+git add *bib
+git add *pdf
+git add img/*
+git commit -m "update"
+git push
+cd /media/tete/E/pre-paper/
+ls
+emacs -nw abstract.tex 
+ps -w
+ps -e
+ps -e | grep emacs
+kill 3584
+kill 3634
+emacs -nw abstract.tex 
+ps -e | grep emacs
+kill 3658
+ps -e | grep emacs
+kill -9 3658
+ps -e | grep emacs
+kill -9 3634
+ps -e | grep emacs
+emacs -nw abstract.tex 
+fg
+fb
+fg
