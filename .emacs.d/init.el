@@ -29,3 +29,8 @@
 (autoload 'nesc-mode "nesc.el")
 (add-to-list 'auto-mode-alist '("\\.nc\\'" . nesc-mode))
 ;;(load "~/.emacs.d/nesc/nesc.el")
+
+
+;; 设置golang-mode
+(add-to-list 'load-path "/home/tete/.emacs.d/go-mode")
+(require 'go-mode-autoloads)
