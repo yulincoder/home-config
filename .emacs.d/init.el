@@ -42,7 +42,10 @@
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 
-;; 设置golang自动补全
+;; 设置golang自动补全,使用gocode（https://github.com/nsf/gocode）
+;; 这依赖于于gocode工具，因此在新平台使用时应当安装gocode(参照以上地址)
+;; gocode的自动补全有时候不能提示库函数，这是因为它找不到库函数
+;; 这时需要设置~/.config/gocode/*.json中的lib-path
 (add-to-list 'load-path "~/.emacs.d/goautocomplete")
 (require 'go-autocomplete)
 (require 'auto-complete-config)
