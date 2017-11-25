@@ -17,7 +17,7 @@
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
-(package-initialize)
+
 
 
 ;; 设置备份文件目录(否则每打开一个文件总会在当前目录下创建filename~文件)
@@ -32,5 +32,31 @@
 
 
 ;; 设置golang-mode
-(add-to-list 'load-path "/home/tete/.emacs.d/go-mode")
+(add-to-list 'load-path "~/.emacs.d/go-mode")
 (require 'go-mode-autoloads)
+
+
+;; 设置包管理源－清华melpa镜像
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+
+;; 设置golang自动补全
+(add-to-list 'load-path "~/.emacs.d/goautocomplete")
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (auto-complete neotree))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
