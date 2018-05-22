@@ -1,3 +1,3 @@
 # home-config
 
-### 1. emacs.d
+### 1. .emacs.d
