@@ -1,0 +1,7 @@
+;win;$Revision: 2.44 $
+
+;;buffer-list
+((((nil "tete" dired-mode 70 nil ((buffer-read-only . t) (truncate-lines) (fill-column . 70) (fill-prefix) (case-fold-search . t) (default-directory . "~/") (dired-actual-switches . "-aluh")))) ((truncate-partial-width-windows . 50) (make-backup-files . t) (version-control . t) (visible-bell) (file-name-history) (buffer-name-history) (minibuffer-history))) 1 0)
+
+;;window-configurations
+(1 (144 30 ((0 0 144 29)) ((nil "*Messages*" 1133 1))) ((top . 0) (left . 1366) (menu-bar-lines . 0) (vertical-scroll-bars) (minibuffer . t)) "")
