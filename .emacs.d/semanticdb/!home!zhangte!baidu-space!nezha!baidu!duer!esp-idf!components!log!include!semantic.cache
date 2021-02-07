@@ -1,0 +1,712 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ESP_LOG_H__" variable (:constant-flag t) nil [648 661])
+            ("stdint.h" include (:system-flag t) nil [663 682])
+            ("stdarg.h" include (:system-flag t) nil [683 702])
+            ("sdkconfig.h" include nil nil [703 725])
+            ("esp32/rom/ets_sys.h" include (:system-flag t) nil [726 756])
+            ("ESP_LOG_LEVEL_LOCAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12424 12443])
+            ("ESP_LOG_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11417 11430])
+            ("ESP_LOGV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10036 10044])
+            ("ESP_LOGD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9934 9942])
+            ("ESP_LOGI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9832 9840])
+            ("ESP_LOGW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9730 9738])
+            ("ESP_LOGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9628 9636])
+            ("ESP_LOG_EARLY_IMPL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9273 9291])
+            ("ESP_EARLY_LOGV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9162 9176])
+            ("ESP_EARLY_LOGD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8931 8945])
+            ("ESP_EARLY_LOGI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8702 8716])
+            ("ESP_EARLY_LOGW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8474 8488])
+            ("ESP_EARLY_LOGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8246 8260])
+            ("LOG_FORMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7961 7971])
+            ("LOG_RESET_COLOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7909 7924])
+            ("LOG_COLOR_V" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7889 7900])
+            ("LOG_COLOR_D" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7869 7880])
+            ("LOG_COLOR_I" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7849 7860])
+            ("LOG_COLOR_W" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7829 7840])
+            ("LOG_COLOR_E" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7809 7820])
+            ("esp_log_buffer_char" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7165 7184])
+            ("esp_log_buffer_hex" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7114 7132])
+            ("ESP_LOG_BUFFER_CHAR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6856 6875])
+            ("ESP_LOG_BUFFER_HEX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6352 6370])
+            ("ESP_LOG_BUFFER_HEXDUMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5890 5912])
+            ("ESP_LOG_BUFFER_CHAR_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4980 5005])
+            ("ESP_LOG_BUFFER_HEX_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4432 4456])
+            ("esp_log_internal.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [3931 3960])
+            ("esp_log_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("level" variable (:type ("esp_log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3810 3832])
+                    ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3833 3849])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3850 3869])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3870 3874]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3791 3915])
+            ("esp_log_early_timestamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3527 3532]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3494 3533])
+            ("esp_log_timestamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3247 3252]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3220 3253])
+            ("esp_log_set_vprintf" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("vprintf_like_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable (:type ("vprintf_like_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2753 2773]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2718 2774])
+            ("esp_log_level_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2230 2246])
+                    ("level" variable (:type ("esp_log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2247 2269]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2207 2270])
+            ("vprintf_like_t" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1469 1482])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1483 1491]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1447 1492])
+            ("esp_log_level_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("ESP_LOG_NONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [848 861])
+                          ("ESP_LOG_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [894 908])
+                          ("ESP_LOG_WARN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [986 999])
+                          ("ESP_LOG_INFO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1080 1093])
+                          ("ESP_LOG_DEBUG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1170 1184])
+                          ("ESP_LOG_VERBOSE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1290 1420]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [829 1437])
+            ("ESP_LOG_LEVEL_LOCAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12424 12443])
+            ("ESP_LOG_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11417 11430])
+            ("ESP_LOGV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10036 10044])
+            ("ESP_LOGD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9934 9942])
+            ("ESP_LOGI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9832 9840])
+            ("ESP_LOGW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9730 9738])
+            ("ESP_LOGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9628 9636])
+            ("ESP_LOG_EARLY_IMPL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9273 9291])
+            ("ESP_EARLY_LOGV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9162 9176])
+            ("ESP_EARLY_LOGD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8931 8945])
+            ("ESP_EARLY_LOGI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8702 8716])
+            ("ESP_EARLY_LOGW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8474 8488])
+            ("ESP_EARLY_LOGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8246 8260])
+            ("LOG_FORMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7961 7971])
+            ("LOG_RESET_COLOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7909 7924])
+            ("LOG_COLOR_V" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7889 7900])
+            ("LOG_COLOR_D" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7869 7880])
+            ("LOG_COLOR_I" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7849 7860])
+            ("LOG_COLOR_W" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7829 7840])
+            ("LOG_COLOR_E" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7809 7820])
+            ("esp_log_buffer_char" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7165 7184])
+            ("esp_log_buffer_hex" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7114 7132])
+            ("ESP_LOG_BUFFER_CHAR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6856 6875])
+            ("ESP_LOG_BUFFER_HEXDUMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5890 5912])
+            ("ESP_LOG_BUFFER_CHAR_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4980 5005])
+            ("ESP_LOG_BUFFER_HEX_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4432 4456])
+            ("esp_log_internal.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [3931 3960])
+            ("esp_log_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("level" variable (:type ("esp_log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3810 3832])
+                    ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3833 3849])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3850 3869])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3870 3874]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3791 3915])
+            ("esp_log_early_timestamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3527 3532]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3494 3533])
+            ("esp_log_timestamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3247 3252]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3220 3253])
+            ("esp_log_set_vprintf" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("vprintf_like_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable (:type ("vprintf_like_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2753 2773]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2718 2774])
+            ("esp_log_level_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2230 2246])
+                    ("level" variable (:type ("esp_log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2247 2269]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2207 2270])
+            ("vprintf_like_t" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1469 1482])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1483 1491]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1447 1492])
+            ("esp_log_level_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("ESP_LOG_NONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [848 861])
+                          ("ESP_LOG_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [894 908])
+                          ("ESP_LOG_WARN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [986 999])
+                          ("ESP_LOG_INFO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1080 1093])
+                          ("ESP_LOG_DEBUG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1170 1184])
+                          ("ESP_LOG_VERBOSE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1290 1420]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [829 1437])
+            ("ESP_LOG_LEVEL_LOCAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12424 12443])
+            ("ESP_LOG_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11417 11430])
+            ("ESP_LOGV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10036 10044])
+            ("ESP_LOGD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9934 9942])
+            ("ESP_LOGI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9832 9840])
+            ("ESP_LOGW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9730 9738])
+            ("ESP_LOGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9628 9636])
+            ("ESP_LOG_EARLY_IMPL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9273 9291])
+            ("ESP_EARLY_LOGV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9162 9176])
+            ("ESP_EARLY_LOGD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8931 8945])
+            ("ESP_EARLY_LOGI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8702 8716])
+            ("ESP_EARLY_LOGW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8474 8488])
+            ("ESP_EARLY_LOGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8246 8260])
+            ("LOG_FORMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7961 7971])
+            ("LOG_RESET_COLOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7909 7924])
+            ("LOG_COLOR_V" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7889 7900])
+            ("LOG_COLOR_D" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7869 7880])
+            ("LOG_COLOR_I" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7849 7860])
+            ("LOG_COLOR_W" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7829 7840])
+            ("LOG_COLOR_E" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7809 7820])
+            ("esp_log_buffer_char" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7165 7184])
+            ("esp_log_buffer_hex" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7114 7132])
+            ("ESP_LOG_BUFFER_CHAR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6856 6875])
+            ("ESP_LOG_BUFFER_HEX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6352 6370])
+            ("ESP_LOG_BUFFER_HEXDUMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5890 5912])
+            ("ESP_LOG_BUFFER_CHAR_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4980 5005])
+            ("ESP_LOG_BUFFER_HEX_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4432 4456])
+            ("LOG_LOCAL_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4019 4034])
+            ("esp_log_internal.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [3931 3960])
+            ("esp_log_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("level" variable (:type ("esp_log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3810 3832])
+                    ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3833 3849])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3850 3869])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3870 3874]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3791 3915])
+            ("esp_log_early_timestamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3527 3532]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3494 3533])
+            ("esp_log_timestamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3247 3252]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3220 3253])
+            ("esp_log_set_vprintf" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("vprintf_like_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable (:type ("vprintf_like_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2753 2773]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2718 2774])
+            ("esp_log_level_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2230 2246])
+                    ("level" variable (:type ("esp_log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2247 2269]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2207 2270])
+            ("vprintf_like_t" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1469 1482])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1483 1491]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1447 1492])
+            ("esp_log_level_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("ESP_LOG_NONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [848 861])
+                          ("ESP_LOG_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [894 908])
+                          ("ESP_LOG_WARN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [986 999])
+                          ("ESP_LOG_INFO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1080 1093])
+                          ("ESP_LOG_DEBUG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1170 1184])
+                          ("ESP_LOG_VERBOSE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1290 1420]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [829 1437]))          
+      :file "esp_log.h"
+      :pointmax 12655
+      :fsize 12654
+      :lastmodtime '(24163 31885 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ESP_LOG_H__")
+          ("LOG_FORMAT" (spp-arg-list ("letter" "format") 7971 . 7987) . 
+              ((spp-symbol-merge ((symbol "LOG_COLOR_" 7989 . 7999) (symbol "letter" 8003 . 8009)) 7989 . 8009) (punctuation "#" 8010 . 8011) (symbol "letter" 8011 . 8017) (string "\" (%d) %s: \"" 8018 . 8030) (symbol "format" 8031 . 8037) (symbol "LOG_RESET_COLOR" 8038 . 8053) (string "\"\\n\"" 8054 . 8058)))
+          ("ESP_LOG_EARLY_IMPL" (spp-arg-list ("tag" "format" "log_level" "log_tag_letter" "...") 9291 . 9336) . 
+              ((DO "do" 9337 . 9339) (semantic-list "{                         \\
+        if (LOG_LOCAL_LEVEL >= log_level) {                                                          \\
+            ets_printf(LOG_FORMAT(log_tag_letter, format), esp_log_timestamp(), tag, ##__VA_ARGS__); \\
+        }}" 9340 . 9584) (WHILE "while" 9585 . 9590) (semantic-list "(0)" 9590 . 9593)))
+          ("ESP_LOG_BUFFER_HEXDUMP" (spp-arg-list ("tag" "buffer" "buff_len" "level") 5912 . 5944) . 
+              ((DO "do" 5951 . 5953) (semantic-list "{ \\
+        if ( LOG_LOCAL_LEVEL >= (level) ) { \\
+            esp_log_buffer_hexdump_internal( tag, buffer, buff_len, level); \\
+        } \\
+    }" 5954 . 6099) (WHILE "while" 6100 . 6105) (semantic-list "(0)" 6105 . 6108)))
+          ("LOG_COLOR_D")
+          ("ESP_LOG_BUFFER_HEX_LEVEL" (spp-arg-list ("tag" "buffer" "buff_len" "level") 4456 . 4488) . 
+              ((DO "do" 4495 . 4497) (semantic-list "{\\
+        if ( LOG_LOCAL_LEVEL >= (level) ) { \\
+            esp_log_buffer_hex_internal( tag, buffer, buff_len, level ); \\
+        } \\
+    }" 4498 . 4639) (WHILE "while" 4640 . 4645) (semantic-list "(0)" 4645 . 4648)))
+          ("ESP_LOG_BUFFER_HEX" (spp-arg-list ("tag" "buffer" "buff_len") 6370 . 6393) . 
+              ((DO "do" 6400 . 6402) (semantic-list "{ \\
+        if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO) { \\
+            ESP_LOG_BUFFER_HEX_LEVEL( tag, buffer, buff_len, ESP_LOG_INFO ); \\
+        }\\
+    }" 6403 . 6551) (WHILE "while" 6552 . 6557) (semantic-list "(0)" 6557 . 6560)))
+          ("esp_log_buffer_hex" . ((symbol "ESP_LOG_BUFFER_HEX" 7138 . 7156)))
+          ("LOG_COLOR_E")
+          ("ESP_LOGI" (spp-arg-list ("tag" "format" "...") 9840 . 9860) . ((symbol "ESP_LOG_LEVEL_LOCAL" 9861 . 9880) (semantic-list "(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)" 9880 . 9925)))
+          ("ESP_LOGV" (spp-arg-list ("tag" "format" "...") 10044 . 10064) . ((symbol "ESP_LOG_LEVEL_LOCAL" 10065 . 10084) (semantic-list "(ESP_LOG_VERBOSE, tag, format, ##__VA_ARGS__)" 10084 . 10129)))
+          ("ESP_LOG_BUFFER_CHAR_LEVEL" (spp-arg-list ("tag" "buffer" "buff_len" "level") 5005 . 5037) . 
+              ((DO "do" 5044 . 5046) (semantic-list "{\\
+        if ( LOG_LOCAL_LEVEL >= (level) ) { \\
+            esp_log_buffer_char_internal( tag, buffer, buff_len, level ); \\
+        } \\
+    }" 5047 . 5189) (WHILE "while" 5190 . 5195) (semantic-list "(0)" 5195 . 5198)))
+          ("ESP_LOG_BUFFER_CHAR" (spp-arg-list ("tag" "buffer" "buff_len") 6875 . 6898) . 
+              ((DO "do" 6905 . 6907) (semantic-list "{ \\
+        if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO) { \\
+            ESP_LOG_BUFFER_CHAR_LEVEL( tag, buffer, buff_len, ESP_LOG_INFO ); \\
+        }\\
+    }" 6908 . 7057) (WHILE "while" 7058 . 7063) (semantic-list "(0)" 7063 . 7066)))
+          ("ESP_LOGW" (spp-arg-list ("tag" "format" "...") 9738 . 9758) . ((symbol "ESP_LOG_LEVEL_LOCAL" 9759 . 9778) (semantic-list "(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)" 9778 . 9823)))
+          ("ESP_LOG_LEVEL_LOCAL" (spp-arg-list ("level" "tag" "format" "...") 12443 . 12468) . 
+              ((DO "do" 12469 . 12471) (semantic-list "{               \\
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \\
+    }" 12472 . 12587) (WHILE "while" 12588 . 12593) (semantic-list "(0)" 12593 . 12596)))
+          ("ESP_EARLY_LOGD" (spp-arg-list ("tag" "format" "...") 8945 . 8965) . ((symbol "ESP_LOG_EARLY_IMPL" 8966 . 8984) (semantic-list "(tag, format, ESP_LOG_DEBUG,   D, ##__VA_ARGS__)" 8984 . 9032)))
+          ("LOG_COLOR_I")
+          ("LOG_COLOR_V")
+          ("ESP_EARLY_LOGE" (spp-arg-list ("tag" "format" "...") 8260 . 8280) . ((symbol "ESP_LOG_EARLY_IMPL" 8281 . 8299) (semantic-list "(tag, format, ESP_LOG_ERROR,   E, ##__VA_ARGS__)" 8299 . 8347)))
+          ("LOG_COLOR_W")
+          ("LOG_RESET_COLOR")
+          ("esp_log_buffer_char" . ((symbol "ESP_LOG_BUFFER_CHAR" 7189 . 7208)))
+          ("ESP_EARLY_LOGI" (spp-arg-list ("tag" "format" "...") 8716 . 8736) . ((symbol "ESP_LOG_EARLY_IMPL" 8737 . 8755) (semantic-list "(tag, format, ESP_LOG_INFO,    I, ##__VA_ARGS__)" 8755 . 8803)))
+          ("ESP_EARLY_LOGV" (spp-arg-list ("tag" "format" "...") 9176 . 9196) . ((symbol "ESP_LOG_EARLY_IMPL" 9197 . 9215) (semantic-list "(tag, format, ESP_LOG_VERBOSE, V, ##__VA_ARGS__)" 9215 . 9263)))
+          ("ESP_LOGD" (spp-arg-list ("tag" "format" "...") 9942 . 9962) . ((symbol "ESP_LOG_LEVEL_LOCAL" 9963 . 9982) (semantic-list "(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)" 9982 . 10027)))
+          ("ESP_LOG_LEVEL" (spp-arg-list ("level" "tag" "format" "...") 11430 . 11455) . 
+              ((DO "do" 11456 . 11458) (semantic-list "{                     \\
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \\
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \\
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \\
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \\
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \\
+    }" 11459 . 12258) (WHILE "while" 12259 . 12264) (semantic-list "(0)" 12264 . 12267)))
+          ("LOG_LOCAL_LEVEL" . ((symbol "CONFIG_LOG_DEFAULT_LEVEL" 4036 . 4060)))
+          ("ESP_EARLY_LOGW" (spp-arg-list ("tag" "format" "...") 8488 . 8508) . ((symbol "ESP_LOG_EARLY_IMPL" 8509 . 8527) (semantic-list "(tag, format, ESP_LOG_WARN,    W, ##__VA_ARGS__)" 8527 . 8575)))
+          ("ESP_LOGE" (spp-arg-list ("tag" "format" "...") 9636 . 9656) . ((symbol "ESP_LOG_LEVEL_LOCAL" 9657 . 9676) (semantic-list "(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)" 9676 . 9721)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "esp_log_internal.h"
+      :fsize 1132
+      :lastmodtime '(24162 31181 0 0)))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!esp-idf!components!log!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("cc" variable (:type ("tt" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21 59])
+            ("tt" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [36 42])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [47 53]))                  
+                :type "struct")
+                nil [21 59])
+            ("main" function (:type "int") nil [61 100]))          
+      :file "tt.c"
+      :pointmax 101
+      :fsize 100
+      :lastmodtime '(24189 64863 628240 375000)
+      :unmatched-syntax nil))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!lightduer-dual-mic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

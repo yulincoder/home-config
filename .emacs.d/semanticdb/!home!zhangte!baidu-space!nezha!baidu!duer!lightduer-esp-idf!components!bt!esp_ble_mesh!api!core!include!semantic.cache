@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ESP_BLE_MESH_LOCAL_DATA_OPERATION_API_H_" variable (:constant-flag t) nil [676 717])
+            ("esp_ble_mesh_defs.h" include nil nil [719 749])
+            ("esp_ble_mesh_get_model_publish_period" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1030 1058]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [984 1059])
+            ("esp_ble_mesh_get_primary_element_address" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1354 1359]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1304 1360])
+            ("esp_ble_mesh_is_model_subscribed_to_group" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2252 2280])
+                    ("group_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2281 2301]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2200 2302])
+            ("esp_ble_mesh_find_element" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("element_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2567 2589]))                  
+                :type ("esp_ble_mesh_elem_t" type (:type "class") nil nil))
+                nil [2520 2590])
+            ("esp_ble_mesh_get_element_count" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2755 2760]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2716 2761])
+            ("esp_ble_mesh_find_vendor_model" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("element" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("esp_ble_mesh_elem_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3301 3336])
+                    ("company_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3345 3365])
+                    ("model_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3366 3384]))                  
+                :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                nil [3248 3385])
+            ("esp_ble_mesh_find_sig_model" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("element" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("esp_ble_mesh_elem_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3751 3786])
+                    ("model_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3787 3805]))                  
+                :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                nil [3701 3806])
+            ("esp_ble_mesh_get_composition_data" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4085 4090]))                  
+                :type ("esp_ble_mesh_comp_t" type (:type "class") nil nil))
+                nil [4024 4091]))          
+      :file "esp_ble_mesh_local_data_operation_api.h"
+      :pointmax 4148
+      :fsize 4147
+      :lastmodtime '(24039 38471 612032 427000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ESP_BLE_MESH_LOCAL_DATA_OPERATION_API_H_")
+          )
+))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!lightduer-esp-idf!components!bt!esp_ble_mesh!api!core!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

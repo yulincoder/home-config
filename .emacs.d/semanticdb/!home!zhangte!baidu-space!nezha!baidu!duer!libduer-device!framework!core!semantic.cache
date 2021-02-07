@@ -1,0 +1,96 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("BAIDU_IOT_TINYDU_IOT_OS_SRC_IOT_BAIDU_CA_SOURCE_BAIDU_CA_MUTEX_H" variable (:constant-flag t) nil [772 836])
+            ("lightduer_types.h" include nil nil [838 866])
+            ("baidu_ca_mutex_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("f_create" variable (:type ("duer_mutex_create_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2075 2104])
+                    ("f_lock" variable (:type ("duer_mutex_lock_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2138 2163])
+                    ("f_unlock" variable (:type ("duer_mutex_unlock_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2197 2226])
+                    ("f_destroy" variable (:type ("duer_mutex_destroy_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2260 2291]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2050 2292])
+            ("duer_mutex_destroy_f" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mtx" variable (:type ("duer_mutex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1753 1770]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1715 1771])
+            ("duer_mutex_unlock_f" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mtx" variable (:type ("duer_mutex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1688 1705]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1651 1706])
+            ("duer_mutex_lock_f" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mtx" variable (:type ("duer_mutex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1624 1641]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1589 1642])
+            ("duer_mutex_create_f" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_mutex_t" type (:type "class") nil nil)
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1542 1580])
+            ("duer_mutex_destroy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mutex" variable (:type ("duer_mutex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1482 1501]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1449 1502])
+            ("duer_mutex_unlock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mutex" variable (:type ("duer_mutex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1336 1355]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1304 1356])
+            ("duer_mutex_lock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mutex" variable (:type ("duer_mutex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1204 1223]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1174 1224])
+            ("duer_mutex_create" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("duer_mutex_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1090 1095]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1059 1096])
+            ("duer_mutex_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [936 963]))          
+      :file "lightduer_mutex.h"
+      :pointmax 2398
+      :fsize 2397
+      :lastmodtime '(24060 24633 740636 83000)
+      :unmatched-syntax '((symbol 2041 . 2049) (TYPEDEF 1707 . 1714) (TYPEDEF 1643 . 1650) (TYPEDEF 1581 . 1588) (TYPEDEF 1534 . 1541) (symbol 1440 . 1448) (symbol 1295 . 1303) (symbol 1165 . 1173) (symbol 1050 . 1058))
+      :lexical-table 
+        '(("BAIDU_IOT_TINYDU_IOT_OS_SRC_IOT_BAIDU_CA_SOURCE_BAIDU_CA_MUTEX_H")
+          )
+))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!libduer-device!framework!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

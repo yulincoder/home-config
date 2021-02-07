@@ -1,0 +1,19 @@
+[21~
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+
+;; 猪场
+(setq package-archives
+        '(("melpa-cn" . "http://mirrors.163.com/elpa/melpa/")
+          ("org-cn"   . "http://mirrors.163.com/elpa/org/")
+          ("gnu-cn"   . "http://mirrors.163.com/elpa/gnu/")))
+
+(setq make-backup-files nil)
+
+
+(global-linum-mode t) ;; show the line number
+;;(load-theme 'misterioso 1) ;; set theme

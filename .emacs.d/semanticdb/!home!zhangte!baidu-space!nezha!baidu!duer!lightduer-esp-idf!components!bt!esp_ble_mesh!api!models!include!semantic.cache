@@ -1,0 +1,1473 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ESP_BLE_MESH_GENERIC_MODEL_API_H_" variable (:constant-flag t) nil [737 771])
+            ("esp_ble_mesh_defs.h" include nil nil [773 803])
+            ("ESP_BLE_MESH_MODEL_GEN_ONOFF_CLI" variable (:constant-flag t) nil [1267 1299])
+            ("ESP_BLE_MESH_MODEL_GEN_LEVEL_CLI" variable (:constant-flag t) nil [1908 1940])
+            ("ESP_BLE_MESH_MODEL_GEN_DEF_TRANS_TIME_CLI" variable (:constant-flag t) nil [2623 2664])
+            ("ESP_BLE_MESH_MODEL_GEN_POWER_ONOFF_CLI" variable (:constant-flag t) nil [3311 3349])
+            ("ESP_BLE_MESH_MODEL_GEN_POWER_LEVEL_CLI" variable (:constant-flag t) nil [3991 4029])
+            ("ESP_BLE_MESH_MODEL_GEN_BATTERY_CLI" variable (:constant-flag t) nil [4655 4689])
+            ("ESP_BLE_MESH_MODEL_GEN_LOCATION_CLI" variable (:constant-flag t) nil [5315 5350])
+            ("ESP_BLE_MESH_MODEL_GEN_PROPERTY_CLI" variable (:constant-flag t) nil [5975 6010])
+            ("esp_ble_mesh_gen_onoff_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [6312 6326])
+                          ("onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6389 6403])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6457 6469])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6504 6523])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6581 6595]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6291 6679])
+            ("esp_ble_mesh_gen_level_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [6742 6756])
+                          ("level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6819 6833])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6887 6899])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6934 6953])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7011 7025]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6721 7109])
+            ("esp_ble_mesh_gen_delta_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [7172 7186])
+                          ("level" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7249 7263])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7317 7329])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7364 7383])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7441 7455]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [7151 7539])
+            ("esp_ble_mesh_gen_move_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [7601 7615])
+                          ("delta_level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7682 7702])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7783 7795])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7834 7853])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7915 7929]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [7580 8016])
+            ("esp_ble_mesh_gen_def_trans_time_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8096 8115]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8075 8219])
+            ("esp_ble_mesh_gen_onpowerup_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onpowerup" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8285 8303]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8264 8389])
+            ("esp_ble_mesh_gen_power_level_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [8458 8473])
+                          ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8539 8554])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8618 8631])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8669 8689])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8750 8765]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8437 8858])
+            ("esp_ble_mesh_gen_power_default_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8928 8943]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8907 9044])
+            ("esp_ble_mesh_gen_power_range_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("range_min" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9113 9132])
+                          ("range_max" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9203 9222]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9092 9326])
+            ("esp_ble_mesh_gen_loc_global_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("global_latitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9399 9423])
+                          ("global_longitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9469 9494])
+                          ("global_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9540 9564]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9378 9628])
+            ("esp_ble_mesh_gen_loc_local_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("local_north" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9700 9721])
+                          ("local_east" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9766 9786])
+                          ("local_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9831 9855])
+                          ("floor_number" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9886 9908])
+                          ("uncertainty" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9939 9960]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9679 10022])
+            ("esp_ble_mesh_gen_user_property_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10092 10113]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10071 10215])
+            ("esp_ble_mesh_gen_user_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10286 10307])
+                          ("property_value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [10370 10408]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10265 10489])
+            ("esp_ble_mesh_gen_admin_property_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10560 10581]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10539 10681])
+            ("esp_ble_mesh_gen_admin_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10753 10774])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10838 10859])
+                          ("property_value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [10910 10948]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10732 11031])
+            ("esp_ble_mesh_gen_manufacturer_property_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11109 11130]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11088 11244])
+            ("esp_ble_mesh_gen_manufacturer_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11323 11344])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11415 11436]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11302 11529])
+            ("esp_ble_mesh_gen_client_properties_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11603 11624]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11582 11734])
+            ("esp_ble_mesh_generic_client_get_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("user_property_get" variable (:type ("esp_ble_mesh_gen_user_property_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11813 11876])
+                          ("admin_property_get" variable (:type ("esp_ble_mesh_gen_admin_property_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11945 12009])
+                          ("manufacturer_property_get" variable (:type ("esp_ble_mesh_gen_manufacturer_property_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12077 12148])
+                          ("client_properties_get" variable (:type ("esp_ble_mesh_gen_client_properties_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12217 12284]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [11793 12391])
+            ("esp_ble_mesh_generic_client_set_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onoff_set" variable (:type ("esp_ble_mesh_gen_onoff_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12470 12518])
+                          ("level_set" variable (:type ("esp_ble_mesh_gen_level_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12626 12674])
+                          ("delta_set" variable (:type ("esp_ble_mesh_gen_delta_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12782 12830])
+                          ("move_set" variable (:type ("esp_ble_mesh_gen_move_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12938 12985])
+                          ("def_trans_time_set" variable (:type ("esp_ble_mesh_gen_def_trans_time_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13092 13149])
+                          ("power_set" variable (:type ("esp_ble_mesh_gen_onpowerup_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13266 13314])
+                          ("power_level_set" variable (:type ("esp_ble_mesh_gen_power_level_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13430 13484])
+                          ("power_default_set" variable (:type ("esp_ble_mesh_gen_power_default_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13598 13654])
+                          ("power_range_set" variable (:type ("esp_ble_mesh_gen_power_range_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13770 13824])
+                          ("loc_global_set" variable (:type ("esp_ble_mesh_gen_loc_global_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13938 13991])
+                          ("loc_local_set" variable (:type ("esp_ble_mesh_gen_loc_local_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14104 14156])
+                          ("user_property_set" variable (:type ("esp_ble_mesh_gen_user_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14268 14324])
+                          ("admin_property_set" variable (:type ("esp_ble_mesh_gen_admin_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14440 14497])
+                          ("manufacturer_property_set" variable (:type ("esp_ble_mesh_gen_manufacturer_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14614 14685]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [12450 14852])
+            ("esp_ble_mesh_gen_onoff_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [15017 15031])
+                          ("present_onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15098 15120])
+                          ("target_onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15171 15192])
+                          ("remain_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15254 15274]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [14996 15363])
+            ("esp_ble_mesh_gen_level_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [15429 15443])
+                          ("present_level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15510 15532])
+                          ("target_level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15583 15604])
+                          ("remain_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15670 15690]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15408 15779])
+            ("esp_ble_mesh_gen_def_trans_time_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15862 15881]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15841 15995])
+            ("esp_ble_mesh_gen_onpowerup_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onpowerup" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16064 16082]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16043 16178])
+            ("esp_ble_mesh_gen_power_level_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [16250 16265])
+                          ("present_power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16331 16354])
+                          ("target_power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16411 16433])
+                          ("remain_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16501 16522]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16229 16616])
+            ("esp_ble_mesh_gen_power_last_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16686 16701]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16665 16802])
+            ("esp_ble_mesh_gen_power_default_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16875 16890]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16854 16996])
+            ("esp_ble_mesh_gen_power_range_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("status_code" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17068 17089])
+                          ("range_min" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17140 17159])
+                          ("range_max" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17230 17249]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [17047 17359])
+            ("esp_ble_mesh_gen_battery_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("battery_level" variable
+                             (:suffix ":8"
+                              :type ("u32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [17427 17455])
+                          ("time_to_discharge" variable
+                             (:suffix ":24"
+                              :type ("u32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [17506 17535])
+                          ("time_to_charge" variable
+                             (:suffix ":24"
+                              :type ("u32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [17597 17626])
+                          ("flags" variable
+                             (:suffix ":8"
+                              :type ("u32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [17685 17713]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [17406 17799])
+            ("esp_ble_mesh_gen_loc_global_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("global_latitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17875 17899])
+                          ("global_longitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17943 17968])
+                          ("global_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18012 18036]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [17854 18104])
+            ("esp_ble_mesh_gen_loc_local_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("local_north" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18179 18200])
+                          ("local_east" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18243 18263])
+                          ("local_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18306 18330])
+                          ("floor_number" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18359 18381])
+                          ("uncertainty" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18410 18431]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [18158 18497])
+            ("esp_ble_mesh_gen_user_properties_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_ids" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [18572 18608]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [18551 18717])
+            ("esp_ble_mesh_gen_user_property_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [18791 18806])
+                          ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18872 18893])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18956 18977])
+                          ("property_value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [19038 19076]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [18770 19169])
+            ("esp_ble_mesh_gen_admin_properties_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_ids" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [19245 19281]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [19224 19389])
+            ("esp_ble_mesh_gen_admin_property_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [19464 19479])
+                          ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19545 19566])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19630 19651])
+                          ("property_value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [19712 19750]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [19443 19845])
+            ("esp_ble_mesh_gen_manufacturer_properties_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_ids" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [19928 19964]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [19907 20089])
+            ("esp_ble_mesh_gen_manufacturer_property_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [20171 20186])
+                          ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20252 20273])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20344 20365])
+                          ("property_value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [20426 20464]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [20150 20573])
+            ("esp_ble_mesh_gen_client_properties_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_ids" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [20650 20686]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [20629 20799])
+            ("esp_ble_mesh_gen_client_status_cb_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onoff_status" variable (:type ("esp_ble_mesh_gen_onoff_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20883 20943])
+                          ("level_status" variable (:type ("esp_ble_mesh_gen_level_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21010 21070])
+                          ("def_trans_time_status" variable (:type ("esp_ble_mesh_gen_def_trans_time_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21137 21206])
+                          ("onpowerup_status" variable (:type ("esp_ble_mesh_gen_onpowerup_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21273 21337])
+                          ("power_level_status" variable (:type ("esp_ble_mesh_gen_power_level_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21404 21470])
+                          ("power_last_status" variable (:type ("esp_ble_mesh_gen_power_last_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21537 21602])
+                          ("power_default_status" variable (:type ("esp_ble_mesh_gen_power_default_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21669 21737])
+                          ("power_range_status" variable (:type ("esp_ble_mesh_gen_power_range_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21804 21870])
+                          ("battery_status" variable (:type ("esp_ble_mesh_gen_battery_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21937 21999])
+                          ("location_global_status" variable (:type ("esp_ble_mesh_gen_loc_global_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22066 22136])
+                          ("location_local_status" variable (:type ("esp_ble_mesh_gen_loc_local_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22198 22267])
+                          ("user_properties_status" variable (:type ("esp_ble_mesh_gen_user_properties_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22325 22395])
+                          ("user_property_status" variable (:type ("esp_ble_mesh_gen_user_property_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22458 22526])
+                          ("admin_properties_status" variable (:type ("esp_ble_mesh_gen_admin_properties_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22589 22660])
+                          ("admin_property_status" variable (:type ("esp_ble_mesh_gen_admin_property_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22723 22792])
+                          ("manufacturer_properties_status" variable (:type ("esp_ble_mesh_gen_manufacturer_properties_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22855 22939])
+                          ("manufacturer_property_status" variable (:type ("esp_ble_mesh_gen_manufacturer_property_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23009 23091])
+                          ("client_properties_status" variable (:type ("esp_ble_mesh_gen_client_properties_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23161 23239]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [20863 23343])
+            ("esp_ble_mesh_generic_client_cb_param_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("error_code" variable (:type "int") (reparse-symbol classsubparts) [23414 23429])
+                          ("params" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_client_common_param_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [23497 23540])
+                          ("status_cb" variable (:type ("esp_ble_mesh_gen_client_status_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23587 23633]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [23393 23727])
+            ("esp_ble_mesh_generic_client_cb_event_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_GENERIC_CLIENT_GET_STATE_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [23808 23850])
+                          ("ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [23855 23897])
+                          ("ESP_BLE_MESH_GENERIC_CLIENT_PUBLISH_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [23902 23942])
+                          ("ESP_BLE_MESH_GENERIC_CLIENT_TIMEOUT_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [23947 23987])
+                          ("ESP_BLE_MESH_GENERIC_CLIENT_EVT_MAX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [23992 24028]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [23789 24070])
+            ("esp_ble_mesh_generic_client_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("event" variable (:type ("esp_ble_mesh_generic_client_cb_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24331 24376])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_generic_client_cb_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24385 24431]))                  
+                :type "void")
+                nil [24289 24432])
+            ("esp_ble_mesh_register_generic_client_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("callback" variable (:type ("esp_ble_mesh_generic_client_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24691 24733]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [24635 24734])
+            ("esp_ble_mesh_generic_client_get_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("params" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_client_common_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25350 25393])
+                    ("get_state" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_generic_client_get_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25402 25453]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [25302 25454])
+            ("esp_ble_mesh_generic_client_set_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("params" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_client_common_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26070 26113])
+                    ("set_state" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_generic_client_set_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26122 26173]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [26022 26174])
+            ("ESP_BLE_MESH_MODEL_GEN_ONOFF_SRV" variable (:constant-flag t) nil [26710 26742])
+            ("ESP_BLE_MESH_MODEL_GEN_LEVEL_SRV" variable (:constant-flag t) nil [27372 27404])
+            ("ESP_BLE_MESH_MODEL_GEN_DEF_TRANS_TIME_SRV" variable (:constant-flag t) nil [28106 28147])
+            ("ESP_BLE_MESH_MODEL_GEN_POWER_ONOFF_SRV" variable (:constant-flag t) nil [29208 29246])
+            ("ESP_BLE_MESH_MODEL_GEN_POWER_ONOFF_SETUP_SRV" variable (:constant-flag t) nil [30017 30061])
+            ("ESP_BLE_MESH_MODEL_GEN_POWER_LEVEL_SRV" variable (:constant-flag t) nil [30964 31002])
+            ("ESP_BLE_MESH_MODEL_GEN_POWER_LEVEL_SETUP_SRV" variable (:constant-flag t) nil [31767 31811])
+            ("ESP_BLE_MESH_MODEL_GEN_BATTERY_SRV" variable (:constant-flag t) nil [32554 32588])
+            ("ESP_BLE_MESH_MODEL_GEN_LOCATION_SRV" variable (:constant-flag t) nil [33503 33538])
+            ("ESP_BLE_MESH_MODEL_GEN_LOCATION_SETUP_SRV" variable (:constant-flag t) nil [34235 34276])
+            ("ESP_BLE_MESH_MODEL_GEN_USER_PROP_SRV" variable (:constant-flag t) nil [34947 34983])
+            ("ESP_BLE_MESH_MODEL_GEN_ADMIN_PROP_SRV" variable (:constant-flag t) nil [35700 35737])
+            ("ESP_BLE_MESH_MODEL_GEN_MANUFACTURER_PROP_SRV" variable (:constant-flag t) nil [36480 36524])
+            ("ESP_BLE_MESH_MODEL_GEN_CLIENT_PROP_SRV" variable (:constant-flag t) nil [37204 37242])
+            ("esp_ble_mesh_gen_onoff_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37464 37478])
+                          ("target_onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37545 37566]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [37443 37654])
+            ("esp_ble_mesh_gen_onoff_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [37724 37752])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37847 37887])
+                          ("state" variable (:type ("esp_ble_mesh_gen_onoff_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37958 37995])
+                          ("last" variable (:type ("esp_ble_mesh_last_msg_info_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38052 38086])
+                          ("transition" variable (:type ("esp_ble_mesh_state_transition_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38152 38195]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [37703 38266])
+            ("esp_ble_mesh_gen_level_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38330 38344])
+                          ("target_level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38411 38432])
+                          ("last_level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38824 38843])
+                          ("last_delta" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38898 38917])
+                          ("move_start" variable (:type "bool") (reparse-symbol classsubparts) [38980 38996])
+                          ("positive" variable (:type "bool") (reparse-symbol classsubparts) [39083 39097]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [38309 39195])
+            ("esp_ble_mesh_gen_level_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [39265 39293])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39388 39428])
+                          ("state" variable (:type ("esp_ble_mesh_gen_level_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39499 39536])
+                          ("last" variable (:type ("esp_ble_mesh_last_msg_info_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39593 39627])
+                          ("transition" variable (:type ("esp_ble_mesh_state_transition_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39693 39736])
+                          ("tt_delta_level" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39780 39803]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [39244 39908])
+            ("esp_ble_mesh_gen_def_trans_time_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39989 40008]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [39968 40118])
+            ("esp_ble_mesh_gen_def_trans_time_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [40206 40234])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [40351 40391])
+                          ("state" variable (:type ("esp_ble_mesh_gen_def_trans_time_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [40466 40512]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [40185 40618])
+            ("esp_ble_mesh_gen_onpowerup_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onpowerup" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [40685 40703]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [40664 40795])
+            ("esp_ble_mesh_gen_power_onoff_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [40871 40899])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41000 41040])
+                          ("state" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_gen_onpowerup_state_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [41111 41153]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [40850 41242])
+            ("esp_ble_mesh_gen_power_onoff_setup_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [41324 41352])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41459 41499])
+                          ("state" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_gen_onpowerup_state_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [41570 41612]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [41303 41707])
+            ("esp_ble_mesh_gen_power_level_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("power_actual" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41777 41799])
+                          ("target_power_actual" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41873 41902])
+                          ("power_last" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41969 41989])
+                          ("power_default" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42055 42078])
+                          ("status_code" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42145 42166])
+                          ("power_range_min" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42242 42267])
+                          ("power_range_max" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42337 42362]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [41756 42467])
+            ("esp_ble_mesh_gen_power_level_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [42543 42571])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42676 42716])
+                          ("state" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_gen_power_level_state_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [42791 42835])
+                          ("last" variable (:type ("esp_ble_mesh_last_msg_info_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42895 42929])
+                          ("transition" variable (:type ("esp_ble_mesh_state_transition_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42999 43042])
+                          ("tt_delta_level" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [43090 43113]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [42522 43228])
+            ("esp_ble_mesh_gen_power_level_setup_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [43310 43338])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [43449 43489])
+                          ("state" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_gen_power_level_state_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [43564 43608]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [43289 43707])
+            ("esp_ble_mesh_gen_battery_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("battery_level" variable
+                             (:suffix ":8"
+                              :type ("uint32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [43773 43898])
+                          ("time_to_discharge" variable
+                             (:suffix ":24"
+                              :type ("uint32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [43773 43898])
+                          ("time_to_charge" variable
+                             (:suffix ":24"
+                              :type ("uint32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [43971 44100])
+                          ("battery_flags" variable
+                             (:suffix ":8"
+                              :type ("uint32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [43971 44100]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [43752 44197])
+            ("esp_ble_mesh_gen_battery_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [44269 44297])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44394 44434])
+                          ("state" variable (:type ("esp_ble_mesh_gen_battery_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44505 44544]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [44248 44630])
+            ("esp_ble_mesh_gen_location_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("global_latitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44697 44722])
+                          ("global_longitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44776 44802])
+                          ("global_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44856 44881])
+                          ("local_north" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44935 44956])
+                          ("local_east" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [45010 45030])
+                          ("local_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [45084 45108])
+                          ("floor_number" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [45162 45184])
+                          ("uncertainty" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [45238 45259]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [44676 45345])
+            ("esp_ble_mesh_gen_location_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [45418 45446])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [45544 45584])
+                          ("state" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_gen_location_state_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [45655 45696]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [45397 45782])
+            ("esp_ble_mesh_gen_location_setup_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [45861 45889])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [45993 46033])
+                          ("state" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_gen_location_state_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [46104 46145]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [45840 46237])
+            ("esp_ble_mesh_gen_user_prop_access_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_GEN_USER_ACCESS_PROHIBIT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46326 46364])
+                          ("ESP_BLE_MESH_GEN_USER_ACCESS_READ" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46369 46403])
+                          ("ESP_BLE_MESH_GEN_USER_ACCESS_WRITE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46408 46443])
+                          ("ESP_BLE_MESH_GEN_USER_ACCESS_READ_WRITE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46448 46488]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [46307 46527])
+            ("esp_ble_mesh_gen_admin_prop_access_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_GEN_ADMIN_NOT_USER_PROP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46617 46654])
+                          ("ESP_BLE_MESH_GEN_ADMIN_ACCESS_READ" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46659 46694])
+                          ("ESP_BLE_MESH_GEN_ADMIN_ACCESS_WRITE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46699 46735])
+                          ("ESP_BLE_MESH_GEN_ADMIN_ACCESS_READ_WRITE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46740 46781]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [46598 46821])
+            ("esp_ble_mesh_gen_manu_prop_access_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_GEN_MANU_NOT_USER_PROP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46918 46954])
+                          ("ESP_BLE_MESH_GEN_MANU_ACCESS_READ" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [46959 46993]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [46899 47032])
+            ("esp_ble_mesh_generic_property_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [47100 47112])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [47185 47206])
+                          ("admin_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [47252 47274])
+                          ("manu_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [47320 47341])
+                          ("val" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [47395 47422]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [47079 47511])
+            ("esp_ble_mesh_gen_user_prop_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [47589 47617])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [47724 47764])
+                          ("property_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [47839 47862])
+                          ("properties" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_generic_property_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [47927 47971]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [47568 48064])
+            ("esp_ble_mesh_gen_admin_prop_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [48143 48171])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [48279 48319])
+                          ("property_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [48394 48417])
+                          ("properties" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_generic_property_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [48483 48527]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [48122 48622])
+            ("esp_ble_mesh_gen_manu_prop_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [48708 48736])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [48851 48891])
+                          ("property_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [48966 48989])
+                          ("properties" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_generic_property_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [49062 49106]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [48687 49207])
+            ("esp_ble_mesh_gen_client_prop_srv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [49287 49315])
+                          ("rsp_ctrl" variable (:type ("esp_ble_mesh_server_rsp_ctrl_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [49420 49460])
+                          ("id_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [49531 49548])
+                          ("property_ids" variable
+                             (:pointer 1
+                              :type ("uint16_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [49620 49643]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [49266 49757])
+            ("esp_ble_mesh_state_change_gen_onoff_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [49837 49851]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [49816 49946])
+            ("esp_ble_mesh_state_change_gen_level_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50026 50040]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [50005 50135])
+            ("esp_ble_mesh_state_change_gen_delta_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50215 50229]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [50194 50324])
+            ("esp_ble_mesh_state_change_gen_move_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50403 50417]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [50382 50511])
+            ("esp_ble_mesh_state_change_gen_def_trans_time_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50609 50628]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [50588 50745])
+            ("esp_ble_mesh_state_change_gen_onpowerup_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onpowerup" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50829 50847]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [50808 50946])
+            ("esp_ble_mesh_state_change_gen_power_level_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51032 51047]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [51011 51154])
+            ("esp_ble_mesh_state_change_gen_power_default_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51242 51257]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [51221 51367])
+            ("esp_ble_mesh_state_change_gen_power_range_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("range_min" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51454 51473])
+                          ("range_max" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51537 51556]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [51433 51666])
+            ("esp_ble_mesh_state_change_gen_loc_global_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("latitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51757 51774])
+                          ("longitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51845 51863])
+                          ("altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51934 51951]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [51736 52067])
+            ("esp_ble_mesh_state_change_gen_loc_local_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("north" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52157 52172])
+                          ("east" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52241 52255])
+                          ("altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52324 52342])
+                          ("floor_number" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52411 52433])
+                          ("uncertainty" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52496 52517]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [52136 52624])
+            ("esp_ble_mesh_state_change_gen_user_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52713 52725])
+                          ("value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [52788 52817]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [52692 52930])
+            ("esp_ble_mesh_state_change_gen_admin_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53020 53032])
+                          ("access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53100 53116])
+                          ("value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [53184 53213]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [52999 53328])
+            ("esp_ble_mesh_state_change_gen_manu_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53425 53437])
+                          ("access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53512 53528]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [53404 53650])
+            ("esp_ble_mesh_generic_server_state_change_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onoff_set" variable (:type ("esp_ble_mesh_state_change_gen_onoff_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53824 53885])
+                          ("level_set" variable (:type ("esp_ble_mesh_state_change_gen_level_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53926 53987])
+                          ("delta_set" variable (:type ("esp_ble_mesh_state_change_gen_delta_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54028 54089])
+                          ("move_set" variable (:type ("esp_ble_mesh_state_change_gen_move_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54130 54190])
+                          ("def_trans_time_set" variable (:type ("esp_ble_mesh_state_change_gen_def_trans_time_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54231 54301])
+                          ("onpowerup_set" variable (:type ("esp_ble_mesh_state_change_gen_onpowerup_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54351 54416])
+                          ("power_level_set" variable (:type ("esp_ble_mesh_state_change_gen_power_level_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54457 54524])
+                          ("power_default_set" variable (:type ("esp_ble_mesh_state_change_gen_power_default_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54565 54634])
+                          ("power_range_set" variable (:type ("esp_ble_mesh_state_change_gen_power_range_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54675 54742])
+                          ("loc_global_set" variable (:type ("esp_ble_mesh_state_change_gen_loc_global_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54783 54849])
+                          ("loc_local_set" variable (:type ("esp_ble_mesh_state_change_gen_loc_local_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54895 54960])
+                          ("user_property_set" variable (:type ("esp_ble_mesh_state_change_gen_user_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [55006 55075])
+                          ("admin_property_set" variable (:type ("esp_ble_mesh_state_change_gen_admin_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [55116 55186])
+                          ("manu_property_set" variable (:type ("esp_ble_mesh_state_change_gen_manu_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [55227 55296]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [53716 55386])
+            ("esp_ble_mesh_server_recv_gen_user_property_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [55474 55495]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [55453 55609])
+            ("esp_ble_mesh_server_recv_gen_admin_property_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [55698 55719]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [55677 55831])
+            ("esp_ble_mesh_server_recv_gen_manufacturer_property_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [55923 55944]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [55902 56070])
+            ("esp_ble_mesh_server_recv_gen_client_properties_get_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56162 56183]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [56141 56305])
+            ("esp_ble_mesh_generic_server_recv_get_msg_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("user_property" variable (:type ("esp_ble_mesh_server_recv_gen_user_property_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56393 56464])
+                          ("admin_property" variable (:type ("esp_ble_mesh_server_recv_gen_admin_property_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56507 56579])
+                          ("manu_property" variable (:type ("esp_ble_mesh_server_recv_gen_manufacturer_property_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56622 56693])
+                          ("client_properties" variable (:type ("esp_ble_mesh_server_recv_gen_client_properties_get_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56744 56819]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [56373 56903])
+            ("esp_ble_mesh_server_recv_gen_onoff_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [56983 56997])
+                          ("onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57064 57078])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57136 57148])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57187 57206])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57268 57282]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [56962 57382])
+            ("esp_ble_mesh_server_recv_gen_level_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [57462 57476])
+                          ("level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57543 57557])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57615 57627])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57666 57685])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57747 57761]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [57441 57861])
+            ("esp_ble_mesh_server_recv_gen_delta_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [57941 57955])
+                          ("delta_level" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58022 58042])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58094 58106])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58145 58164])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58226 58240]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [57920 58340])
+            ("esp_ble_mesh_server_recv_gen_move_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [58419 58433])
+                          ("delta_level" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58500 58520])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58601 58613])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58652 58671])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58733 58747]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [58398 58846])
+            ("esp_ble_mesh_server_recv_gen_def_trans_time_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58944 58963]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [58923 59083])
+            ("esp_ble_mesh_server_recv_gen_onpowerup_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onpowerup" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59167 59185]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [59146 59287])
+            ("esp_ble_mesh_server_recv_gen_power_level_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("op_en" variable (:type "bool") (reparse-symbol classsubparts) [59373 59388])
+                          ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59454 59469])
+                          ("tid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59533 59546])
+                          ("trans_time" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59584 59604])
+                          ("delay" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59665 59680]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [59352 59785])
+            ("esp_ble_mesh_server_recv_gen_power_default_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("power" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59873 59888]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [59852 60001])
+            ("esp_ble_mesh_server_recv_gen_power_range_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("range_min" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60087 60106])
+                          ("range_max" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60177 60196]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [60066 60312])
+            ("esp_ble_mesh_server_recv_gen_loc_global_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("global_latitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60402 60426])
+                          ("global_longitude" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60472 60497])
+                          ("global_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60543 60567]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [60381 60643])
+            ("esp_ble_mesh_server_recv_gen_loc_local_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("local_north" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60732 60753])
+                          ("local_east" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60798 60818])
+                          ("local_altitude" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60863 60887])
+                          ("floor_number" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60918 60940])
+                          ("uncertainty" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60971 60992]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [60711 61066])
+            ("esp_ble_mesh_server_recv_gen_user_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61154 61175])
+                          ("property_value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [61238 61276]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [61133 61369])
+            ("esp_ble_mesh_server_recv_gen_admin_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61458 61479])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61543 61564])
+                          ("property_value" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [61614 61652]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [61437 61747])
+            ("esp_ble_mesh_server_recv_gen_manufacturer_property_set_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("property_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61843 61864])
+                          ("user_access" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61935 61956]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [61822 62061])
+            ("esp_ble_mesh_generic_server_recv_set_msg_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("onoff" variable (:type ("esp_ble_mesh_server_recv_gen_onoff_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62149 62212])
+                          ("level" variable (:type ("esp_ble_mesh_server_recv_gen_level_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62279 62342])
+                          ("delta" variable (:type ("esp_ble_mesh_server_recv_gen_delta_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62409 62472])
+                          ("move" variable (:type ("esp_ble_mesh_server_recv_gen_move_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62539 62601])
+                          ("def_trans_time" variable (:type ("esp_ble_mesh_server_recv_gen_def_trans_time_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62667 62739])
+                          ("onpowerup" variable (:type ("esp_ble_mesh_server_recv_gen_onpowerup_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62833 62900])
+                          ("power_level" variable (:type ("esp_ble_mesh_server_recv_gen_power_level_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62971 63040])
+                          ("power_default" variable (:type ("esp_ble_mesh_server_recv_gen_power_default_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63113 63184])
+                          ("power_range" variable (:type ("esp_ble_mesh_server_recv_gen_power_range_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63259 63328])
+                          ("location_global" variable (:type ("esp_ble_mesh_server_recv_gen_loc_global_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63401 63474])
+                          ("location_local" variable (:type ("esp_ble_mesh_server_recv_gen_loc_local_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63551 63623])
+                          ("user_property" variable (:type ("esp_ble_mesh_server_recv_gen_user_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63699 63770])
+                          ("admin_property" variable (:type ("esp_ble_mesh_server_recv_gen_admin_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63845 63917])
+                          ("manu_property" variable (:type ("esp_ble_mesh_server_recv_gen_manufacturer_property_set_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63993 64064]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [62129 64196])
+            ("esp_ble_mesh_generic_server_cb_value_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("state_change" variable (:type ("esp_ble_mesh_generic_server_state_change_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64278 64334])
+                          ("get" variable (:type ("esp_ble_mesh_generic_server_recv_get_msg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64395 64442])
+                          ("set" variable (:type ("esp_ble_mesh_generic_server_recv_set_msg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64504 64551]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [64258 64650])
+            ("esp_ble_mesh_generic_server_cb_param_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [64721 64750])
+                          ("ctx" variable (:type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64798 64825])
+                          ("value" variable (:type ("esp_ble_mesh_generic_server_cb_value_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64875 64920]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [64700 65011])
+            ("esp_ble_mesh_generic_server_cb_event_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [65468 65513])
+                          ("ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [65701 65746])
+                          ("ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [65944 65989])
+                          ("ESP_BLE_MESH_GENERIC_SERVER_EVT_MAX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [65994 66030]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [65073 66072])
+            ("esp_ble_mesh_generic_server_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("event" variable (:type ("esp_ble_mesh_generic_server_cb_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66333 66378])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_generic_server_cb_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66387 66433]))                  
+                :type "void")
+                nil [66291 66434])
+            ("esp_ble_mesh_register_generic_server_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("callback" variable (:type ("esp_ble_mesh_generic_server_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66693 66735]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [66637 66736]))          
+      :file "esp_ble_mesh_generic_model_api.h"
+      :pointmax 66787
+      :fsize 66786
+      :lastmodtime '(24176 21322 871782 607000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ESP_BLE_MESH_GENERIC_MODEL_API_H_")
+          ("ESP_BLE_MESH_MODEL_GEN_BATTERY_SRV" (spp-arg-list ("srv_pub" "srv_data") 32588 . 32607) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 32630 . 32652) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_BATTERY_SRV,     \\
+                    NULL, srv_pub, srv_data)" 32652 . 32742)))
+          ("ESP_BLE_MESH_MODEL_GEN_LOCATION_CLI" (spp-arg-list ("cli_pub" "cli_data") 5350 . 5369) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 5389 . 5411) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_CLI,  \\
+                    NULL, cli_pub, cli_data)" 5411 . 5499)))
+          ("ESP_BLE_MESH_MODEL_GEN_PROPERTY_CLI" (spp-arg-list ("cli_pub" "cli_data") 6010 . 6029) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 6049 . 6071) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_PROP_CLI,      \\
+                    NULL, cli_pub, cli_data)" 6071 . 6159)))
+          ("ESP_BLE_MESH_MODEL_GEN_MANUFACTURER_PROP_SRV" (spp-arg-list ("srv_pub" "srv_data") 36524 . 36543) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 36565 . 36587) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_MANUFACTURER_PROP_SRV,    \\
+                    NULL, srv_pub, srv_data)" 36587 . 36686)))
+          ("ESP_BLE_MESH_MODEL_GEN_DEF_TRANS_TIME_CLI" (spp-arg-list ("cli_pub" "cli_data") 2664 . 2683) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 2705 . 2727) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_CLI,    \\
+                    NULL, cli_pub, cli_data)" 2727 . 2823)))
+          ("ESP_BLE_MESH_MODEL_GEN_POWER_ONOFF_SETUP_SRV" (spp-arg-list ("srv_pub" "srv_data") 30061 . 30080) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 30103 . 30125) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SETUP_SRV,     \\
+                    NULL, srv_pub, srv_data)" 30125 . 30225)))
+          ("ESP_BLE_MESH_MODEL_GEN_ADMIN_PROP_SRV" (spp-arg-list ("srv_pub" "srv_data") 35737 . 35756) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 35778 . 35800) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_ADMIN_PROP_SRV,    \\
+                    NULL, srv_pub, srv_data)" 35800 . 35892)))
+          ("ESP_BLE_MESH_MODEL_GEN_POWER_ONOFF_CLI" (spp-arg-list ("cli_pub" "cli_data") 3349 . 3368) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 3389 . 3411) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_CLI,   \\
+                    NULL, cli_pub, cli_data)" 3411 . 3503)))
+          ("ESP_BLE_MESH_MODEL_GEN_POWER_LEVEL_SETUP_SRV" (spp-arg-list ("srv_pub" "srv_data") 31811 . 31830) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 31853 . 31875) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SETUP_SRV,     \\
+                    NULL, srv_pub, srv_data)" 31875 . 31975)))
+          ("ESP_BLE_MESH_MODEL_GEN_ONOFF_CLI" (spp-arg-list ("cli_pub" "cli_data") 1299 . 1318) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 1337 . 1359) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_ONOFF_CLI, \\
+                    NULL, cli_pub, cli_data)" 1359 . 1443)))
+          ("ESP_BLE_MESH_MODEL_GEN_POWER_LEVEL_CLI" (spp-arg-list ("cli_pub" "cli_data") 4029 . 4048) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 4069 . 4091) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_CLI,   \\
+                    NULL, cli_pub, cli_data)" 4091 . 4183)))
+          ("ESP_BLE_MESH_MODEL_GEN_LOCATION_SETUP_SRV" (spp-arg-list ("srv_pub" "srv_data") 34276 . 34295) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 34318 . 34340) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_SETUP_SRV,     \\
+                    NULL, srv_pub, srv_data)" 34340 . 34437)))
+          ("ESP_BLE_MESH_MODEL_GEN_LEVEL_CLI" (spp-arg-list ("cli_pub" "cli_data") 1940 . 1959) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 1978 . 2000) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_LEVEL_CLI, \\
+                    NULL, cli_pub, cli_data)" 2000 . 2084)))
+          ("ESP_BLE_MESH_MODEL_GEN_CLIENT_PROP_SRV" (spp-arg-list ("srv_pub" "srv_data") 37242 . 37261) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 37284 . 37306) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_CLIENT_PROP_SRV,     \\
+                    NULL, srv_pub, srv_data)" 37306 . 37400)))
+          ("ESP_BLE_MESH_MODEL_GEN_BATTERY_CLI" (spp-arg-list ("cli_pub" "cli_data") 4689 . 4708) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 4729 . 4751) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_BATTERY_CLI,   \\
+                    NULL, cli_pub, cli_data)" 4751 . 4839)))
+          ("ESP_BLE_MESH_MODEL_GEN_LOCATION_SRV" (spp-arg-list ("srv_pub" "srv_data") 33538 . 33557) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 33580 . 33602) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_SRV,     \\
+                    NULL, srv_pub, srv_data)" 33602 . 33693)))
+          ("ESP_BLE_MESH_MODEL_GEN_USER_PROP_SRV" (spp-arg-list ("srv_pub" "srv_data") 34983 . 35002) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 35025 . 35047) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_USER_PROP_SRV,     \\
+                    NULL, srv_pub, srv_data)" 35047 . 35139)))
+          ("ESP_BLE_MESH_MODEL_GEN_DEF_TRANS_TIME_SRV" (spp-arg-list ("srv_pub" "srv_data") 28147 . 28166) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 28189 . 28211) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_SRV,     \\
+                    NULL, srv_pub, srv_data)" 28211 . 28308)))
+          ("ESP_BLE_MESH_MODEL_GEN_POWER_ONOFF_SRV" (spp-arg-list ("srv_pub" "srv_data") 29246 . 29265) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 29288 . 29310) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SRV,     \\
+                    NULL, srv_pub, srv_data)" 29310 . 29404)))
+          ("ESP_BLE_MESH_MODEL_GEN_ONOFF_SRV" (spp-arg-list ("srv_pub" "srv_data") 26742 . 26761) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 26784 . 26806) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_ONOFF_SRV,     \\
+                    NULL, srv_pub, srv_data)" 26806 . 26894)))
+          ("ESP_BLE_MESH_MODEL_GEN_POWER_LEVEL_SRV" (spp-arg-list ("srv_pub" "srv_data") 31002 . 31021) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 31044 . 31066) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SRV,     \\
+                    NULL, srv_pub, srv_data)" 31066 . 31160)))
+          ("ESP_BLE_MESH_MODEL_GEN_LEVEL_SRV" (spp-arg-list ("srv_pub" "srv_data") 27404 . 27423) . ((symbol "ESP_BLE_MESH_SIG_MODEL" 27446 . 27468) (semantic-list "(ESP_BLE_MESH_MODEL_ID_GEN_LEVEL_SRV,     \\
+                    NULL, srv_pub, srv_data)" 27468 . 27556)))
+          )
+))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!lightduer-esp-idf!components!bt!esp_ble_mesh!api!models!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

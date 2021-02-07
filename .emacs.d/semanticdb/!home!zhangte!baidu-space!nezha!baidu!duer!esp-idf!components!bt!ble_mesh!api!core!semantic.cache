@@ -1,0 +1,134 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [618 637])
+            ("errno.h" include (:system-flag t) nil [638 656])
+            ("btc/btc_task.h" include nil nil [658 683])
+            ("btc/btc_manage.h" include nil nil [684 711])
+            ("esp_err.h" include nil nil [713 733])
+            ("esp_bt_defs.h" include nil nil [734 758])
+            ("esp_bt_main.h" include nil nil [759 783])
+            ("btc_ble_mesh_prov.h" include nil nil [785 815])
+            ("esp_ble_mesh_networking_api.h" include nil nil [816 856])
+            ("ESP_BLE_MESH_TX_SDU_MAX" variable (:constant-flag t) nil [866 889])
+            ("ble_mesh_send_msg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [969 997])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1033 1061])
+                    ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1097 1113])
+                    ("act" variable (:type ("btc_ble_mesh_model_act_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1149 1178])
+                    ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1214 1230])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1231 1245])
+                    ("msg_timeout" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1281 1301])
+                    ("need_rsp" variable (:type "bool") (reparse-symbol arg-sub-list) [1302 1316])
+                    ("device_role" variable (:type ("esp_ble_mesh_dev_role_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1352 1388]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [934 3849])
+            ("esp_ble_mesh_register_custom_model_callback" function
+               (:arguments 
+                  ( ("callback" variable (:type ("esp_ble_mesh_model_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3905 3938]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [3851 4088])
+            ("esp_ble_mesh_model_msg_opcode_init" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4135 4149])
+                    ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4150 4166]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [4090 4767])
+            ("esp_ble_mesh_client_model_init" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4810 4838]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [4769 4953])
+            ("esp_ble_mesh_server_model_send_msg" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5000 5028])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5037 5065])
+                    ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5066 5082])
+                    ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5091 5107])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5108 5122]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [4955 5344])
+            ("esp_ble_mesh_client_model_send_msg" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5391 5419])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5428 5456])
+                    ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5457 5473])
+                    ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5482 5498])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5499 5513])
+                    ("msg_timeout" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5514 5534])
+                    ("need_rsp" variable (:type "bool") (reparse-symbol arg-sub-list) [5543 5557])
+                    ("device_role" variable (:type ("esp_ble_mesh_dev_role_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5558 5594]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [5346 5831])
+            ("esp_ble_mesh_model_publish" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5870 5898])
+                    ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5899 5915])
+                    ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5953 5969])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5970 5984])
+                    ("device_role" variable (:type ("esp_ble_mesh_dev_role_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6022 6058]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [5833 6306])
+            ("esp_ble_mesh_node_local_reset" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6348 6353]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [6308 6647]))          
+      :file "esp_ble_mesh_networking_api.c"
+      :pointmax 10718
+      :fsize 10717
+      :lastmodtime '(24163 31883 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ESP_BLE_MESH_TX_SDU_MAX" . ((semantic-list "((CONFIG_BLE_MESH_ADV_BUF_COUNT - 3) * 12)" 890 . 932)))
+          )
+))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!esp-idf!components!bt!ble_mesh!api!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

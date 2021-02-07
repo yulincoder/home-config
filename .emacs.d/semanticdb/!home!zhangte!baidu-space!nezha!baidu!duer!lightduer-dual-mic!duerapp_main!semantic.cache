@@ -1,0 +1,316 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "duerapp_audio_player_test.c"
+      :pointmax 3792
+      :fsize 3791
+      :lastmodtime '(24189 64519 957749 467000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [173 192])
+            ("duerapp.h" include nil nil [193 213])
+            ("freertos/FreeRTOS.h" include nil nil [214 244])
+            ("freertos/task.h" include nil nil [245 271])
+            ("freertos/queue.h" include nil nil [272 299])
+            ("freertos/semphr.h" include nil nil [300 328])
+            ("freertos/timers.h" include nil nil [329 357])
+            ("esp_system.h" include nil nil [358 381])
+            ("esp_wifi.h" include nil nil [382 403])
+            ("nvs_flash.h" include nil nil [404 426])
+            ("esp_vfs_fat.h" include nil nil [427 451])
+            ("rom/rtc.h" include nil nil [453 473])
+            ("soc/soc.h" include nil nil [474 494])
+            ("soc/rtc_cntl_reg.h" include nil nil [495 524])
+            ("soc/sens_reg.h" include nil nil [525 550])
+            ("bootloader_common.h" include nil nil [551 581])
+            ("lightduer_connagent.h" include nil nil [583 615])
+            ("lightduer_voice.h" include nil nil [616 644])
+            ("lightduer_memory.h" include nil nil [645 674])
+            ("lightduer_sleep.h" include nil nil [675 703])
+            ("duerapp_config.h" include nil nil [705 732])
+            ("lightduer_key.h" include nil nil [733 759])
+            ("driver/gpio.h" include nil nil [760 784])
+            ("duerapp_event_loop.h" include nil nil [785 816])
+            ("lightduer_dcs.h" include nil nil [817 843])
+            ("lightduer_ds_log_e2e.h" include nil nil [844 877])
+            ("duerapp_dcs.h" include nil nil [878 902])
+            ("duerapp_dlp.h" include nil nil [903 927])
+            ("lightduer_audio_codec_ops.h" include nil nil [928 966])
+            ("lightduer_audio_adapter.h" include nil nil [967 1003])
+            ("lightduer_audio_player.h" include nil nil [1004 1039])
+            ("lightduer_audio_codec_adapter.h" include nil nil [1040 1082])
+            ("lightduer_audio_adc_imp.h" include nil nil [1083 1119])
+            ("lightduer_net_trans_common_events_handle.h" include nil nil [1120 1173])
+            ("lightduer_net_trans_encrypted.h" include nil nil [1174 1216])
+            ("lightduer_profile.h" include nil nil [1217 1247])
+            ("lightduer_bduss_oauth.h" include nil nil [1248 1282])
+            ("lightduer_dlp_router.h" include nil nil [1283 1316])
+            ("lightduer_lib.h" include nil nil [1317 1343])
+            ("duerapp_authorized.h" include nil nil [1344 1375])
+            ("duerapp_recorder.h" include nil nil [1376 1405])
+            ("touch_manager.h" include nil nil [1406 1432])
+            ("touch_manager_cb.h" include nil nil [1433 1462])
+            ("duerapp_auto_dns.h" include nil nil [1463 1492])
+            ("duerapp_ntp.h" include nil nil [1493 1517])
+            ("duerapp_nvs.h" include nil nil [1518 1542])
+            ("duerapp_bluetooth_config.h" include nil nil [1543 1580])
+            ("duerapp_system.h" include nil nil [1581 1608])
+            ("duerapp_wifi_config.h" include nil nil [1609 1641])
+            ("duerapp_mesh_user.h" include nil nil [1642 1672])
+            ("duerapp_monitor.h" include nil nil [1673 1701])
+            ("duerapp_ota.h" include nil nil [1702 1726])
+            ("duerapp_crab.h" include nil nil [1727 1752])
+            ("duer_ota_utils.h" include nil nil [1753 1780])
+            ("duer_audio_prompt_tone.h" include nil nil [1781 1816])
+            ("duerapp_audio_play_utils.h" include nil nil [1817 1854])
+            ("lightduer_anonymous_lc.h" include nil nil [1855 1890])
+            ("sys/time.h" include (:system-flag t) nil [1892 1913])
+            ("lightduer_timestamp.h" include nil nil [1914 1946])
+            ("lightduer_sleep.h" include nil nil [1947 1975])
+            ("duerapp_ds_log.h" include nil nil [1977 2004])
+            ("lightduer_ds_log_storage.h" include nil nil [2005 2042])
+            ("lightduer_ds_log_dcs.h" include nil nil [2043 2076])
+            ("lightduer_asr.h" include nil nil [2077 2103])
+            ("product_info.h" include nil nil [2161 2186])
+            ("duerapp_night_mode.h" include nil nil [2341 2372])
+            ("lightduer_net_ntp.h" include nil nil [2373 2403])
+            ("esp_log.h" include nil nil [2463 2483])
+            ("g_netconf_in_progress" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [2985 3019])
+            ("g_got_ip" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [3020 3041])
+            ("g_duer_started" variable
+               (:typemodifiers ("volatile")
+                :default-value "false"
+                :type "bool")
+                nil [3042 3079])
+            ("g_wireless_mode" variable
+               (:default-value "0"
+                :type ("duer_wireless_mode_t" type (:type "class") nil nil))
+                nil [3080 3121])
+            ("g_conn_tone_run_once" variable
+               (:default-value "true"
+                :type "bool")
+                nil [3122 3155])
+            ("s_restart_sem" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("xSemaphoreHandle" type (:type "class") nil nil))
+                nil [3157 3202])
+            ("g_duer_restart_task_handle" variable
+               (:default-value "NULL"
+                :type ("TaskHandle_t" type (:type "class") nil nil))
+                nil [3203 3250])
+            ("duer_restart_task" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [3252 3284])
+            ("NV_MAX_WIFI_BT_MAC_LEN" variable (:constant-flag t) nil [3293 3315])
+            ("s_is_boot_abnormal" variable
+               (:typemodifiers ("static")
+                :default-value "DUER_FALSE"
+                :type ("duer_bool" type (:type "class") nil nil))
+                nil [3320 3369])
+            ("duer_os_start" function
+               (:prototype-flag t
+                :type "void")
+                nil [3371 3392])
+            ("duerapp_is_boot_abnormal" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3429 3434]))                  
+                :type ("duer_bool" type (:type "class") nil nil))
+                nil [3394 3469])
+            ("duerapp_clear_boot_reason" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3502 3507]))                  
+                :type "void")
+                nil [3471 3548])
+            ("duer_bds_nvs_restore" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [3589 4652])
+            ("duer_event_hook" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("duer_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4682 4702]))                  
+                :type "void")
+                nil [4654 9444])
+            ("duer_unauthorize_request_exception" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9486 9491]))                  
+                :type "void")
+                nil [9446 9615])
+            ("duer_os_reset_auth_and_start" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9651 9656]))                  
+                :type "void")
+                nil [9617 9750])
+            ("duer_restart_task" function (:type "void") nil [9752 10574])
+            ("duer_os_start" function (:type "void") nil [10644 10761])
+            ("duer_audio_on_finished" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("what" variable (:type "int") (reparse-symbol arg-sub-list) [11845 11854])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11855 11866]))                  
+                :type "void")
+                nil [11810 11911])
+            ("duer_audio_on_started_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("duer_audio_play_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11949 11977]))                  
+                :type "int")
+                nil [11913 13554])
+            ("duer_audio_player_end" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("duer_audio_play_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13589 13617]))                  
+                :type "int")
+                nil [13556 14066])
+            ("duer_audio_on_stopped_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("duer_audio_play_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14104 14132]))                  
+                :type "int")
+                nil [14068 14224])
+            ("duer_audio_on_finished_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("duer_audio_play_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14263 14291]))                  
+                :type "int")
+                nil [14226 14623])
+            ("duer_audio_on_error_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("duer_audio_play_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14659 14687]))                  
+                :type "int")
+                nil [14625 14777])
+            ("duer_audio_write_codec_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("duer_audio_play_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14823 14851]))                  
+                :type "void")
+                nil [14779 15051])
+            ("duer_audio_init" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [15053 16465])
+            ("duer_report_reboot_reason" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("reset_reason" variable (:type ("RESET_REASON" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16908 16934]))                  
+                :type "void")
+                nil [16870 18508])
+            ("char2hex" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18523 18531]))                  
+                :type "int")
+                nil [18510 18730])
+            ("duer_set_wifi_bt_mac_address" function (:type "void") nil [18732 19363])
+            ("duer_init_file_system" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20812 20817]))                  
+                :type "void")
+                nil [20778 21229])
+            ("app_main" function (:type "void") nil [21231 24972])
+            ("btdm_start_scan_trigger_gpio" function (:type ("IRAM_ATTR" type (:type "class") nil nil)) nil [24979 25058])
+            ("btdm_stop_scan_trigger_gpio" function (:type ("IRAM_ATTR" type (:type "class") nil nil)) nil [25064 25142])
+            ("btdm_start_adv_trigger_gpio" function (:type ("IRAM_ATTR" type (:type "class") nil nil)) nil [25148 25226])
+            ("btdm_stop_adv_trigger_gpio" function (:type ("IRAM_ATTR" type (:type "class") nil nil)) nil [25232 25309]))          
+      :file "duerapp.c"
+      :pointmax 25343
+      :fsize 25350
+      :lastmodtime '(24189 62885 377428 521000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NV_MAX_WIFI_BT_MAC_LEN" . ((number "17" 3316 . 3318)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp.h"
+      :fsize 1373
+      :lastmodtime '(24184 22633 412688 931000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_config.h"
+      :fsize 4855
+      :lastmodtime '(24184 22633 412688 931000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_event_loop.h"
+      :fsize 531
+      :lastmodtime '(24097 10827 655311 625000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_dcs.h"
+      :fsize 1389
+      :lastmodtime '(24189 62885 377428 521000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_dlp.h"
+      :fsize 367
+      :lastmodtime '(24097 10827 655311 625000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_authorized.h"
+      :fsize 898
+      :lastmodtime '(24184 22633 412688 931000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_recorder.h"
+      :fsize 502
+      :lastmodtime '(24184 22633 412688 931000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_auto_dns.h"
+      :fsize 978
+      :lastmodtime '(24171 13794 908931 265000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_ntp.h"
+      :fsize 1115
+      :lastmodtime '(24178 65504 634363 728000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_bluetooth_config.h"
+      :fsize 5445
+      :lastmodtime '(24177 57876 931276 794000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_wifi_config.h"
+      :fsize 1345
+      :lastmodtime '(24184 22633 412688 931000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_mesh_user.h"
+      :fsize 360
+      :lastmodtime '(24189 62885 377428 521000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_monitor.h"
+      :fsize 1855
+      :lastmodtime '(24097 10827 675311 708000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_ota.h"
+      :fsize 3071
+      :lastmodtime '(24177 57876 935276 817000))
+    (semanticdb-table "semanticdb-table"
+      :file "duer_audio_prompt_tone.h"
+      :fsize 1912
+      :lastmodtime '(24189 62885 377428 521000))
+    (semanticdb-table "semanticdb-table"
+      :file "duerapp_audio_play_utils.h"
+      :fsize 1496
+      :lastmodtime '(24184 22633 412688 931000)))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!lightduer-dual-mic!duerapp_main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

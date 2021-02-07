@@ -1,0 +1,1200 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [168 186])
+            ("string.h" include (:system-flag t) nil [187 206])
+            ("esp_bt.h" include nil nil [208 227])
+            ("esp_bt_main.h" include nil nil [228 252])
+            ("esp_bt_device.h" include nil nil [253 279])
+            ("esp_coexist.h" include nil nil [280 304])
+            ("esp_log.h" include nil nil [305 325])
+            ("nvs_flash.h" include nil nil [326 348]))          
+      :file "ble_mesh_api.c"
+      :pointmax 62686
+      :fsize 62685
+      :lastmodtime '(24189 62885 245426 452000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("LIGHTDUER_DUAL_MIC_COMPONENTS_BAIDU_BLUETOOTH_BLE_MESH_API_H" variable (:constant-flag t) nil [403 463])
+            ("stdint.h" include (:system-flag t) nil [465 484])
+            ("stdbool.h" include (:system-flag t) nil [485 505])
+            ("esp_ble_mesh_defs.h" include nil nil [507 537])
+            ("esp_ble_mesh_common_api.h" include nil nil [538 574])
+            ("esp_ble_mesh_provisioning_api.h" include nil nil [575 617])
+            ("esp_ble_mesh_networking_api.h" include nil nil [618 658])
+            ("esp_ble_mesh_config_model_api.h" include nil nil [659 701])
+            ("esp_ble_mesh_generic_model_api.h" include nil nil [702 745])
+            ("esp_ble_mesh_lighting_model_api.h" include nil nil [746 790])
+            ("MSG_1_OCTET" variable (:constant-flag t) nil [915 926])
+            ("MSG_2_OCTET" variable (:constant-flag t) nil [962 973])
+            ("MSG_4_OCTET" variable (:constant-flag t) nil [1032 1043])
+            ("BD_COMP_ID" variable (:constant-flag t) nil [1170 1180])
+            ("BD_COMP_ID_LITTLE_END" variable (:constant-flag t) nil [1196 1217])
+            ("MESH_TASK_QUEUE_LEN" variable (:constant-flag t) nil [1251 1270])
+            ("MESH_TASK_POST_TIMEOUT" variable (:constant-flag t) nil [1342 1364])
+            ("MAX_MESH_VENDOR_MSG_LEN" variable (:constant-flag t) nil [1438 1461])
+            ("MAX_MESH_SIG_MSG_LEN_SMALL" variable (:constant-flag t) nil [1560 1586])
+            ("MAX_MESH_SIG_MSG_LEN_BIG" variable (:constant-flag t) nil [1676 1700])
+            ("MAX_MESH_MSG_RESEND_COUNT" variable (:constant-flag t) nil [1792 1817])
+            ("MAX_UUID_COUNT" variable (:constant-flag t) nil [1896 1910])
+            ("MAX_ELEMENT_COUNT" variable (:constant-flag t) nil [1979 1996])
+            ("MAX_MODEL_COUNT" variable (:constant-flag t) nil [2065 2080])
+            ("CONNECTIVITY_REPORT_INTERVAL" variable (:constant-flag t) nil [2160 2188])
+            ("duer_mesh_err_code_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_OK" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2325 2338])
+                          ("DUER_MESH_BLUETOOTH_CLOSED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2386 2413])
+                          ("DUER_MESH_BLE_INVALID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2460 2482])
+                          ("DUER_MESH_PARAM_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2532 2554])
+                          ("DUER_MESH_CMD_TIMEOUT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2596 2618])
+                          ("DUER_MESH_NODE_NOT_FOUND" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2660 2685])
+                          ("DUER_MESH_PROV_SUCCESS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2872 2895])
+                          ("DUER_MESH_PROV_WRONG_UNI_ADDR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2942 2972])
+                          ("DUER_MESH_PROV_PROV_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3021 3048])
+                          ("DUER_MESH_PROV_GET_COM_DATA_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3096 3131])
+                          ("DUER_MESH_PROV_ADD_APP_KEY_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3176 3210])
+                          ("DUER_MESH_PROV_BIND_APP_KEY_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3275 3310])
+                          ("DUER_MESH_PROV_SUB_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3347 3373])
+                          ("DUER_MESH_PROV_REG_HEARTBEAT_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3416 3452]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2288 3513])
+            ("duer_mesh_mode_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_MOD_STANDBY_NO_PERI" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3656 3686])
+                          ("DUER_MESH_MOD_STANDBY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3751 3773])
+                          ("DUER_MESH_MOD_CONFIG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3848 3869])
+                          ("DUER_MESH_MOD_BUSY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3942 3961]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3637 4058])
+            ("duer_mesh_prov_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_PROV_STATE_IDLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4175 4201])
+                          ("DUER_MESH_PROV_STATE_PROVED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4245 4273])
+                          ("DUER_MESH_PROV_STATE_GOT_COM_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4322 4356])
+                          ("DUER_MESH_PROV_STATE_ADDED_APP_KEY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4408 4443])
+                          ("DUER_MESH_PROV_STATE_BOUND_APP_KEY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4501 4536])
+                          ("DUER_MESH_PROV_STATE_ADDED_SUB_ADDR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4589 4625])
+                          ("DUER_MESH_PROV_STATE_REG_HEARTBEAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4675 4710]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [4156 4782])
+            ("duer_mesh_cfg_type_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_CFG_TYPE_GET_COM_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4831 4863])
+                          ("DUER_MESH_CFG_TYPE_ADD_APP_KEY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4904 4935])
+                          ("DUER_MESH_CFG_TYPE_BIND_APP_KEY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4968 5000])
+                          ("DUER_MESH_CFG_TYPE_ADD_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5033 5060])
+                          ("DUER_MESH_CFG_TYPE_DEL_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5110 5137])
+                          ("DUER_MESH_CFG_TYPE_DEL_ALL_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5190 5221])
+                          ("DUER_MESH_CFG_TYPE_UPD_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5274 5301])
+                          ("DUER_MESH_CFG_TYPE_OVW_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5386 5413])
+                          ("DUER_MESH_CFG_TYPE_DEL_DEV" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5469 5496])
+                          ("DUER_MESH_CFG_TYPE_PUBLISH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5535 5562])
+                          ("DUER_MESH_CFG_TYPE_HEART_BEAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5595 5625]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [4812 5677])
+            ("duer_mesh_task_sig_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_TASK_SID_CALL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5758 5782])
+                          ("DUER_MESH_TASK_SID_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5839 5861])
+                          ("DUER_MESH_TASK_SID_QUIT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5917 5941]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [5739 6017])
+            ("duer_mesh_task_pid_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_TASK_PID_START_SCAN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6081 6111])
+                          ("DUER_MESH_TASK_PID_START_PROV" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6161 6191])
+                          ("DUER_MESH_TASK_PID_DEL_DEV" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6246 6273])
+                          ("DUER_MESH_TASK_PID_ADD_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6328 6355])
+                          ("DUER_MESH_TASK_PID_DEL_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6422 6449])
+                          ("DUER_MESH_TASK_PID_DEL_ALL_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6518 6549])
+                          ("DUER_MESH_TASK_PID_UPD_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6618 6645])
+                          ("DUER_MESH_TASK_PID_OVW_SUB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6730 6757])
+                          ("DUER_MESH_TASK_PID_SEND_IR_DAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6829 6860])
+                          ("DUER_MESH_TASK_PID_SEND_DT_DAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6920 6951])
+                          ("DUER_MESH_TASK_PID_GEN_STATE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7018 7047])
+                          ("DUER_MESH_TASK_PID_LIGHT_STATE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7115 7146])
+                          ("DUER_MESH_API_PID_NUM" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7210 7232]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [6062 7256])
+            ("duer_mesh_bn_click_type_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_BN_CLICK" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7308 7327])
+                          ("DUER_MESH_BN_DOUBLE_CLICK" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7379 7405])
+                          ("DUER_MESH_BN_PRESS_AND_HOLD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7450 7478])
+                          ("DUER_MESH_BN_LONG_PRESS_AND_HOLD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7519 7552]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [7289 7625])
+            ("duer_mesh_attr_type_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_ATTR_TYPE_ON_OFF" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7695 7722])
+                          ("DUER_MESH_ATTR_TYPE_BRIGHTNESS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7800 7831])
+                          ("DUER_MESH_ATTR_TYPE_TEMPERATURE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7882 7914])
+                          ("DUER_MESH_ATTR_TYPE_COLOR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7965 7991])
+                          ("DUER_MESH_ATTR_TYPE_CONNECTIVITY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8043 8076]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [7649 8147])
+            ("duer_mesh_attr_val_connectivity_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_ATTR_VAL_OFFLINE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8208 8235])
+                          ("DUER_MESH_ATTR_VAL_ONLINE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8286 8312]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [8189 8395])
+            ("duer_mesh_attr_val_onoff_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DUER_MESH_ATTR_VAL_OFF" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8448 8471])
+                          ("DUER_MESH_ATTR_VAL_ON" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8522 8544]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [8429 8620])
+            ("duer_mesh_unprov_dev_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("uuid" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8778 8795])
+                          ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8835 8854])
+                          ("sub_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8900 8918])
+                          ("auth_val" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8977 8998]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8757 9065])
+            ("duer_mesh_prov_new_dev_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("unprov_dev" variable (:type ("duer_mesh_unprov_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9167 9201])
+                          ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9244 9260]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9146 9344])
+            ("duer_mesh_scan_res_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("uuids" variable
+                             (:dereference 2
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [9393 9427])
+                          ("dev_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9450 9468])
+                          ("err_code" variable (:type ("duer_mesh_err_code_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9526 9556])
+                          ("err_msg" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [9591 9607]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9372 9674])
+            ("duer_mesh_prov_ele_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("element_idx" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9743 9763])
+                          ("model_ids" variable
+                             (:dereference 2
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [9813 9851])
+                          ("model_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9879 9899]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9722 9966])
+            ("duer_mesh_prov_res_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("uuid" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10072 10089])
+                          ("dev_key" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10128 10148])
+                          ("random_val" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10195 10218])
+                          ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10264 10277])
+                          ("ele" variable
+                             (:dereference 1
+                              :type ("duer_mesh_prov_ele_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10324 10368])
+                          ("ele_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10399 10417])
+                          ("prov_success" variable (:type "bool") (reparse-symbol classsubparts) [10470 10488])
+                          ("err_code" variable (:type ("duer_mesh_err_code_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10543 10573])
+                          ("err_msg" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [10608 10624]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10051 10691])
+            ("duer_mesh_cfg_res_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("cfg_type" variable (:type ("duer_mesh_cfg_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10745 10775])
+                          ("err_code" variable (:type ("duer_mesh_err_code_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10816 10846])
+                          ("err_msg" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [10881 10897]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10724 10963])
+            ("duer_mesh_node_info_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("uuid" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11009 11027])
+                          ("uni_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11083 11101])
+                          ("elem_num" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11168 11186]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10988 11269])
+            ("duer_mesh_extra_data_item_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("key" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [11322 11332])
+                          ("val" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [11382 11392]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11301 11470])
+            ("duer_mesh_extra_data_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("items" variable
+                             (:pointer 1
+                              :type ("duer_mesh_extra_data_item_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11518 11553])
+                          ("extra_size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11591 11610]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11497 11684])
+            ("duer_mesh_ack_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("if_timeout" variable (:type "bool") (reparse-symbol classsubparts) [11749 11765])
+                          ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11832 11848])
+                          ("data_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11895 11912])
+                          ("data" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11964 12002])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [12029 12040]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11728 12120])
+            ("duer_mesh_vd_ack_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("err_code" variable (:type ("duer_mesh_err_code_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12177 12207])
+                          ("ack_list" variable
+                             (:pointer 1
+                              :type ("duer_mesh_ack_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12279 12305])
+                          ("list_size" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12344 12363]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [12156 12427])
+            ("duer_mesh_attr_state_ack" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("if_timeout" variable (:type "bool") (reparse-symbol classsubparts) [12506 12522])
+                          ("err_code" variable (:type ("duer_mesh_err_code_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12594 12624])
+                          ("err_msg" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12659 12678])
+                          ("attr_type" variable (:type ("duer_mesh_attr_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12727 12759])
+                          ("data_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12798 12815])
+                          ("data" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12870 12909]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [12485 12961])
+            ("duer_mesh_data_rec_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13051 13070])
+                          ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13120 13136])
+                          ("data_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13183 13200])
+                          ("data" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13257 13296]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13030 13346])
+            ("duer_mesh_button_notify_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13403 13422])
+                          ("uuid" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13479 13496])
+                          ("click_type" variable (:type ("duer_mesh_bn_click_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13547 13584])
+                          ("vbat" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13621 13635]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13382 13713])
+            ("duer_mesh_vd_data_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13772 13788])
+                          ("expect_ack_opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13848 13875])
+                          ("data_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13924 13941])
+                          ("data" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14002 14040])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [14084 14095]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13751 14181])
+            ("duer_mesh_gen_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14257 14271])
+                          ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14321 14337])
+                          ("data_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14398 14415])
+                          ("data" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14481 14524]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [14236 14630])
+            ("duer_mesh_light_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("type" variable (:type ("duer_mesh_attr_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14705 14732])
+                          ("addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14776 14790])
+                          ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14845 14861])
+                          ("data_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14920 14937])
+                          ("data" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15001 15044]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [14684 15150])
+            ("duer_mesh_vd_send_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15225 15244])
+                          ("max_retry" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15294 15312])
+                          ("data_list" variable
+                             (:pointer 1
+                              :type ("duer_mesh_vd_data_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15367 15398])
+                          ("list_size" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15440 15459])
+                          ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15518 15534]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15204 15634])
+            ("duer_mesh_attr_val_color_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("hue" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15697 15710])
+                          ("saturation" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15761 15781])
+                          ("lightness" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15832 15851]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15676 15937])
+            ("duer_mesh_attr_val_temp_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("temp" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16006 16020])
+                          ("delta_uv" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16074 16091])
+                          ("lightness" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16139 16158]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15985 16243])
+            ("duer_mesh_task_msg_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("sid" variable (:type ("duer_mesh_task_sig_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16317 16342])
+                          ("pid" variable (:type ("duer_mesh_task_pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16396 16421])
+                          ("is_serial" variable (:type "bool") (reparse-symbol classsubparts) [16476 16491])
+                          ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16589 16605])
+                          ("args" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [16740 16751]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16296 16829])
+            ("duer_mesh_task_func_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("func_call" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("args" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [16913 16924]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [16895 16925])
+                          ("func_cb" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("args" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [16981 16992]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [16965 16993])
+                          ("func_timeout" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("pid" variable (:type ("duer_mesh_task_pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17178 17203]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [17157 17204]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16874 17229])
+            ("duer_mesh_vendor_client_cb_param_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("node" variable (:type ("duer_mesh_node_info_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17308 17335])
+                          ("error_code" variable (:type "int") (reparse-symbol classsubparts) [17374 17389])
+                          ("event" variable (:type ("esp_ble_mesh_model_cb_event_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17453 17489])
+                          ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17540 17556])
+                          ("msg_len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17628 17645])
+                          ("msg" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [17717 17754]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [17287 17835])
+            ("duer_mesh_del_dev_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("uni_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17895 17913])
+                          ("net_key" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [17967 17987])
+                          ("app_key" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [18031 18051]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [17874 18113])
+            ("duer_mesh_sub_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("unsub_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18220 18240])
+                          ("sub_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18299 18317])
+                          ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18376 18395]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [18199 18459])
+            ("duer_mesh_attr_notify_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18520 18539])
+                          ("type" variable (:type ("duer_mesh_attr_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18589 18616])
+                          ("" type
+                             (:members 
+                                ( ("on_off" variable (:type ("duer_mesh_attr_val_onoff_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18676 18710])
+                                  ("connectivity" variable (:type ("duer_mesh_attr_val_connectivity_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18719 18766])
+                                  ("color" variable (:type ("duer_mesh_attr_val_color_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18775 18808])
+                                  ("temperature" variable (:type ("duer_mesh_attr_val_temp_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18817 18855]))                                
+                              :type "union")
+                              (reparse-symbol classsubparts) [18660 18862]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [18499 18954])
+            ("duer_mesh_scan_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("scan_res" variable
+                       (:pointer 1
+                        :type ("duer_mesh_scan_res_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19148 19179]))                  
+                :type "void")
+                nil [19120 19180])
+            ("duer_mesh_prov_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("prov_res" variable
+                       (:pointer 1
+                        :type ("duer_mesh_prov_res_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19337 19368]))                  
+                :type "void")
+                nil [19309 19369])
+            ("duer_mesh_cfg_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("cfg_res" variable
+                       (:pointer 1
+                        :type ("duer_mesh_cfg_res_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19518 19547]))                  
+                :type "void")
+                nil [19491 19548])
+            ("duer_mesh_attr_ack_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("ack" variable
+                       (:pointer 1
+                        :type ("duer_mesh_attr_state_ack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19655 19685]))                  
+                :type "void")
+                nil [19623 19686])
+            ("duer_mesh_attr_change_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("attr_notify" variable
+                       (:pointer 1
+                        :type ("duer_mesh_attr_notify_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19786 19823]))                  
+                :type "void")
+                nil [19751 19824])
+            ("duer_mesh_vd_ack_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("ir_ack" variable
+                       (:pointer 1
+                        :type ("duer_mesh_vd_ack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19925 19952]))                  
+                :type "void")
+                nil [19895 19953])
+            ("duer_mesh_data_rec_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("data_rec" variable
+                       (:pointer 1
+                        :type ("duer_mesh_data_rec_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20080 20111]))                  
+                :type "void")
+                nil [20048 20112])
+            ("duer_mesh_bn_click_cb_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("button_notify" variable
+                       (:pointer 1
+                        :type ("duer_mesh_button_notify_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20205 20246]))                  
+                :type "void")
+                nil [20173 20247])
+            ("mesh_scanning_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_scan_cb_t" type (:type "class") nil nil))
+                nil [20344 20388])
+            ("mesh_provision_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_prov_cb_t" type (:type "class") nil nil))
+                nil [20426 20471])
+            ("mesh_cfg_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_cfg_cb_t" type (:type "class") nil nil))
+                nil [20523 20561])
+            ("attr_ack_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_attr_ack_cb_t" type (:type "class") nil nil))
+                nil [20606 20649])
+            ("attr_change_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_attr_change_cb_t" type (:type "class") nil nil))
+                nil [20715 20764])
+            ("ir_ack_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_vd_ack_cb_t" type (:type "class") nil nil))
+                nil [20815 20854])
+            ("ir_data_rec_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_data_rec_cb_t" type (:type "class") nil nil))
+                nil [20895 20941])
+            ("dt_ack_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_vd_ack_cb_t" type (:type "class") nil nil))
+                nil [20989 21028])
+            ("dt_data_rec_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_data_rec_cb_t" type (:type "class") nil nil))
+                nil [21076 21122])
+            ("datatrans_bn_click_cb" variable
+               (:typemodifiers ("extern")
+                :type ("duer_mesh_bn_click_cb_t" type (:type "class") nil nil))
+                nil [21177 21230])
+            ("duer_mesh_prepare_opr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21584 21589]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [21541 21590])
+            ("duer_mesh_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21845 21850]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [21809 21851])
+            ("duer_mesh_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("prov_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22163 22182])
+                    ("net_key" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22183 22209])
+                    ("app_key" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22210 22236])
+                    ("extra_data" variable
+                       (:pointer 1
+                        :type ("duer_mesh_extra_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22274 22309]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [22126 22310])
+            ("duer_mesh_stop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22452 22457]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [22416 22458])
+            ("duer_mesh_deinit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22627 22632]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [22589 22633])
+            ("duer_mesh_if_ready" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22746 22751]))                  
+                :type "bool")
+                nil [22722 22752])
+            ("duer_mesh_change_mode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mode" variable (:type ("duer_mesh_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22924 22946]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [22881 22947])
+            ("duer_mesh_start_scan" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23166 23182])
+                    ("scan_cb" variable (:type ("duer_mesh_scan_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23183 23211]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [23124 23212])
+            ("duer_mesh_stop_scan" function
+               (:prototype-flag t
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [23302 23345])
+            ("duer_mesh_prov_new_dev" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("unprov_dev" variable
+                       (:pointer 1
+                        :type ("duer_mesh_unprov_dev_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23686 23721])
+                    ("prov_cb" variable (:type ("duer_mesh_prov_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23722 23750])
+                    ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23759 23775]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [23642 23776])
+            ("duer_mesh_reg_cfg_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cfg_cb" variable (:type ("duer_mesh_cfg_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23952 23978]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [23910 23979])
+            ("duer_mesh_del_dev" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24265 24284])
+                    ("net_key" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24285 24311])
+                    ("app_key" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24312 24338]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [24226 24339])
+            ("duer_mesh_add_sub" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24571 24590])
+                    ("sub_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24591 24609]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [24532 24610])
+            ("duer_mesh_delete_sub" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24942 24961])
+                    ("sub_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24962 24980])
+                    ("all" variable (:type "bool") (reparse-symbol arg-sub-list) [24981 24990]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [24900 24991])
+            ("duer_mesh_upd_sub" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25457 25476])
+                    ("unsub_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25477 25497])
+                    ("sub_addrs" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25498 25518])
+                    ("sub_addr_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25558 25581])
+                    ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25582 25598]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [25418 25599])
+            ("duer_mesh_overwrite_sub" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25996 26015])
+                    ("sub_addrs" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26016 26036])
+                    ("sub_addr_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26037 26060])
+                    ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26106 26122]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [25951 26123])
+            ("duer_mesh_set_attr_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26493 26507])
+                    ("attr_type" variable (:type ("duer_mesh_attr_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26508 26540])
+                    ("attr_val" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26541 26559])
+                    ("val_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26606 26622])
+                    ("timeout" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26623 26639]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [26447 26640])
+            ("duer_mesh_reg_attr_msg_rec_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ack_cb" variable (:type ("duer_mesh_attr_ack_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26966 26997])
+                    ("attr_change_cb" variable (:type ("duer_mesh_attr_change_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26998 27040]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [26915 27041])
+            ("duer_mesh_reg_bn_click_event_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bn_click_cb" variable (:type ("duer_mesh_bn_click_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27248 27284]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [27195 27285])
+            ("duer_mesh_send_ir_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27658 27677])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27678 27695])
+                    ("max_retry" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27696 27714])
+                    ("data_list" variable
+                       (:pointer 1
+                        :type ("duer_mesh_vd_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27759 27790])
+                    ("list_size" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27791 27810]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [27614 27811])
+            ("duer_mesh_reg_ir_msg_rec_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ack_cb" variable (:type ("duer_mesh_vd_ack_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28134 28163])
+                    ("data_rec_cb" variable (:type ("duer_mesh_data_rec_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28164 28200]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [28085 28201])
+            ("duer_mesh_send_dt_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28594 28613])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28614 28631])
+                    ("max_retry" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28632 28650])
+                    ("data_list" variable
+                       (:pointer 1
+                        :type ("duer_mesh_vd_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28695 28726])
+                    ("list_size" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28727 28746]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [28550 28747])
+            ("duer_mesh_reg_dt_msg_rec_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ack_cb" variable (:type ("duer_mesh_vd_ack_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29077 29106])
+                    ("data_rec_cb" variable (:type ("duer_mesh_data_rec_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29107 29143]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [29028 29144])
+            ("duer_mesh_deep_copy_vd_data_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 2
+                        :type ("duer_mesh_vd_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29358 29384])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("duer_mesh_vd_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29385 29410]))                  
+                :type "int")
+                nil [29321 29411])
+            ("duer_mesh_deep_free_vd_data_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("duer_mesh_vd_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29542 29567]))                  
+                :type "void")
+                nil [29504 29568])
+            ("duer_mesh_deep_copy_vd_ack_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 2
+                        :type ("duer_mesh_ack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29776 29798])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("duer_mesh_ack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29799 29820]))                  
+                :type "int")
+                nil [29740 29821])
+            ("duer_mesh_deep_free_vd_ack_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("duer_mesh_ack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29949 29970]))                  
+                :type "void")
+                nil [29912 29971])
+            ("duer_mesh_task_post" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("duer_mesh_task_msg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30171 30197])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30198 30215]))                  
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [30130 30216])
+            ("duer_mesh_factory_reset" function
+               (:prototype-flag t
+                :type ("duer_mesh_err_code_t" type (:type "class") nil nil))
+                nil [30323 30370]))          
+      :file "ble_mesh_api.h"
+      :pointmax 30446
+      :fsize 30445
+      :lastmodtime '(24184 22633 256686 566000)
+      :unmatched-syntax '((TYPEDEF 20165 . 20172) (TYPEDEF 20040 . 20047) (TYPEDEF 19887 . 19894) (TYPEDEF 19743 . 19750) (TYPEDEF 19615 . 19622) (TYPEDEF 19483 . 19490) (TYPEDEF 19301 . 19308) (TYPEDEF 19112 . 19119))
+      :lexical-table 
+        '(("MAX_MESH_VENDOR_MSG_LEN" . ((number "8" 1462 . 1463)))
+          ("MAX_MESH_SIG_MSG_LEN_BIG" . ((number "10" 1701 . 1703)))
+          ("MAX_MODEL_COUNT" . ((number "20" 2081 . 2083)))
+          ("MESH_TASK_POST_TIMEOUT" . 
+              ((number "1000" 1365 . 1369) (punctuation "/" 1370 . 1371) (symbol "portTICK_PERIOD_MS" 1372 . 1390)))
+          ("MAX_MESH_SIG_MSG_LEN_SMALL" . ((number "9" 1587 . 1588)))
+          ("MAX_MESH_MSG_RESEND_COUNT" . ((number "3" 1818 . 1819)))
+          ("MESH_TASK_QUEUE_LEN" . ((number "60" 1271 . 1273)))
+          ("LIGHTDUER_DUAL_MIC_COMPONENTS_BAIDU_BLUETOOTH_BLE_MESH_API_H")
+          ("MSG_1_OCTET" (spp-arg-list ("msg" "offset") 926 . 939) . ((semantic-list "(msg[offset])" 940 . 953)))
+          ("BD_COMP_ID" . ((number "0x011C" 1181 . 1187)))
+          ("MAX_UUID_COUNT" . ((number "20" 1911 . 1913)))
+          ("MSG_2_OCTET" (spp-arg-list ("msg" "offset") 973 . 986) . ((semantic-list "(msg[offset + 1] << 8 | msg[offset])" 987 . 1023)))
+          ("MAX_ELEMENT_COUNT" . ((number "10" 1997 . 1999)))
+          ("CONNECTIVITY_REPORT_INTERVAL" . ((semantic-list "(64 * 3)" 2189 . 2197)))
+          ("MSG_4_OCTET" (spp-arg-list ("msg" "offset") 1043 . 1056) . 
+              ((open-paren "(" 1057 . 1058) (symbol "msg" 1058 . 1061) (semantic-list "[offset + 3]" 1061 . 1073) (punctuation "<" 1074 . 1075) (punctuation "<" 1075 . 1076) (number "24" 1077 . 1079) (punctuation "|" 1080 . 1081) (open-paren "(" 1082 . 1083) (symbol "msg" 1083 . 1086) (semantic-list "[offset + 2]" 1086 . 1098) (punctuation "<" 1099 . 1100) (punctuation "<" 1100 . 1101) (number "16" 1102 . 1104) (punctuation "|" 1105 . 1106) (semantic-list "(msg[offset + 1] << 8 | msg[offset])" 1107 . 1143)))
+          ("BD_COMP_ID_LITTLE_END" . ((number "0x1C01" 1218 . 1224)))
+          )
+))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!lightduer-dual-mic!components!baidu!bluetooth!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

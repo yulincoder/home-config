@@ -1,0 +1,351 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [618 636])
+            ("string.h" include (:system-flag t) nil [637 656])
+            ("esp_log.h" include nil nil [658 678])
+            ("nvs_flash.h" include nil nil [679 701])
+            ("esp_ble_mesh_defs.h" include nil nil [703 733])
+            ("esp_ble_mesh_common_api.h" include nil nil [734 770])
+            ("esp_ble_mesh_networking_api.h" include nil nil [771 811])
+            ("esp_ble_mesh_provisioning_api.h" include nil nil [812 854])
+            ("esp_ble_mesh_config_model_api.h" include nil nil [855 897])
+            ("esp_ble_mesh_generic_model_api.h" include nil nil [898 941])
+            ("esp_ble_mesh_local_data_operation_api.h" include nil nil [942 992])
+            ("board.h" include nil nil [994 1012])
+            ("esp_fast_prov_operation.h" include nil nil [1013 1049])
+            ("esp_fast_prov_client_model.h" include nil nil [1050 1089])
+            ("esp_fast_prov_server_model.h" include nil nil [1090 1129])
+            ("ble_mesh_demo_init.h" include nil nil [1130 1161])
+            ("led_state" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("_led_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1163 1201])
+            ("send_self_prov_node_addr_timer" variable
+               (:typemodifiers ("extern")
+                :type ("k_delayed_work" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1202 1262])
+            ("fast_prov_cli_flags" variable
+               (:typemodifiers ("extern")
+                :type ("bt_mesh_atomic_t" type (:type "class") nil nil))
+                nil [1263 1307])
+            ("dev_uuid" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ 0xdd, 0xdd }"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1309 1354])
+            ("prov_start_num" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1355 1389])
+            ("prov_start" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [1390 1421])
+            ("fast_prov_cli_op_pair" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_INFO_SET,      ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_INFO_STATUS      },
+    { ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NET_KEY_ADD,   ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NET_KEY_STATUS   },
+    { ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_ADDR,     ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_ADDR_ACK    },
+    { ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_ADDR_GET, ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_ADDR_STATUS },
+}"
+                :type ("esp_ble_mesh_client_op_pair_t" type (:type "class") nil nil))
+                nil [1423 1948])
+            ("config_client" variable (:type ("esp_ble_mesh_client_t" type (:type "class") nil nil)) nil [1993 2029])
+            ("config_server" variable
+               (:default-value "{
+    .relay = ESP_BLE_MESH_RELAY_ENABLED,
+    .beacon = ESP_BLE_MESH_BEACON_DISABLED,
+#if defined(CONFIG_BLE_MESH_FRIEND)
+    .friend_state = ESP_BLE_MESH_FRIEND_ENABLED,
+#else
+    .friend_state = ESP_BLE_MESH_FRIEND_NOT_SUPPORTED,
+#endif
+#if defined(CONFIG_BLE_MESH_GATT_PROXY_SERVER)
+    .gatt_proxy = ESP_BLE_MESH_GATT_PROXY_ENABLED,
+#else
+    .gatt_proxy = ESP_BLE_MESH_GATT_PROXY_NOT_SUPPORTED,
+#endif
+    .default_ttl = 7,
+    /* 3 transmissions with 20ms interval */
+    .net_transmit = ESP_BLE_MESH_TRANSMIT(2, 20),
+    .relay_retransmit = ESP_BLE_MESH_TRANSMIT(2, 20),
+}"
+                :type ("esp_ble_mesh_cfg_srv_t" type (:type "class") nil nil))
+                nil [2074 2694])
+            ("fast_prov_client" variable
+               (:default-value "{
+    .op_pair_size = ARRAY_SIZE(fast_prov_cli_op_pair),
+    .op_pair = fast_prov_cli_op_pair,
+}"
+                :type ("esp_ble_mesh_client_t" type (:type "class") nil nil))
+                nil [2735 2873])
+            ("fast_prov_server" variable
+               (:default-value "{
+    .primary_role  = false,
+    .max_node_num  = 6,
+    .prov_node_cnt = 0x0,
+    .unicast_min   = ESP_BLE_MESH_ADDR_UNASSIGNED,
+    .unicast_max   = ESP_BLE_MESH_ADDR_UNASSIGNED,
+    .unicast_cur   = ESP_BLE_MESH_ADDR_UNASSIGNED,
+    .unicast_step  = 0x0,
+    .flags         = 0x0,
+    .iv_index      = 0x0,
+    .net_idx       = ESP_BLE_MESH_KEY_UNUSED,
+    .app_idx       = ESP_BLE_MESH_KEY_UNUSED,
+    .group_addr    = ESP_BLE_MESH_ADDR_UNASSIGNED,
+    .prim_prov_addr = ESP_BLE_MESH_ADDR_UNASSIGNED,
+    .match_len     = 0x0,
+    .pend_act      = FAST_PROV_ACT_NONE,
+    .state         = STATE_IDLE,
+}"
+                :type ("example_fast_prov_server_t" type (:type "class") nil nil))
+                nil [2914 3568])
+            ("ESP_BLE_MESH_MODEL_PUB_DEFINE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("onoff_pub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3600 3610])
+                    ("" variable (:type ("ROLE_FAST_PROV" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3618 3633]))                  
+                :type "int")
+                nil [3570 3634])
+            ("onoff_server" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .rsp_ctrl.get_auto_rsp = ESP_BLE_MESH_SERVER_AUTO_RSP,
+    .rsp_ctrl.set_auto_rsp = ESP_BLE_MESH_SERVER_AUTO_RSP,
+}"
+                :type ("esp_ble_mesh_gen_onoff_srv_t" type (:type "class") nil nil))
+                nil [3635 3808])
+            ("fast_prov_srv_op" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_INFO_SET,          3),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NET_KEY_ADD,      16),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_ADDR,         2),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_ADDR_GET,     0),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_GROUP_ADD,    2),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_GROUP_DELETE, 2),
+    ESP_BLE_MESH_MODEL_OP_END,
+}"
+                :type ("esp_ble_mesh_model_op_t" type (:type "class") nil nil))
+                nil [3810 4407])
+            ("fast_prov_cli_op" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_INFO_STATUS,    1),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NET_KEY_STATUS, 2),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_FAST_PROV_NODE_ADDR_ACK,  0),
+    ESP_BLE_MESH_MODEL_OP_END,
+}"
+                :type ("esp_ble_mesh_model_op_t" type (:type "class") nil nil))
+                nil [4409 4742])
+            ("root_models" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    ESP_BLE_MESH_MODEL_CFG_SRV(&config_server),
+    ESP_BLE_MESH_MODEL_CFG_CLI(&config_client),
+    ESP_BLE_MESH_MODEL_GEN_ONOFF_SRV(&onoff_pub, &onoff_server),
+}"
+                :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                nil [4744 4953])
+            ("vnd_models" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    ESP_BLE_MESH_VENDOR_MODEL(CID_ESP, ESP_BLE_MESH_VND_MODEL_ID_FAST_PROV_SRV,
+    fast_prov_srv_op, NULL, &fast_prov_server),
+    ESP_BLE_MESH_VENDOR_MODEL(CID_ESP, ESP_BLE_MESH_VND_MODEL_ID_FAST_PROV_CLI,
+    fast_prov_cli_op, NULL, &fast_prov_client),
+}"
+                :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                nil [4955 5258])
+            ("elements" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    ESP_BLE_MESH_ELEMENT(0, root_models, vnd_models),
+}"
+                :type ("esp_ble_mesh_elem_t" type (:type "class") nil nil))
+                nil [5260 5358])
+            ("comp" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .cid           = CID_ESP,
+    .elements      = elements,
+    .element_count = ARRAY_SIZE(elements),
+}"
+                :type ("esp_ble_mesh_comp_t" type (:type "class") nil nil))
+                nil [5360 5502])
+            ("prov" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .uuid                = dev_uuid,
+    .output_size         = 0,
+    .output_actions      = 0,
+    .prov_attention      = 0x00,
+    .prov_algorithm      = 0x00,
+    .prov_pub_key_oob    = 0x00,
+    .prov_static_oob_val = NULL,
+    .prov_static_oob_len = 0x00,
+    .flags               = 0x00,
+    .iv_index            = 0x00,
+}"
+                :type ("esp_ble_mesh_prov_t" type (:type "class") nil nil))
+                nil [5504 5870])
+            ("example_change_led_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("onoff" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5909 5923]))                  
+                :type "void")
+                nil [5872 6388])
+            ("node_prov_complete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6421 6438])
+                    ("addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6439 6453])
+                    ("flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6454 6468])
+                    ("iv_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6469 6487]))                  
+                :type "void")
+                nil [6390 6861])
+            ("provisioner_prov_link_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bearer" variable (:type ("esp_ble_mesh_prov_bearer_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6902 6936]))                  
+                :type "void")
+                nil [6863 7042])
+            ("provisioner_prov_link_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bearer" variable (:type ("esp_ble_mesh_prov_bearer_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7084 7118])
+                    ("reason" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7119 7134]))                  
+                :type "void")
+                nil [7044 7334])
+            ("provisioner_prov_complete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("node_idx" variable (:type "int") (reparse-symbol arg-sub-list) [7374 7387])
+                    ("uuid" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7388 7411])
+                    ("unicast_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7412 7434])
+                    ("element_num" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7473 7493])
+                    ("net_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7494 7511]))                  
+                :type "void")
+                nil [7336 11043])
+            ("example_recv_unprov_adv_pkt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev_uuid" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11085 11106])
+                    ("addr" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11107 11139])
+                    ("addr_type" variable (:type ("esp_ble_mesh_addr_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11180 11215])
+                    ("oob_info" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11216 11234])
+                    ("adv_type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11275 11292])
+                    ("bearer" variable (:type ("esp_ble_mesh_prov_bearer_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11293 11327]))                  
+                :type "void")
+                nil [11045 12578])
+            ("example_ble_mesh_provisioning_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable (:type ("esp_ble_mesh_prov_cb_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12625 12660])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_prov_cb_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12669 12705]))                  
+                :type "void")
+                nil [12580 17854])
+            ("example_ble_mesh_custom_model_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable (:type ("esp_ble_mesh_model_cb_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17901 17937])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_cb_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17946 17983]))                  
+                :type "void")
+                nil [17856 22252])
+            ("example_ble_mesh_config_client_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable (:type ("esp_ble_mesh_cfg_client_cb_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22300 22341])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_cfg_client_cb_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22350 22392]))                  
+                :type "void")
+                nil [22254 27295])
+            ("example_ble_mesh_config_server_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable (:type ("esp_ble_mesh_cfg_server_cb_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27343 27384])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_cfg_server_cb_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27393 27435]))                  
+                :type "void")
+                nil [27297 28279])
+            ("example_ble_mesh_generic_server_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable (:type ("esp_ble_mesh_generic_server_cb_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28328 28373])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_generic_server_cb_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28421 28467]))                  
+                :type "void")
+                nil [28281 29213])
+            ("ble_mesh_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29246 29251]))                  
+                :type ("esp_err_t" type (:type "class") nil nil))
+                nil [29215 30671])
+            ("app_main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30687 30692]))                  
+                :type "void")
+                nil [30673 31409]))          
+      :file "ble_mesh_demo_main.c"
+      :pointmax 31410
+      :fsize 31409
+      :lastmodtime '(24085 45981 757122 3000)
+      :unmatched-syntax '((number 3615 . 3616) (punctuation 3613 . 3614) (number 3611 . 3612)))
+    (semanticdb-table "semanticdb-table"
+      :file "board.h"
+      :fsize 1278
+      :lastmodtime '(24039 38472 132038 572000))
+    (semanticdb-table "semanticdb-table"
+      :file "ble_mesh_demo_init.h"
+      :fsize 467
+      :lastmodtime '(24039 38472 132038 572000)))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!lightduer-esp-idf!examples!bluetooth!esp_ble_mesh!ble_mesh_fast_provision!ble_mesh_fast_prov_server!main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

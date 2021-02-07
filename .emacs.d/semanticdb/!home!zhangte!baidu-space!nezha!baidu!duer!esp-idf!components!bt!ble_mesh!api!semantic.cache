@@ -1,0 +1,1871 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ESP_BLE_MESH_DEFS_H_" variable (:constant-flag t) nil [656 677])
+            ("stdint.h" include (:system-flag t) nil [679 698])
+            ("esp_bt_defs.h" include nil nil [700 724])
+            ("mesh_proxy.h" include nil nil [726 749])
+            ("mesh_access.h" include nil nil [750 774])
+            ("mesh_main.h" include nil nil [775 797])
+            ("mesh.h" include nil nil [799 816])
+            ("proxy.h" include nil nil [817 835])
+            ("foundation.h" include nil nil [836 859])
+            ("provisioner_main.h" include nil nil [860 889])
+            ("model_opcode.h" include nil nil [891 916])
+            ("mesh_common.h" include nil nil [917 941])
+            ("MIN" variable (:constant-flag t) nil [963 966])
+            ("ESP_BLE_MESH_SDU_MAX_LEN" variable (:constant-flag t) nil [1035 1059])
+            ("ESP_BLE_MESH_NODE_NAME_MAX_LEN" variable (:constant-flag t) nil [1147 1177])
+            ("ESP_BLE_MESH_DEVICE_NAME_MAX_LEN" variable (:constant-flag t) nil [1262 1294])
+            ("ESP_BLE_MESH_OCTET16_LEN" variable (:constant-flag t) nil [1372 1396])
+            ("esp_ble_mesh_octet16_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1403 1468])
+            ("ESP_BLE_MESH_OCTET8_LEN" variable (:constant-flag t) nil [1525 1548])
+            ("esp_ble_mesh_octet8_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1555 1618])
+            ("ESP_BLE_MESH_ADDR_UNASSIGNED" variable (:constant-flag t) nil [1628 1656])
+            ("ESP_BLE_MESH_ADDR_ALL_NODES" variable (:constant-flag t) nil [1703 1730])
+            ("ESP_BLE_MESH_ADDR_PROXIES" variable (:constant-flag t) nil [1777 1802])
+            ("ESP_BLE_MESH_ADDR_FRIENDS" variable (:constant-flag t) nil [1849 1874])
+            ("ESP_BLE_MESH_ADDR_RELAYS" variable (:constant-flag t) nil [1921 1945])
+            ("ESP_BLE_MESH_KEY_UNUSED" variable (:constant-flag t) nil [1993 2016])
+            ("ESP_BLE_MESH_KEY_DEV" variable (:constant-flag t) nil [2063 2083])
+            ("ESP_BLE_MESH_KEY_PRIMARY" variable (:constant-flag t) nil [2131 2155])
+            ("ESP_BLE_MESH_KEY_ANY" variable (:constant-flag t) nil [2202 2222])
+            ("ESP_BLE_MESH_NET_PRIMARY" variable (:constant-flag t) nil [2304 2328])
+            ("ESP_BLE_MESH_RELAY_DISABLED" variable (:constant-flag t) nil [2402 2429])
+            ("ESP_BLE_MESH_RELAY_ENABLED" variable (:constant-flag t) nil [2476 2502])
+            ("ESP_BLE_MESH_RELAY_NOT_SUPPORTED" variable (:constant-flag t) nil [2549 2581])
+            ("ESP_BLE_MESH_BEACON_DISABLED" variable (:constant-flag t) nil [2656 2684])
+            ("ESP_BLE_MESH_BEACON_ENABLED" variable (:constant-flag t) nil [2731 2758])
+            ("ESP_BLE_MESH_GATT_PROXY_DISABLED" variable (:constant-flag t) nil [2837 2869])
+            ("ESP_BLE_MESH_GATT_PROXY_ENABLED" variable (:constant-flag t) nil [2916 2947])
+            ("ESP_BLE_MESH_GATT_PROXY_NOT_SUPPORTED" variable (:constant-flag t) nil [2994 3031])
+            ("ESP_BLE_MESH_FRIEND_DISABLED" variable (:constant-flag t) nil [3106 3134])
+            ("ESP_BLE_MESH_FRIEND_ENABLED" variable (:constant-flag t) nil [3181 3208])
+            ("ESP_BLE_MESH_FRIEND_NOT_SUPPORTED" variable (:constant-flag t) nil [3255 3288])
+            ("ESP_BLE_MESH_NODE_IDENTITY_STOPPED" variable (:constant-flag t) nil [3370 3404])
+            ("ESP_BLE_MESH_NODE_IDENTITY_RUNNING" variable (:constant-flag t) nil [3451 3485])
+            ("ESP_BLE_MESH_NODE_IDENTITY_NOT_SUPPORTED" variable (:constant-flag t) nil [3532 3572])
+            ("ESP_BLE_MESH_FEATURE_RELAY" variable (:constant-flag t) nil [3647 3673])
+            ("ESP_BLE_MESH_FEATURE_PROXY" variable (:constant-flag t) nil [3717 3743])
+            ("ESP_BLE_MESH_FEATURE_FRIEND" variable (:constant-flag t) nil [3787 3814])
+            ("ESP_BLE_MESH_FEATURE_LOW_POWER" variable (:constant-flag t) nil [3858 3888])
+            ("ESP_BLE_MESH_FEATURE_ALL_SUPPORTED" variable (:constant-flag t) nil [3932 3966])
+            ("ESP_BLE_MESH_ADDR_IS_UNICAST" variable (:constant-flag t) nil [4007 4035])
+            ("ESP_BLE_MESH_ADDR_IS_GROUP" variable (:constant-flag t) nil [4088 4114])
+            ("ESP_BLE_MESH_ADDR_IS_VIRTUAL" variable (:constant-flag t) nil [4167 4195])
+            ("ESP_BLE_MESH_ADDR_IS_RFU" variable (:constant-flag t) nil [4248 4272])
+            ("ESP_BLE_MESH_INVALID_NODE_INDEX" variable (:constant-flag t) nil [4326 4357])
+            ("ESP_BLE_MESH_MODEL_ID_CONFIG_SRV" variable (:constant-flag t) nil [4407 4439])
+            ("ESP_BLE_MESH_MODEL_ID_CONFIG_CLI" variable (:constant-flag t) nil [4495 4527])
+            ("ESP_BLE_MESH_MODEL_ID_HEALTH_SRV" variable (:constant-flag t) nil [4583 4615])
+            ("ESP_BLE_MESH_MODEL_ID_HEALTH_CLI" variable (:constant-flag t) nil [4674 4706])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_ONOFF_SRV" variable (:constant-flag t) nil [4815 4850])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_ONOFF_CLI" variable (:constant-flag t) nil [4909 4944])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_LEVEL_SRV" variable (:constant-flag t) nil [5003 5038])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_LEVEL_CLI" variable (:constant-flag t) nil [5097 5132])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_SRV" variable (:constant-flag t) nil [5191 5235])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_CLI" variable (:constant-flag t) nil [5294 5338])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SRV" variable (:constant-flag t) nil [5397 5438])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SETUP_SRV" variable (:constant-flag t) nil [5497 5544])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_CLI" variable (:constant-flag t) nil [5603 5644])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SRV" variable (:constant-flag t) nil [5703 5744])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SETUP_SRV" variable (:constant-flag t) nil [5803 5850])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_CLI" variable (:constant-flag t) nil [5909 5950])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_BATTERY_SRV" variable (:constant-flag t) nil [6009 6046])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_BATTERY_CLI" variable (:constant-flag t) nil [6105 6142])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_SRV" variable (:constant-flag t) nil [6201 6239])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_SETUP_SRV" variable (:constant-flag t) nil [6298 6342])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_CLI" variable (:constant-flag t) nil [6400 6438])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_ADMIN_PROP_SRV" variable (:constant-flag t) nil [6497 6537])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_MANUFACTURER_PROP_SRV" variable (:constant-flag t) nil [6596 6643])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_USER_PROP_SRV" variable (:constant-flag t) nil [6702 6741])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_CLIENT_PROP_SRV" variable (:constant-flag t) nil [6800 6841])
+            ("ESP_BLE_MESH_MODEL_ID_GEN_PROP_CLI" variable (:constant-flag t) nil [6900 6934])
+            ("ESP_BLE_MESH_MODEL_ID_SENSOR_SRV" variable (:constant-flag t) nil [6993 7025])
+            ("ESP_BLE_MESH_MODEL_ID_SENSOR_SETUP_SRV" variable (:constant-flag t) nil [7084 7122])
+            ("ESP_BLE_MESH_MODEL_ID_SENSOR_CLI" variable (:constant-flag t) nil [7181 7213])
+            ("ESP_BLE_MESH_MODEL_ID_TIME_SRV" variable (:constant-flag t) nil [7272 7302])
+            ("ESP_BLE_MESH_MODEL_ID_TIME_SETUP_SRV" variable (:constant-flag t) nil [7361 7397])
+            ("ESP_BLE_MESH_MODEL_ID_TIME_CLI" variable (:constant-flag t) nil [7456 7486])
+            ("ESP_BLE_MESH_MODEL_ID_SCENE_SRV" variable (:constant-flag t) nil [7545 7576])
+            ("ESP_BLE_MESH_MODEL_ID_SCENE_SETUP_SRV" variable (:constant-flag t) nil [7635 7672])
+            ("ESP_BLE_MESH_MODEL_ID_SCENE_CLI" variable (:constant-flag t) nil [7731 7762])
+            ("ESP_BLE_MESH_MODEL_ID_SCHEDULER_SRV" variable (:constant-flag t) nil [7821 7856])
+            ("ESP_BLE_MESH_MODEL_ID_SCHEDULER_SETUP_SRV" variable (:constant-flag t) nil [7915 7956])
+            ("ESP_BLE_MESH_MODEL_ID_SCHEDULER_CLI" variable (:constant-flag t) nil [8015 8050])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_SRV" variable (:constant-flag t) nil [8109 8150])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_SETUP_SRV" variable (:constant-flag t) nil [8209 8256])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_CLI" variable (:constant-flag t) nil [8315 8356])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_SRV" variable (:constant-flag t) nil [8415 8450])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_SETUP_SRV" variable (:constant-flag t) nil [8509 8550])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_CLI" variable (:constant-flag t) nil [8609 8644])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_TEMP_SRV" variable (:constant-flag t) nil [8703 8743])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_SRV" variable (:constant-flag t) nil [8802 8837])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_SETUP_SRV" variable (:constant-flag t) nil [8896 8937])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_CLI" variable (:constant-flag t) nil [8996 9031])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_HUE_SRV" variable (:constant-flag t) nil [9090 9129])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_SAT_SRV" variable (:constant-flag t) nil [9188 9227])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_XYL_SRV" variable (:constant-flag t) nil [9286 9321])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_XYL_SETUP_SRV" variable (:constant-flag t) nil [9380 9421])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_XYL_CLI" variable (:constant-flag t) nil [9480 9515])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_LC_SRV" variable (:constant-flag t) nil [9574 9608])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_LC_SETUP_SRV" variable (:constant-flag t) nil [9667 9707])
+            ("ESP_BLE_MESH_MODEL_ID_LIGHT_LC_CLI" variable (:constant-flag t) nil [9765 9799])
+            ("esp_ble_mesh_opcode_config_client_get_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [9953 10010])
+            ("ESP_BLE_MESH_MODEL_OP_BEACON_GET" variable (:constant-flag t) nil [10314 10346])
+            ("ESP_BLE_MESH_MODEL_OP_COMPOSITION_DATA_GET" variable (:constant-flag t) nil [10481 10523])
+            ("ESP_BLE_MESH_MODEL_OP_DEFAULT_TTL_GET" variable (:constant-flag t) nil [11696 11733])
+            ("ESP_BLE_MESH_MODEL_OP_GATT_PROXY_GET" variable (:constant-flag t) nil [11853 11889])
+            ("ESP_BLE_MESH_MODEL_OP_RELAY_GET" variable (:constant-flag t) nil [12009 12040])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_GET" variable (:constant-flag t) nil [12182 12217])
+            ("ESP_BLE_MESH_MODEL_OP_FRIEND_GET" variable (:constant-flag t) nil [12671 12703])
+            ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_PUB_GET" variable (:constant-flag t) nil [12823 12862])
+            ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_SUB_GET" variable (:constant-flag t) nil [13338 13377])
+            ("ESP_BLE_MESH_MODEL_OP_NET_KEY_GET" variable (:constant-flag t) nil [13853 13886])
+            ("ESP_BLE_MESH_MODEL_OP_APP_KEY_GET" variable (:constant-flag t) nil [13992 14025])
+            ("ESP_BLE_MESH_MODEL_OP_NODE_IDENTITY_GET" variable (:constant-flag t) nil [14133 14172])
+            ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_SUB_GET" variable (:constant-flag t) nil [14281 14320])
+            ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_SUB_GET" variable (:constant-flag t) nil [14449 14491])
+            ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_APP_GET" variable (:constant-flag t) nil [14617 14656])
+            ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_APP_GET" variable (:constant-flag t) nil [14769 14811])
+            ("ESP_BLE_MESH_MODEL_OP_KEY_REFRESH_PHASE_GET" variable (:constant-flag t) nil [14924 14967])
+            ("ESP_BLE_MESH_MODEL_OP_LPN_POLLTIMEOUT_GET" variable (:constant-flag t) nil [15093 15134])
+            ("ESP_BLE_MESH_MODEL_OP_NETWORK_TRANSMIT_GET" variable (:constant-flag t) nil [15278 15320])
+            ("esp_ble_mesh_opcode_config_client_set_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [15521 15578])
+            ("ESP_BLE_MESH_MODEL_OP_BEACON_SET" variable (:constant-flag t) nil [15882 15914])
+            ("ESP_BLE_MESH_MODEL_OP_DEFAULT_TTL_SET" variable (:constant-flag t) nil [16060 16097])
+            ("ESP_BLE_MESH_MODEL_OP_GATT_PROXY_SET" variable (:constant-flag t) nil [16228 16264])
+            ("ESP_BLE_MESH_MODEL_OP_RELAY_SET" variable (:constant-flag t) nil [16381 16412])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_SET" variable (:constant-flag t) nil [16565 16600])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD" variable (:constant-flag t) nil [17065 17100])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_VIRTUAL_ADDR_ADD" variable (:constant-flag t) nil [17359 17407])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_DELETE" variable (:constant-flag t) nil [17656 17694])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_VIRTUAL_ADDR_DELETE" variable (:constant-flag t) nil [17955 18006])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_OVERWRITE" variable (:constant-flag t) nil [18257 18298])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_VIRTUAL_ADDR_OVERWRITE" variable (:constant-flag t) nil [18583 18637])
+            ("ESP_BLE_MESH_MODEL_OP_NET_KEY_ADD" variable (:constant-flag t) nil [18912 18945])
+            ("ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD" variable (:constant-flag t) nil [19094 19127])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND" variable (:constant-flag t) nil [19416 19452])
+            ("ESP_BLE_MESH_MODEL_OP_NODE_RESET" variable (:constant-flag t) nil [19609 19641])
+            ("ESP_BLE_MESH_MODEL_OP_FRIEND_SET" variable (:constant-flag t) nil [19776 19808])
+            ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_PUB_SET" variable (:constant-flag t) nil [19939 19978])
+            ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_SUB_SET" variable (:constant-flag t) nil [20425 20464])
+            ("ESP_BLE_MESH_MODEL_OP_NET_KEY_UPDATE" variable (:constant-flag t) nil [20937 20973])
+            ("ESP_BLE_MESH_MODEL_OP_NET_KEY_DELETE" variable (:constant-flag t) nil [21062 21098])
+            ("ESP_BLE_MESH_MODEL_OP_APP_KEY_UPDATE" variable (:constant-flag t) nil [21206 21242])
+            ("ESP_BLE_MESH_MODEL_OP_APP_KEY_DELETE" variable (:constant-flag t) nil [21357 21393])
+            ("ESP_BLE_MESH_MODEL_OP_NODE_IDENTITY_SET" variable (:constant-flag t) nil [21504 21543])
+            ("ESP_BLE_MESH_MODEL_OP_KEY_REFRESH_PHASE_SET" variable (:constant-flag t) nil [21652 21695])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_VIRTUAL_ADDR_SET" variable (:constant-flag t) nil [21813 21861])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_DELETE_ALL" variable (:constant-flag t) nil [21996 22038])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_APP_UNBIND" variable (:constant-flag t) nil [22136 22174])
+            ("ESP_BLE_MESH_MODEL_OP_NETWORK_TRANSMIT_SET" variable (:constant-flag t) nil [22284 22326])
+            ("esp_ble_mesh_config_model_status_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [22560 22612])
+            ("ESP_BLE_MESH_MODEL_OP_BEACON_STATUS" variable (:constant-flag t) nil [22841 22876])
+            ("ESP_BLE_MESH_MODEL_OP_COMPOSITION_DATA_STATUS" variable (:constant-flag t) nil [22922 22967])
+            ("ESP_BLE_MESH_MODEL_OP_DEFAULT_TTL_STATUS" variable (:constant-flag t) nil [23010 23050])
+            ("ESP_BLE_MESH_MODEL_OP_GATT_PROXY_STATUS" variable (:constant-flag t) nil [23096 23135])
+            ("ESP_BLE_MESH_MODEL_OP_RELAY_STATUS" variable (:constant-flag t) nil [23181 23215])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_STATUS" variable (:constant-flag t) nil [23261 23299])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_STATUS" variable (:constant-flag t) nil [23343 23381])
+            ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_SUB_LIST" variable (:constant-flag t) nil [23425 23465])
+            ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_SUB_LIST" variable (:constant-flag t) nil [23505 23548])
+            ("ESP_BLE_MESH_MODEL_OP_NET_KEY_STATUS" variable (:constant-flag t) nil [23589 23625])
+            ("ESP_BLE_MESH_MODEL_OP_NET_KEY_LIST" variable (:constant-flag t) nil [23671 23705])
+            ("ESP_BLE_MESH_MODEL_OP_APP_KEY_STATUS" variable (:constant-flag t) nil [23751 23787])
+            ("ESP_BLE_MESH_MODEL_OP_APP_KEY_LIST" variable (:constant-flag t) nil [23833 23867])
+            ("ESP_BLE_MESH_MODEL_OP_NODE_IDENTITY_STATUS" variable (:constant-flag t) nil [23913 23955])
+            ("ESP_BLE_MESH_MODEL_OP_MODEL_APP_STATUS" variable (:constant-flag t) nil [24001 24039])
+            ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_APP_LIST" variable (:constant-flag t) nil [24083 24123])
+            ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_APP_LIST" variable (:constant-flag t) nil [24167 24210])
+            ("ESP_BLE_MESH_MODEL_OP_NODE_RESET_STATUS" variable (:constant-flag t) nil [24251 24290])
+            ("ESP_BLE_MESH_MODEL_OP_FRIEND_STATUS" variable (:constant-flag t) nil [24336 24371])
+            ("ESP_BLE_MESH_MODEL_OP_KEY_REFRESH_PHASE_STATUS" variable (:constant-flag t) nil [24417 24463])
+            ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_PUB_STATUS" variable (:constant-flag t) nil [24495 24537])
+            ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_SUB_STATUS" variable (:constant-flag t) nil [24583 24625])
+            ("ESP_BLE_MESH_MODEL_OP_LPN_POLLTIMEOUT_STATUS" variable (:constant-flag t) nil [24671 24715])
+            ("ESP_BLE_MESH_MODEL_OP_NETWORK_TRANSMIT_STATUS" variable (:constant-flag t) nil [24757 24802])
+            ("esp_ble_mesh_opcode_health_client_get_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [24939 24996])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_GET" variable (:constant-flag t) nil [25308 25346])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_GET" variable (:constant-flag t) nil [25447 25486])
+            ("ESP_BLE_MESH_MODEL_OP_ATTENTION_GET" variable (:constant-flag t) nil [25583 25618])
+            ("esp_ble_mesh_opcode_health_client_set_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [25816 25873])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_CLEAR" variable (:constant-flag t) nil [26185 26225])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_CLEAR_UNACK" variable (:constant-flag t) nil [26317 26363])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_TEST" variable (:constant-flag t) nil [26451 26490])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_TEST_UNACK" variable (:constant-flag t) nil [26589 26634])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_SET" variable (:constant-flag t) nil [26729 26768])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_SET_UNACK" variable (:constant-flag t) nil [26860 26905])
+            ("ESP_BLE_MESH_MODEL_OP_ATTENTION_SET" variable (:constant-flag t) nil [26993 27028])
+            ("ESP_BLE_MESH_MODEL_OP_ATTENTION_SET_UNACK" variable (:constant-flag t) nil [27148 27189])
+            ("esp_ble_mesh_health_model_status_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [27441 27493])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_CURRENT_STATUS" variable (:constant-flag t) nil [27722 27765])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_STATUS" variable (:constant-flag t) nil [27811 27852])
+            ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_STATUS" variable (:constant-flag t) nil [27898 27940])
+            ("ESP_BLE_MESH_MODEL_OP_ATTENTION_STATUS" variable (:constant-flag t) nil [27986 28024])
+            ("esp_ble_mesh_generic_message_opcode_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [28063 28118])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_GET" variable (:constant-flag t) nil [28517 28552])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_SET" variable (:constant-flag t) nil [28611 28646])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_SET_UNACK" variable (:constant-flag t) nil [28705 28746])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_STATUS" variable (:constant-flag t) nil [28805 28843])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_GET" variable (:constant-flag t) nil [28940 28975])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_GET" variable (:constant-flag t) nil [28940 28975])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_GET" variable (:constant-flag t) nil [28940 28975])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_SET" variable (:constant-flag t) nil [29034 29069])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_SET_UNACK" variable (:constant-flag t) nil [29128 29169])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_STATUS" variable (:constant-flag t) nil [29228 29266])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_DELTA_SET" variable (:constant-flag t) nil [29325 29360])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_DELTA_SET_UNACK" variable (:constant-flag t) nil [29419 29460])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MOVE_SET" variable (:constant-flag t) nil [29519 29553])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MOVE_SET_UNACK" variable (:constant-flag t) nil [29612 29652])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_GET" variable (:constant-flag t) nil [29767 29811])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_SET" variable (:constant-flag t) nil [29870 29914])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_SET_UNACK" variable (:constant-flag t) nil [29973 30023])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_STATUS" variable (:constant-flag t) nil [30082 30129])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_GET" variable (:constant-flag t) nil [30232 30271])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_STATUS" variable (:constant-flag t) nil [30330 30372])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_SET" variable (:constant-flag t) nil [30481 30520])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_SET_UNACK" variable (:constant-flag t) nil [30579 30624])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_GET" variable (:constant-flag t) nil [30727 30768])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_SET" variable (:constant-flag t) nil [30827 30868])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_SET_UNACK" variable (:constant-flag t) nil [30927 30974])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_STATUS" variable (:constant-flag t) nil [31033 31077])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LAST_GET" variable (:constant-flag t) nil [31136 31176])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LAST_STATUS" variable (:constant-flag t) nil [31235 31278])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_GET" variable (:constant-flag t) nil [31337 31380])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_STATUS" variable (:constant-flag t) nil [31439 31485])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_GET" variable (:constant-flag t) nil [31544 31585])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_STATUS" variable (:constant-flag t) nil [31644 31688])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_SET" variable (:constant-flag t) nil [31797 31840])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_SET_UNACK" variable (:constant-flag t) nil [31899 31948])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_SET" variable (:constant-flag t) nil [32007 32048])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_SET_UNACK" variable (:constant-flag t) nil [32107 32154])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_BATTERY_GET" variable (:constant-flag t) nil [32253 32290])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_BATTERY_STATUS" variable (:constant-flag t) nil [32349 32389])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_GET" variable (:constant-flag t) nil [32489 32529])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_STATUS" variable (:constant-flag t) nil [32588 32631])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_GET" variable (:constant-flag t) nil [32690 32729])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_STATUS" variable (:constant-flag t) nil [32788 32830])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_SET" variable (:constant-flag t) nil [32936 32976])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_SET_UNACK" variable (:constant-flag t) nil [33035 33081])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_SET" variable (:constant-flag t) nil [33140 33179])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_SET_UNACK" variable (:constant-flag t) nil [33238 33283])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTIES_GET" variable (:constant-flag t) nil [33396 33449])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTIES_STATUS" variable (:constant-flag t) nil [33506 33562])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_GET" variable (:constant-flag t) nil [33619 33670])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_SET" variable (:constant-flag t) nil [33727 33778])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_SET_UNACK" variable (:constant-flag t) nil [33835 33892])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_STATUS" variable (:constant-flag t) nil [33949 34003])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTIES_GET" variable (:constant-flag t) nil [34107 34153])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTIES_STATUS" variable (:constant-flag t) nil [34212 34261])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_GET" variable (:constant-flag t) nil [34320 34364])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_SET" variable (:constant-flag t) nil [34423 34467])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_SET_UNACK" variable (:constant-flag t) nil [34526 34576])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_STATUS" variable (:constant-flag t) nil [34635 34682])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTIES_GET" variable (:constant-flag t) nil [34787 34832])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTIES_STATUS" variable (:constant-flag t) nil [34891 34939])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_GET" variable (:constant-flag t) nil [34998 35041])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_SET" variable (:constant-flag t) nil [35100 35143])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_SET_UNACK" variable (:constant-flag t) nil [35202 35251])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_STATUS" variable (:constant-flag t) nil [35310 35356])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_CLIENT_PROPERTIES_GET" variable (:constant-flag t) nil [35463 35510])
+            ("ESP_BLE_MESH_MODEL_OP_GEN_CLIENT_PROPERTIES_STATUS" variable (:constant-flag t) nil [35569 35619])
+            ("esp_ble_mesh_sensor_message_opcode_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [35671 35725])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_GET" variable (:constant-flag t) nil [36115 36158])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_STATUS" variable (:constant-flag t) nil [36217 36263])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_GET" variable (:constant-flag t) nil [36322 36354])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS" variable (:constant-flag t) nil [36413 36448])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_COLUMN_GET" variable (:constant-flag t) nil [36507 36546])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_COLUMN_STATUS" variable (:constant-flag t) nil [36605 36647])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SERIES_GET" variable (:constant-flag t) nil [36706 36745])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SERIES_STATUS" variable (:constant-flag t) nil [36804 36846])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_GET" variable (:constant-flag t) nil [36942 36982])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_SET" variable (:constant-flag t) nil [37041 37081])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_SET_UNACK" variable (:constant-flag t) nil [37140 37186])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_STATUS" variable (:constant-flag t) nil [37245 37288])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTINGS_GET" variable (:constant-flag t) nil [37347 37388])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTINGS_STATUS" variable (:constant-flag t) nil [37447 37491])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_GET" variable (:constant-flag t) nil [37550 37590])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_SET" variable (:constant-flag t) nil [37649 37689])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_SET_UNACK" variable (:constant-flag t) nil [37748 37794])
+            ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_STATUS" variable (:constant-flag t) nil [37853 37896])
+            ("esp_ble_mesh_time_scene_message_opcode_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [37948 38006])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_GET" variable (:constant-flag t) nil [38402 38432])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_SET" variable (:constant-flag t) nil [38491 38521])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_STATUS" variable (:constant-flag t) nil [38580 38613])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_ROLE_GET" variable (:constant-flag t) nil [38672 38707])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_ROLE_SET" variable (:constant-flag t) nil [38766 38801])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_ROLE_STATUS" variable (:constant-flag t) nil [38860 38898])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_ZONE_GET" variable (:constant-flag t) nil [38957 38992])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_ZONE_SET" variable (:constant-flag t) nil [39051 39086])
+            ("ESP_BLE_MESH_MODEL_OP_TIME_ZONE_STATUS" variable (:constant-flag t) nil [39145 39183])
+            ("ESP_BLE_MESH_MODEL_OP_TAI_UTC_DELTA_GET" variable (:constant-flag t) nil [39242 39281])
+            ("ESP_BLE_MESH_MODEL_OP_TAI_UTC_DELTA_SET" variable (:constant-flag t) nil [39340 39379])
+            ("ESP_BLE_MESH_MODEL_OP_TAI_UTC_DELTA_STATUS" variable (:constant-flag t) nil [39438 39480])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_GET" variable (:constant-flag t) nil [39569 39600])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_RECALL" variable (:constant-flag t) nil [39659 39693])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_RECALL_UNACK" variable (:constant-flag t) nil [39752 39792])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_STATUS" variable (:constant-flag t) nil [39851 39885])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_REGISTER_GET" variable (:constant-flag t) nil [39944 39984])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_REGISTER_STATUS" variable (:constant-flag t) nil [40043 40086])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_STORE" variable (:constant-flag t) nil [40181 40214])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_STORE_UNACK" variable (:constant-flag t) nil [40273 40312])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_DELETE" variable (:constant-flag t) nil [40371 40405])
+            ("ESP_BLE_MESH_MODEL_OP_SCENE_DELETE_UNACK" variable (:constant-flag t) nil [40464 40504])
+            ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_GET" variable (:constant-flag t) nil [40597 40636])
+            ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_STATUS" variable (:constant-flag t) nil [40695 40737])
+            ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_GET" variable (:constant-flag t) nil [40796 40831])
+            ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_STATUS" variable (:constant-flag t) nil [40890 40928])
+            ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_SET" variable (:constant-flag t) nil [41027 41066])
+            ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_SET_UNACK" variable (:constant-flag t) nil [41125 41170])
+            ("esp_ble_mesh_light_message_opcode_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [41222 41275])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_GET" variable (:constant-flag t) nil [41671 41712])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_SET" variable (:constant-flag t) nil [41774 41815])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_SET_UNACK" variable (:constant-flag t) nil [41877 41924])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_STATUS" variable (:constant-flag t) nil [41986 42030])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_GET" variable (:constant-flag t) nil [42092 42140])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_SET" variable (:constant-flag t) nil [42202 42250])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_SET_UNACK" variable (:constant-flag t) nil [42312 42366])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_STATUS" variable (:constant-flag t) nil [42428 42479])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LAST_GET" variable (:constant-flag t) nil [42541 42587])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LAST_STATUS" variable (:constant-flag t) nil [42649 42698])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_GET" variable (:constant-flag t) nil [42760 42809])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_STATUS" variable (:constant-flag t) nil [42871 42923])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_GET" variable (:constant-flag t) nil [42985 43032])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_STATUS" variable (:constant-flag t) nil [43094 43144])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_SET" variable (:constant-flag t) nil [43252 43301])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_SET_UNACK" variable (:constant-flag t) nil [43363 43418])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_SET" variable (:constant-flag t) nil [43480 43527])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_SET_UNACK" variable (:constant-flag t) nil [43589 43642])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_GET" variable (:constant-flag t) nil [43738 43773])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_SET" variable (:constant-flag t) nil [43835 43870])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_SET_UNACK" variable (:constant-flag t) nil [43932 43973])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_STATUS" variable (:constant-flag t) nil [44035 44073])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_GET" variable (:constant-flag t) nil [44135 44182])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_GET" variable (:constant-flag t) nil [44244 44297])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_STATUS" variable (:constant-flag t) nil [44359 44415])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_SET" variable (:constant-flag t) nil [44477 44524])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_SET_UNACK" variable (:constant-flag t) nil [44586 44639])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_STATUS" variable (:constant-flag t) nil [44701 44751])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_GET" variable (:constant-flag t) nil [44813 44856])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_STATUS" variable (:constant-flag t) nil [44918 44964])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_SET" variable (:constant-flag t) nil [45066 45109])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_SET_UNACK" variable (:constant-flag t) nil [45174 45223])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_SET" variable (:constant-flag t) nil [45288 45341])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_SET_UNACK" variable (:constant-flag t) nil [45406 45465])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_GET" variable (:constant-flag t) nil [45564 45599])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_GET" variable (:constant-flag t) nil [45664 45703])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_SET" variable (:constant-flag t) nil [45768 45807])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_SET_UNACK" variable (:constant-flag t) nil [45872 45917])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_STATUS" variable (:constant-flag t) nil [45982 46024])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_GET" variable (:constant-flag t) nil [46089 46135])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_SET" variable (:constant-flag t) nil [46200 46246])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_SET_UNACK" variable (:constant-flag t) nil [46311 46363])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_STATUS" variable (:constant-flag t) nil [46428 46477])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SET" variable (:constant-flag t) nil [46542 46577])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SET_UNACK" variable (:constant-flag t) nil [46642 46683])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_STATUS" variable (:constant-flag t) nil [46748 46786])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_TARGET_GET" variable (:constant-flag t) nil [46851 46893])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_TARGET_STATUS" variable (:constant-flag t) nil [46958 47003])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_GET" variable (:constant-flag t) nil [47068 47111])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_STATUS" variable (:constant-flag t) nil [47176 47222])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_GET" variable (:constant-flag t) nil [47287 47328])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_STATUS" variable (:constant-flag t) nil [47393 47437])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_SET" variable (:constant-flag t) nil [47542 47585])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_SET_UNACK" variable (:constant-flag t) nil [47650 47699])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_SET" variable (:constant-flag t) nil [47764 47805])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_SET_UNACK" variable (:constant-flag t) nil [47870 47917])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_GET" variable (:constant-flag t) nil [48056 48091])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_SET" variable (:constant-flag t) nil [48156 48191])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_SET_UNACK" variable (:constant-flag t) nil [48256 48297])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_STATUS" variable (:constant-flag t) nil [48362 48400])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_TARGET_GET" variable (:constant-flag t) nil [48465 48507])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_TARGET_STATUS" variable (:constant-flag t) nil [48572 48617])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_GET" variable (:constant-flag t) nil [48682 48725])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_STATUS" variable (:constant-flag t) nil [48790 48836])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_GET" variable (:constant-flag t) nil [48901 48942])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_STATUS" variable (:constant-flag t) nil [49007 49051])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_SET" variable (:constant-flag t) nil [49156 49199])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_SET_UNACK" variable (:constant-flag t) nil [49264 49313])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_SET" variable (:constant-flag t) nil [49378 49419])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_SET_UNACK" variable (:constant-flag t) nil [49484 49531])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_GET" variable (:constant-flag t) nil [49634 49673])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_SET" variable (:constant-flag t) nil [49738 49777])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_SET_UNACK" variable (:constant-flag t) nil [49842 49887])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_STATUS" variable (:constant-flag t) nil [49952 49994])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_GET" variable (:constant-flag t) nil [50059 50096])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_SET" variable (:constant-flag t) nil [50161 50198])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_SET_UNACK" variable (:constant-flag t) nil [50263 50306])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_STATUS" variable (:constant-flag t) nil [50371 50411])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_GET" variable (:constant-flag t) nil [50476 50522])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_SET" variable (:constant-flag t) nil [50587 50633])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_SET_UNACK" variable (:constant-flag t) nil [50698 50750])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_STATUS" variable (:constant-flag t) nil [50815 50864])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_GET" variable (:constant-flag t) nil [50929 50972])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_SET" variable (:constant-flag t) nil [51037 51080])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_SET_UNACK" variable (:constant-flag t) nil [51145 51194])
+            ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_STATUS" variable (:constant-flag t) nil [51259 51305])
+            ("esp_ble_mesh_opcode_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [51363 51402])
+            ("ESP_BLE_MESH_CFG_STATUS_SUCCESS" variable (:constant-flag t) nil [51460 51491])
+            ("ESP_BLE_MESH_CFG_STATUS_INVALID_ADDRESS" variable (:constant-flag t) nil [51541 51580])
+            ("ESP_BLE_MESH_CFG_STATUS_INVALID_MODEL" variable (:constant-flag t) nil [51630 51667])
+            ("ESP_BLE_MESH_CFG_STATUS_INVALID_APPKEY" variable (:constant-flag t) nil [51717 51755])
+            ("ESP_BLE_MESH_CFG_STATUS_INVALID_NETKEY" variable (:constant-flag t) nil [51805 51843])
+            ("ESP_BLE_MESH_CFG_STATUS_INSUFFICIENT_RESOURCES" variable (:constant-flag t) nil [51893 51939])
+            ("ESP_BLE_MESH_CFG_STATUS_KEY_INDEX_ALREADY_STORED" variable (:constant-flag t) nil [51983 52031])
+            ("ESP_BLE_MESH_CFG_STATUS_INVALID_PUBLISH_PARAMETERS" variable (:constant-flag t) nil [52075 52125])
+            ("ESP_BLE_MESH_CFG_STATUS_NOT_A_SUBSCRIBE_MODEL" variable (:constant-flag t) nil [52163 52208])
+            ("ESP_BLE_MESH_CFG_STATUS_STORAGE_FAILURE" variable (:constant-flag t) nil [52248 52287])
+            ("ESP_BLE_MESH_CFG_STATUS_FEATURE_NOT_SUPPORTED" variable (:constant-flag t) nil [52334 52379])
+            ("ESP_BLE_MESH_CFG_STATUS_CANNOT_UPDATE" variable (:constant-flag t) nil [52421 52458])
+            ("ESP_BLE_MESH_CFG_STATUS_CANNOT_REMOVE" variable (:constant-flag t) nil [52508 52545])
+            ("ESP_BLE_MESH_CFG_STATUS_CANNOT_BIND" variable (:constant-flag t) nil [52595 52630])
+            ("ESP_BLE_MESH_CFG_STATUS_TEMP_UNABLE_TO_CHANGE_STATE" variable (:constant-flag t) nil [52680 52731])
+            ("ESP_BLE_MESH_CFG_STATUS_CANNOT_SET" variable (:constant-flag t) nil [52773 52807])
+            ("ESP_BLE_MESH_CFG_STATUS_UNSPECIFIED_ERROR" variable (:constant-flag t) nil [52857 52898])
+            ("ESP_BLE_MESH_CFG_STATUS_INVALID_BINDING" variable (:constant-flag t) nil [52942 52981])
+            ("esp_ble_mesh_cfg_status_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [53023 53065])
+            ("ESP_BLE_MESH_MODEL_STATUS_SUCCESS" variable (:constant-flag t) nil [53252 53285])
+            ("ESP_BLE_MESH_MODEL_STATUS_CANNOT_SET_RANGE_MIN" variable (:constant-flag t) nil [53313 53359])
+            ("ESP_BLE_MESH_MODEL_STATUS_CANNOT_SET_RANGE_MAX" variable (:constant-flag t) nil [53374 53420])
+            ("esp_ble_mesh_model_status_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [53427 53471])
+            ("ESP_BLE_MESH_TRANSMIT" variable (:constant-flag t) nil [54331 54352])
+            ("ESP_BLE_MESH_GET_TRANSMIT_COUNT" variable (:constant-flag t) nil [54651 54682])
+            ("ESP_BLE_MESH_GET_TRANSMIT_INTERVAL" variable (:constant-flag t) nil [54964 54998])
+            ("ESP_BLE_MESH_PUBLISH_TRANSMIT" variable (:constant-flag t) nil [55483 55512])
+            ("ESP_BLE_MESH_GET_PUBLISH_TRANSMIT_COUNT" variable (:constant-flag t) nil [55842 55881])
+            ("ESP_BLE_MESH_GET_PUBLISH_TRANSMIT_INTERVAL" variable (:constant-flag t) nil [56192 56234])
+            ("esp_ble_mesh_cb_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [56395 56430])
+            ("esp_ble_mesh_cb_type_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_TYPE_PROV_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56451 56477])
+                          ("ESP_BLE_MESH_TYPE_OUTPUT_NUM_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56482 56514])
+                          ("ESP_BLE_MESH_TYPE_OUTPUT_STR_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56519 56551])
+                          ("ESP_BLE_MESH_TYPE_INTPUT_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56556 56584])
+                          ("ESP_BLE_MESH_TYPE_LINK_OPEN_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56589 56620])
+                          ("ESP_BLE_MESH_TYPE_LINK_CLOSE_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56625 56657])
+                          ("ESP_BLE_MESH_TYPE_COMPLETE_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56662 56692])
+                          ("ESP_BLE_MESH_TYPE_RESET_CB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56697 56724]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [56432 56750])
+            ("esp_ble_mesh_oob_method_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_NO_OOB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56837 56857])
+                          ("ESP_BLE_MESH_STATIC_OOB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56862 56886])
+                          ("ESP_BLE_MESH_OUTPUT_OOB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56891 56915])
+                          ("ESP_BLE_MESH_INPUT_OOB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [56920 56943]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [56818 56972])
+            ("esp_ble_mesh_output_action_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_NO_OUTPUT" variable
+                             (:constant-flag t
+                              :default-value (57106 57107)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57075 57107])
+                          ("ESP_BLE_MESH_BLINK" variable
+                             (:constant-flag t
+                              :default-value (57144 57150)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57113 57150])
+                          ("ESP_BLE_MESH_BEEP" variable
+                             (:constant-flag t
+                              :default-value (57187 57193)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57156 57193])
+                          ("ESP_BLE_MESH_VIBRATE" variable
+                             (:constant-flag t
+                              :default-value (57230 57236)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57199 57236])
+                          ("ESP_BLE_MESH_DISPLAY_NUMBER" variable
+                             (:constant-flag t
+                              :default-value (57273 57279)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57242 57279])
+                          ("ESP_BLE_MESH_DISPLAY_STRING" variable
+                             (:constant-flag t
+                              :default-value (57316 57322)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57285 57322]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [57056 57355])
+            ("esp_ble_mesh_input_action_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_NO_INPUT" variable
+                             (:constant-flag t
+                              :default-value (57486 57487)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57457 57487])
+                          ("ESP_BLE_MESH_PUSH" variable
+                             (:constant-flag t
+                              :default-value (57522 57528)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57493 57528])
+                          ("ESP_BLE_MESH_TWIST" variable
+                             (:constant-flag t
+                              :default-value (57563 57569)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57534 57569])
+                          ("ESP_BLE_MESH_ENTER_NUMBER" variable
+                             (:constant-flag t
+                              :default-value (57604 57610)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57575 57610])
+                          ("ESP_BLE_MESH_ENTER_STRING" variable
+                             (:constant-flag t
+                              :default-value (57645 57651)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57616 57651]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [57438 57683])
+            ("esp_ble_mesh_prov_bearer_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_PROV_ADV" variable
+                             (:constant-flag t
+                              :default-value (57810 57816)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57784 57816])
+                          ("ESP_BLE_MESH_PROV_GATT" variable
+                             (:constant-flag t
+                              :default-value (57848 57854)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [57822 57854]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [57765 57885])
+            ("ESP_BLE_MESH_MODEL_OP_1" variable (:constant-flag t) nil [57895 57918])
+            ("ESP_BLE_MESH_MODEL_OP_2" variable (:constant-flag t) nil [57966 57989])
+            ("ESP_BLE_MESH_MODEL_OP_3" variable (:constant-flag t) nil [58041 58064])
+            ("ESP_BLE_MESH_SIG_MODEL" variable (:constant-flag t) nil [58188 58210])
+            ("ESP_BLE_MESH_VENDOR_MODEL" variable (:constant-flag t) nil [58965 58990])
+            ("ESP_BLE_MESH_ELEMENT" variable (:constant-flag t) nil [60182 60202])
+            ("ESP_BLE_MESH_PROV" variable (:constant-flag t) nil [60591 60608])
+            ("esp_ble_mesh_model_t" type
+               (:typedef ("esp_ble_mesh_model" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [60946 61001])
+            ("esp_ble_mesh_elem_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("element_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61204 61226])
+                          ("location" variable
+                             (:constant-flag t
+                              :type ("uint16_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [61301 61325])
+                          ("sig_model_count" variable
+                             (:constant-flag t
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [61353 61383])
+                          ("vnd_model_count" variable
+                             (:constant-flag t
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [61388 61418])
+                          ("sig_models" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [61441 61474])
+                          ("vnd_models" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [61479 61512]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [61126 61535])
+            ("esp_ble_mesh_model_pub_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [61743 61771])
+                          ("publish_addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61777 61799])
+                          ("app_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61829 61846])
+                          ("ttl" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61887 61900])
+                          ("retransmit" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61944 61964])
+                          ("period" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62015 62031])
+                          ("period_div" variable
+                             (:suffix ":4"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [62067 62210])
+                          ("cred" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [62067 62210])
+                          ("count" variable
+                             (:suffix ":3"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [62067 62210])
+                          ("period_start" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62251 62273])
+                          ("msg" variable
+                             (:pointer 1
+                              :type ("net_buf_simple" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [62516 62543])
+                          ("update" variable (:type ("esp_ble_mesh_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62632 62657])
+                          ("dev_role" variable (:type ("u8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [62726 62740])
+                          ("timer" variable (:type ("k_delayed_work" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [62808 62836]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [61645 62864])
+            ("esp_ble_mesh_model_op_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("opcode" variable
+                             (:constant-flag t
+                              :type ("uint32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [62992 63017])
+                          ("min_len" variable
+                             (:constant-flag t
+                              :type ("size_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [63084 63110])
+                          ("param_cb" variable (:type ("esp_ble_mesh_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63154 63181]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [62971 63283])
+            ("ESP_BLE_MESH_MODEL_OP_END" variable (:constant-flag t) nil [63459 63484])
+            ("esp_ble_mesh_model" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("model_id" variable
+                               (:constant-flag t
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [63690 63714])
+                            ("vnd" variable (:type ("" type
+                                 (:members 
+                                    ( ("company_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63744 63764])
+                                      ("model_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63777 63795]))                                    
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [63723 63810]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [63674 63817])
+                    ("element" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_elem_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [63873 63902])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_pub_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [63936 63972])
+                    ("keys" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [64000 64047])
+                    ("groups" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [64110 64161])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("esp_ble_mesh_model_op_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [64201 64229])
+                    ("user_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [64270 64286])
+                    ("element_idx" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64354 64375])
+                    ("model_idx" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64411 64430])
+                    ("flags" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64477 64492]))                  
+                :type "struct")
+                nil [63623 64544])
+            ("ESP_BLE_MESH_MODEL_NONE" variable (:constant-flag t) nil [64676 64699])
+            ("esp_ble_mesh_msg_ctx_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("net_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64929 64946])
+                          ("app_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65000 65017])
+                          ("addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65050 65064])
+                          ("recv_ttl" variable
+                             (:suffix ":7"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [65123 65144])
+                          ("send_rel" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [65217 65238])
+                          ("send_ttl" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65301 65319])
+                          ("recv_op" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65396 65413])
+                          ("recv_dst" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65487 65505])
+                          ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [65607 65635])
+                          ("srv_send" variable (:type "bool") (reparse-symbol classsubparts) [65757 65771]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [64835 65797])
+            ("esp_ble_mesh_prov_t" type
+               (:typedef ("" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [65915 68554])
+            ("esp_ble_mesh_comp_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("cid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68670 68683])
+                          ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68688 68701])
+                          ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68706 68719])
+                          ("element_count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68725 68746])
+                          ("elements" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_elem_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [68751 68781]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [68649 68804])
+            ("esp_ble_mesh_dev_role_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ROLE_NODE" variable
+                             (:constant-flag t
+                              :default-value (68837 68838)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [68825 68838])
+                          ("ROLE_PROVISIONER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [68844 68861])
+                          ("ROLE_FAST_PROV" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [68866 68881]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [68806 68908])
+            ("esp_ble_mesh_client_common_param_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("opcode" variable (:type ("esp_ble_mesh_opcode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68931 68960])
+                          ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [68990 69018])
+                          ("ctx" variable (:type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [69072 69099])
+                          ("msg_timeout" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [69149 69169])
+                          ("msg_role" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [69345 69362]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [68910 69478])
+            ("esp_ble_mesh_dev_add_flag_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [69480 69524])
+            ("ADD_DEV_RM_AFTER_PROV_FLAG" variable (:constant-flag t) nil [69533 69559])
+            ("ADD_DEV_START_PROV_NOW_FLAG" variable (:constant-flag t) nil [69576 69603])
+            ("ADD_DEV_FLUSHABLE_DEV_FLAG" variable (:constant-flag t) nil [69619 69645])
+            ("esp_ble_mesh_unprov_dev_add_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("addr" variable (:type ("esp_bd_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [69675 69694])
+                          ("addr_type" variable (:type ("esp_ble_addr_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [69699 69729])
+                          ("uuid" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [69734 69752])
+                          ("oob_info" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [69757 69775])
+                          ("bearer" variable (:type ("esp_ble_mesh_prov_bearer_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [69887 69921]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [69654 69954])
+            ("DEL_DEV_ADDR_FLAG" variable (:constant-flag t) nil [69964 69981])
+            ("DEL_DEV_UUID_FLAG" variable (:constant-flag t) nil [69997 70014])
+            ("esp_ble_mesh_device_delete_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("" type
+                             (:members 
+                                ( ("" type
+                                     (:members 
+                                        ( ("addr" variable (:type ("esp_bd_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70080 70099])
+                                          ("addr_type" variable (:type ("esp_ble_addr_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70112 70142]))                                        
+                                      :type "struct")
+                                      (reparse-symbol classsubparts) [70059 70153])
+                                  ("uuid" variable
+                                     (:dereference 1
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [70162 70179]))                                
+                              :type "union")
+                              (reparse-symbol classsubparts) [70043 70186])
+                          ("flag" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70191 70204]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [70022 70286])
+            ("PROV_DATA_NET_IDX_FLAG" variable (:constant-flag t) nil [70296 70318])
+            ("PROV_DATA_FLAGS_FLAG" variable (:constant-flag t) nil [70335 70355])
+            ("PROV_DATA_IV_INDEX_FLAG" variable (:constant-flag t) nil [70374 70397])
+            ("esp_ble_mesh_prov_data_info_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("" type
+                             (:members 
+                                ( ("net_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70442 70459])
+                                  ("flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70468 70483])
+                                  ("iv_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70492 70510]))                                
+                              :type "union")
+                              (reparse-symbol classsubparts) [70426 70517])
+                          ("flag" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70522 70535]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [70405 70621])
+            ("esp_ble_mesh_fast_prov_info_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("unicast_min" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70644 70665])
+                          ("unicast_max" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70729 70750])
+                          ("net_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70814 70831])
+                          ("flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70888 70903])
+                          ("iv_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70955 70973])
+                          ("offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71025 71041])
+                          ("match_len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71093 71112])
+                          ("match_val" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [71161 71184]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [70623 71252])
+            ("esp_ble_mesh_fast_prov_action_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("FAST_PROV_ACT_NONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71273 71292])
+                          ("FAST_PROV_ACT_ENTER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71297 71317])
+                          ("FAST_PROV_ACT_SUSPEND" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71322 71344])
+                          ("FAST_PROV_ACT_EXIT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71349 71368])
+                          ("FAST_PROV_ACT_MAX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71373 71391]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [71254 71426])
+            ("esp_ble_mesh_prov_cb_event_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_PROV_REGISTER_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71447 71483])
+                          ("ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71612 71659])
+                          ("ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71735 71774])
+                          ("ESP_BLE_MESH_NODE_PROV_DISABLE_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71863 71903])
+                          ("ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [71992 72029])
+                          ("ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72096 72134])
+                          ("ESP_BLE_MESH_NODE_PROV_OOB_PUB_KEY_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72196 72235])
+                          ("ESP_BLE_MESH_NODE_PROV_OUTPUT_NUMBER_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72309 72350])
+                          ("ESP_BLE_MESH_NODE_PROV_OUTPUT_STRING_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72415 72456])
+                          ("ESP_BLE_MESH_NODE_PROV_INPUT_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72521 72554])
+                          ("ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72646 72682])
+                          ("ESP_BLE_MESH_NODE_PROV_RESET_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72742 72775])
+                          ("ESP_BLE_MESH_NODE_PROV_SET_OOB_PUB_KEY_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72839 72887])
+                          ("ESP_BLE_MESH_NODE_PROV_INPUT_NUMBER_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [72952 72997])
+                          ("ESP_BLE_MESH_NODE_PROV_INPUT_STRING_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [73059 73104])
+                          ("ESP_BLE_MESH_NODE_PROXY_IDENTITY_ENABLE_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [73166 73215])
+                          ("ESP_BLE_MESH_NODE_PROXY_GATT_ENABLE_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [73298 73343])
+                          ("ESP_BLE_MESH_NODE_PROXY_GATT_DISABLE_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [73422 73468])
+                          ("ESP_BLE_MESH_SET_FAST_PROV_INFO_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [76343 76384])
+                          ("ESP_BLE_MESH_SET_FAST_PROV_ACTION_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [76511 76554])
+                          ("ESP_BLE_MESH_PROV_EVT_MAX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [76630 76656]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [71428 76688])
+            ("esp_ble_mesh_model_cb_event_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ESP_BLE_MESH_MODEL_OPERATION_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [76709 76742])
+                          ("ESP_BLE_MESH_MODEL_SEND_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [76859 76892])
+                          ("ESP_BLE_MESH_MODEL_PUBLISH_COMP_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [76970 77006])
+                          ("ESP_BLE_MESH_CLIENT_MODEL_RECV_PUBLISH_MSG_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [77084 77131])
+                          ("ESP_BLE_MESH_CLIENT_MODEL_SEND_TIMEOUT_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [77202 77245])
+                          ("ESP_BLE_MESH_MODEL_PUBLISH_UPDATE_EVT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [77367 77405])
+                          ("ESP_BLE_MESH_MODEL_EVT_MAX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [77538 77565]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [76690 77598])
+            ("esp_ble_mesh_prov_cb_param_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("prov_register_comp" variable (:type ("ble_mesh_prov_register_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [77686 77776])
+                          ("ble_mesh_prov_register_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [77737 77750]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [77686 77776])
+                          ("node_set_unprov_dev_name_comp" variable (:type ("ble_mesh_set_unprov_dev_name_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [77858 77965])
+                          ("ble_mesh_set_unprov_dev_name_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [77915 77928]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [77858 77965])
+                          ("node_prov_enable_comp" variable (:type ("ble_mesh_prov_enable_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [78039 78130])
+                          ("ble_mesh_prov_enable_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [78088 78101]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [78039 78130])
+                          ("node_prov_disable_comp" variable (:type ("ble_mesh_prov_disable_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [78205 78298])
+                          ("ble_mesh_prov_disable_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [78255 78268]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [78205 78298])
+                          ("node_prov_link_open" variable (:type ("ble_mesh_link_open_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [78370 78477])
+                          ("ble_mesh_link_open_evt_param" type
+                             (:members 
+                                ( ("bearer" variable (:type ("esp_ble_mesh_prov_bearer_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [78416 78450]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [78370 78477])
+                          ("node_prov_link_close" variable (:type ("ble_mesh_link_close_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [78550 78659])
+                          ("ble_mesh_link_close_evt_param" type
+                             (:members 
+                                ( ("bearer" variable (:type ("esp_ble_mesh_prov_bearer_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [78597 78631]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [78550 78659])
+                          ("node_prov_output_num" variable (:type ("ble_mesh_output_num_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [78735 78871])
+                          ("ble_mesh_output_num_evt_param" type
+                             (:members 
+                                ( ("action" variable (:type ("esp_ble_mesh_output_action_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [78782 78818])
+                                  ("number" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [78827 78843]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [78735 78871])
+                          ("node_prov_output_str" variable (:type ("ble_mesh_output_str_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [78947 79037])
+                          ("ble_mesh_output_str_evt_param" type
+                             (:members 
+                                ( ("string" variable
+                                     (:dereference 1
+                                      :type "char")
+                                      (reparse-symbol classsubparts) [78994 79009]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [78947 79037])
+                          ("node_prov_input" variable (:type ("ble_mesh_input_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [79105 79227])
+                          ("ble_mesh_input_evt_param" type
+                             (:members 
+                                ( ("action" variable (:type ("esp_ble_mesh_input_action_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79147 79182])
+                                  ("size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79191 79204]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [79105 79227])
+                          ("node_prov_complete" variable (:type ("ble_mesh_provision_complete_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [79298 79470])
+                          ("ble_mesh_provision_complete_evt_param" type
+                             (:members 
+                                ( ("net_idx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79353 79370])
+                                  ("addr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79379 79393])
+                                  ("flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79402 79417])
+                                  ("iv_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79426 79444]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [79298 79470])
+                          ("node_prov_reset" variable (:type ("ble_mesh_provision_reset_param" type (:type "struct") nil nil)) (reparse-symbol classsubparts) [79538 79601])
+                          ("node_prov_set_oob_pub_key_comp" variable (:type ("ble_mesh_set_oob_pub_key_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [79684 79788])
+                          ("ble_mesh_set_oob_pub_key_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [79737 79750]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [79684 79788])
+                          ("node_prov_input_num_comp" variable (:type ("ble_mesh_input_number_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [79865 79960])
+                          ("ble_mesh_input_number_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [79915 79928]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [79865 79960])
+                          ("node_prov_input_str_comp" variable (:type ("ble_mesh_input_string_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [80037 80132])
+                          ("ble_mesh_input_string_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [80087 80100]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [80037 80132])
+                          ("node_proxy_identity_enable_comp" variable (:type ("ble_mesh_proxy_identity_enable_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [80216 80327])
+                          ("ble_mesh_proxy_identity_enable_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [80275 80288]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [80216 80327])
+                          ("node_proxy_gatt_enable_comp" variable (:type ("ble_mesh_proxy_gatt_enable_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [80407 80510])
+                          ("ble_mesh_proxy_gatt_enable_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [80462 80475]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [80407 80510])
+                          ("node_proxy_gatt_disable_comp" variable (:type ("ble_mesh_proxy_gatt_disable_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [80591 80696])
+                          ("ble_mesh_proxy_gatt_disable_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [80647 80660]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [80591 80696]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [77600 85889])
+            ("esp_ble_mesh_model_cb_param_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model_operation" variable (:type ("ble_mesh_model_operation_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [85974 86186])
+                          ("ble_mesh_model_operation_evt_param" type
+                             (:members 
+                                ( ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86026 86042])
+                                  ("model" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86051 86079])
+                                  ("ctx" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86088 86116])
+                                  ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86125 86141])
+                                  ("msg" variable
+                                     (:pointer 1
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86150 86163]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [85974 86186])
+                          ("model_send_comp" variable (:type ("ble_mesh_model_send_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [86254 86437])
+                          ("ble_mesh_model_send_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [86302 86315])
+                                  ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86324 86340])
+                                  ("model" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86349 86377])
+                                  ("ctx" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86386 86414]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [86254 86437])
+                          ("model_publish_comp" variable (:type ("ble_mesh_model_publish_comp_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [86506 86633])
+                          ("ble_mesh_model_publish_comp_param" type
+                             (:members 
+                                ( ("err_code" variable (:type "int") (reparse-symbol classsubparts) [86557 86570])
+                                  ("model" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86579 86607]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [86506 86633])
+                          ("client_recv_publish_msg" variable (:type ("ble_mesh_mod_recv_publish_msg_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [86715 86936])
+                          ("ble_mesh_mod_recv_publish_msg_param" type
+                             (:members 
+                                ( ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86768 86784])
+                                  ("model" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86793 86821])
+                                  ("ctx" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86830 86858])
+                                  ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86867 86883])
+                                  ("msg" variable
+                                     (:pointer 1
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [86892 86905]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [86715 86936])
+                          ("client_send_timeout" variable (:type ("ble_mesh_client_model_send_timeout_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [87014 87189])
+                          ("ble_mesh_client_model_send_timeout_param" type
+                             (:members 
+                                ( ("opcode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [87072 87088])
+                                  ("model" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [87097 87125])
+                                  ("ctx" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_msg_ctx_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [87134 87162]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [87014 87189])
+                          ("model_publish_update" variable (:type ("ble_mesh_model_publish_update_evt_param" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [87260 87373])
+                          ("ble_mesh_model_publish_update_evt_param" type
+                             (:members 
+                                ( ("model" variable
+                                     (:pointer 1
+                                      :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [87317 87345]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [87260 87373]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [85891 87406])
+            ("esp_ble_mesh_client_op_pair_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("cli_op" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [87429 87445])
+                          ("status_op" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [87491 87510]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [87408 87623])
+            ("esp_ble_mesh_client_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("model" variable
+                             (:pointer 1
+                              :type ("esp_ble_mesh_model_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [87680 87708])
+                          ("op_pair_size" variable (:type "int") (reparse-symbol classsubparts) [87713 87730])
+                          ("op_pair" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type ("esp_ble_mesh_client_op_pair_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [87793 87838])
+                          ("publish_status" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [87933 87957])
+                          ("internal_data" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [88094 88114])
+                          ("msg_role" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [88213 88230]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [87659 88362]))          
+      :file "esp_ble_mesh_defs.h"
+      :pointmax 88399
+      :fsize 88398
+      :lastmodtime '(24163 31883 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ESP_BLE_MESH_ADDR_ALL_NODES" . ((symbol "BLE_MESH_ADDR_ALL_NODES" 1745 . 1768)))
+          ("ESP_BLE_MESH_ADDR_PROXIES" . ((symbol "BLE_MESH_ADDR_PROXIES" 1819 . 1840)))
+          ("ESP_BLE_MESH_BEACON_DISABLED" . ((symbol "BLE_MESH_BEACON_DISABLED" 2698 . 2722)))
+          ("ESP_BLE_MESH_BEACON_ENABLED" . ((symbol "BLE_MESH_BEACON_ENABLED" 2773 . 2796)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SRV" 5451 . 5488)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_SRV" 8163 . 8200)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_CTL_SRV" 8469 . 8500)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_XYL_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_XYL_SETUP_SRV" 9434 . 9471)))
+          ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_SUB_GET" . ((symbol "OP_HEARTBEAT_SUB_GET" 13394 . 13414)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_GET" . ((symbol "OP_HEALTH_FAULT_GET" 25364 . 25383)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_CLEAR_UNACK" . ((symbol "OP_HEALTH_FAULT_CLEAR_UNREL" 26373 . 26400)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONOFF_GET" 28571 . 28602)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONPOWERUP_SET" 30535 . 30570)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_RANGE_SET_UNACK" 32161 . 32204)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTIES_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_USER_PROPERTIES_GET" 34841 . 34882)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_CLIENT_PROPERTIES_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_CLIENT_PROPERTIES_GET" 35517 . 35560)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_GET" . ((symbol "BLE_MESH_MODEL_OP_TIME_GET" 38456 . 38482)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_ZONE_SET" . ((symbol "BLE_MESH_MODEL_OP_TIME_ZONE_SET" 39105 . 39136)))
+          ("ESP_BLE_MESH_MODEL_OP_TAI_UTC_DELTA_GET" . ((symbol "BLE_MESH_MODEL_OP_TAI_UTC_DELTA_GET" 39296 . 39331)))
+          ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_GET" . ((symbol "BLE_MESH_MODEL_OP_SCHEDULER_GET" 40850 . 40881)))
+          ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SCHEDULER_STATUS" 40944 . 40978)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_STATUS" 42928 . 42976)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_SET" 44534 . 44577)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_GET" 45624 . 45655)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_SET" 46260 . 46302)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_TARGET_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_TARGET_GET" 48525 . 48563)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_TARGET_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_TARGET_STATUS" 48632 . 48673)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_GET" 48742 . 48781)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_OM_GET" 50119 . 50152)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_SET_UNACK" 50758 . 50806)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_GET" 50989 . 51028)))
+          ("ESP_BLE_MESH_CFG_STATUS_INSUFFICIENT_RESOURCES" . ((symbol "STATUS_INSUFF_RESOURCES" 51951 . 51974)))
+          ("ESP_BLE_MESH_MODEL_NONE" . ((semantic-list "((esp_ble_mesh_model_t []){})" 64700 . 64729)))
+          ("ESP_BLE_MESH_OCTET16_LEN" . ((number "16" 1400 . 1402)))
+          ("ESP_BLE_MESH_NODE_IDENTITY_STOPPED" . ((symbol "BLE_MESH_NODE_IDENTITY_STOPPED" 3412 . 3442)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SRV" 5757 . 5794)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_BATTERY_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_BATTERY_SRV" 6063 . 6096)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_LOCATION_CLI" 6454 . 6488)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_XYL_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_XYL_SRV" 9340 . 9371)))
+          ("ESP_BLE_MESH_MODEL_OP_NODE_IDENTITY_GET" . ((symbol "OP_NODE_IDENTITY_GET" 14189 . 14209)))
+          ("ESP_BLE_MESH_MODEL_OP_DEFAULT_TTL_SET" . ((symbol "OP_DEFAULT_TTL_SET" 16116 . 16134)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD" . ((symbol "OP_MOD_SUB_ADD" 17121 . 17135)))
+          ("ESP_BLE_MESH_MODEL_OP_FRIEND_SET" . ((symbol "OP_FRIEND_SET" 19832 . 19845)))
+          ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_PUB_SET" . ((symbol "OP_HEARTBEAT_PUB_SET" 19995 . 20015)))
+          ("ESP_BLE_MESH_MODEL_OP_KEY_REFRESH_PHASE_SET" . ((symbol "OP_KRP_SET" 21708 . 21718)))
+          ("ESP_BLE_MESH_MODEL_OP_NETWORK_TRANSMIT_STATUS" . ((symbol "OP_NET_TRANSMIT_STATUS" 24813 . 24835)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_GET" . ((symbol "OP_HEALTH_PERIOD_GET" 25503 . 25523)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_TEST_UNACK" . ((symbol "OP_HEALTH_FAULT_TEST_UNREL" 26645 . 26671)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONOFF_SET_UNACK" 28759 . 28796)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_LEVEL_GET" 28994 . 29025)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_STATUS" 30136 . 30179)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_SET_UNACK" 34580 . 34626)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_SET" 45828 . 45863)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_SET" 47824 . 47861)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_MODE_STATUS" 50012 . 50050)))
+          ("ESP_BLE_MESH_CFG_STATUS_CANNOT_SET" . ((symbol "STATUS_CANNOT_SET" 52831 . 52848)))
+          ("ESP_BLE_MESH_MODEL_STATUS_SUCCESS" . ((number "0x00" 53300 . 53304)))
+          ("ESP_BLE_MESH_SIG_MODEL" (spp-arg-list ("_id" "_op" "_pub" "_user_data") 58210 . 58238) . ((semantic-list "{                                                                   \\
+    .model_id = (_id),                                              \\
+    .op = _op,                                                      \\
+    .keys = { [0 ... (CONFIG_BLE_MESH_MODEL_KEY_COUNT - 1)] =       \\
+            ESP_BLE_MESH_KEY_UNUSED },                              \\
+    .pub = _pub,                                                    \\
+    .groups = { [0 ... (CONFIG_BLE_MESH_MODEL_GROUP_COUNT - 1)] =   \\
+            ESP_BLE_MESH_ADDR_UNASSIGNED },                         \\
+    .user_data = _user_data,                                        \\
+}" 58250 . 58881)))
+          ("ADD_DEV_START_PROV_NOW_FLAG" . ((symbol "BIT" 69604 . 69607) (semantic-list "(1)" 69607 . 69610)))
+          ("MIN" (spp-arg-list ("x" "y") 966 . 972) . ((semantic-list "(((x) < (y)) ? (x) : (y))" 975 . 1000)))
+          ("ESP_BLE_MESH_SDU_MAX_LEN" . ((number "384" 1071 . 1074)))
+          ("ESP_BLE_MESH_ADDR_IS_UNICAST" (spp-arg-list ("addr") 4035 . 4041) . ((symbol "BLE_MESH_ADDR_IS_UNICAST" 4049 . 4073) (semantic-list "(addr)" 4073 . 4079)))
+          ("ESP_BLE_MESH_MODEL_ID_CONFIG_CLI" . ((symbol "BLE_MESH_MODEL_ID_CFG_CLI" 4549 . 4574)))
+          ("ESP_BLE_MESH_MODEL_ID_SENSOR_CLI" . ((symbol "BLE_MESH_MODEL_ID_SENSOR_CLI" 7235 . 7263)))
+          ("ESP_BLE_MESH_MODEL_ID_TIME_SRV" . ((symbol "BLE_MESH_MODEL_ID_TIME_SRV" 7326 . 7352)))
+          ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_SUB_GET" . ((symbol "OP_MOD_SUB_GET" 14337 . 14351)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_DELETE" . ((symbol "OP_MOD_SUB_DEL" 17712 . 17726)))
+          ("ESP_BLE_MESH_MODEL_OP_LPN_POLLTIMEOUT_STATUS" . ((symbol "OP_LPN_TIMEOUT_STATUS" 24727 . 24748)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_TEST" . ((symbol "OP_HEALTH_FAULT_TEST" 26507 . 26527)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_SET_UNACK" . ((symbol "OP_HEALTH_PERIOD_SET_UNREL" 26916 . 26942)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONOFF_STATUS" 28859 . 28893)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_LEVEL_SET_UNACK" 29182 . 29219)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_GET" 32744 . 32779)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTIES_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTIES_STATUS" 34266 . 34311)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_SET" 34477 . 34517)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_STATUS" 35364 . 35406)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_SET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SETTING_SET" 37703 . 37739)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_STATUS" 42485 . 42532)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_STATUS" 43151 . 43197)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_SET" 43309 . 43354)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_STATUS" 44758 . 44804)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_STATUS" 44975 . 45017)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_STATUS" 46808 . 46842)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_GET" 48961 . 48998)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_STATUS" 49067 . 49107)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_SET" 50647 . 50689)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_STATUS" 51319 . 51361)))
+          ("ESP_BLE_MESH_CFG_STATUS_SUCCESS" . ((symbol "STATUS_SUCCESS" 51518 . 51532)))
+          ("ESP_BLE_MESH_MODEL_OP_1" (spp-arg-list ("b0") 57918 . 57922) . ((symbol "BLE_MESH_MODEL_OP_1" 57934 . 57953) (semantic-list "(b0)" 57953 . 57957)))
+          ("ESP_BLE_MESH_VENDOR_MODEL" (spp-arg-list ("_company" "_id" "_op" "_pub" "_user_data") 58990 . 59028) . ((semantic-list "{                                                                       \\
+    .vnd.company_id = (_company),                                       \\
+    .vnd.model_id = (_id),                                              \\
+    .op = _op,                                                          \\
+    .pub = _pub,                                                        \\
+    .keys = { [0 ... (CONFIG_BLE_MESH_MODEL_KEY_COUNT - 1)] =           \\
+            ESP_BLE_MESH_KEY_UNUSED },                                  \\
+    .groups = { [0 ... (CONFIG_BLE_MESH_MODEL_GROUP_COUNT - 1)] =       \\
+            ESP_BLE_MESH_ADDR_UNASSIGNED },                             \\
+    .user_data = _user_data,                                            \\
+}" 59031 . 59772)))
+          ("DEL_DEV_UUID_FLAG" . ((symbol "BIT" 70015 . 70018) (semantic-list "(1)" 70018 . 70021)))
+          ("ESP_BLE_MESH_NODE_NAME_MAX_LEN" . ((number "31" 1183 . 1185)))
+          ("ESP_BLE_MESH_KEY_UNUSED" . ((symbol "BLE_MESH_KEY_UNUSED" 2035 . 2054)))
+          ("ESP_BLE_MESH_KEY_DEV" . ((symbol "BLE_MESH_KEY_DEV" 2105 . 2121)))
+          ("ESP_BLE_MESH_FEATURE_FRIEND" . ((symbol "BLE_MESH_FEAT_FRIEND" 3829 . 3849)))
+          ("ESP_BLE_MESH_FEATURE_LOW_POWER" . ((symbol "BLE_MESH_FEAT_LOW_POWER" 3900 . 3923)))
+          ("ESP_BLE_MESH_ADDR_IS_VIRTUAL" (spp-arg-list ("addr") 4195 . 4201) . ((symbol "BLE_MESH_ADDR_IS_VIRTUAL" 4209 . 4233) (semantic-list "(addr)" 4233 . 4239)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_ONOFF_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_ONOFF_CLI" 4963 . 4994)))
+          ("ESP_BLE_MESH_MODEL_ID_TIME_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_TIME_SETUP_SRV" 7415 . 7447)))
+          ("ESP_BLE_MESH_MODEL_ID_SCHEDULER_CLI" . ((symbol "BLE_MESH_MODEL_ID_SCHEDULER_CLI" 8069 . 8100)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_CLI" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_HSL_CLI" 9050 . 9081)))
+          ("ESP_BLE_MESH_MODEL_OP_RELAY_GET" . ((symbol "OP_RELAY_GET" 12065 . 12077)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_VIRTUAL_ADDR_SET" . ((symbol "OP_MOD_PUB_VA_SET" 21869 . 21886)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_DELETE_ALL" . ((symbol "OP_MOD_SUB_DEL_ALL" 22052 . 22070)))
+          ("ESP_BLE_MESH_MODEL_OP_BEACON_STATUS" . ((symbol "OP_BEACON_STATUS" 22897 . 22913)))
+          ("ESP_BLE_MESH_MODEL_OP_GATT_PROXY_STATUS" . ((symbol "OP_GATT_PROXY_STATUS" 23152 . 23172)))
+          ("ESP_BLE_MESH_MODEL_OP_NET_KEY_LIST" . ((symbol "OP_NET_KEY_LIST" 23727 . 23742)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_APP_STATUS" . ((symbol "OP_MOD_APP_STATUS" 24057 . 24074)))
+          ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_PUB_STATUS" . ((symbol "OP_HEARTBEAT_PUB_STATUS" 24551 . 24574)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_LEVEL_STATUS" 29282 . 29316)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MOVE_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_MOVE_SET" 29573 . 29603)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LAST_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_LAST_GET" 31190 . 31226)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_SET_UNACK" 31953 . 31998)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_RANGE_SET" 32061 . 32098)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_SET" 32990 . 33026)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTINGS_GET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SETTINGS_GET" 37401 . 37438)))
+          ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_SCHEDULER_ACT_SET_UNACK" 41179 . 41220)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_STATUS" 44416 . 44468)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_SET_UNACK" 45932 . 45973)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_STATUS" 47236 . 47278)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_MODE_GET" 49694 . 49729)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_MODE_SET_UNACK" 49902 . 49943)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_OM_STATUS" 50431 . 50467)))
+          ("ESP_BLE_MESH_CFG_STATUS_INVALID_ADDRESS" . ((symbol "STATUS_INVALID_ADDRESS" 51599 . 51621)))
+          ("ESP_BLE_MESH_CFG_STATUS_INVALID_NETKEY" . ((symbol "STATUS_INVALID_NETKEY" 51863 . 51884)))
+          ("ESP_BLE_MESH_CFG_STATUS_NOT_A_SUBSCRIBE_MODEL" . ((symbol "STATUS_NOT_SUB_MOD" 52221 . 52239)))
+          ("ESP_BLE_MESH_CFG_STATUS_FEATURE_NOT_SUPPORTED" . ((symbol "STATUS_FEAT_NOT_SUPP" 52392 . 52412)))
+          ("ESP_BLE_MESH_GET_TRANSMIT_COUNT" (spp-arg-list ("transmit") 54682 . 54692) . ((symbol "BLE_MESH_TRANSMIT_COUNT" 54693 . 54716) (semantic-list "(transmit)" 54716 . 54726)))
+          ("ESP_BLE_MESH_MODEL_OP_2" (spp-arg-list ("b0" "b1") 57989 . 57997) . ((symbol "BLE_MESH_MODEL_OP_2" 58005 . 58024) (semantic-list "(b0, b1)" 58024 . 58032)))
+          ("ESP_BLE_MESH_ELEMENT" (spp-arg-list ("_loc" "_mods" "_vnd_mods") 60202 . 60226) . ((semantic-list "{                                                       \\
+    .location         = (_loc),                         \\
+    .sig_model_count  = ARRAY_SIZE(_mods),              \\
+    .sig_models       = (_mods),                        \\
+    .vnd_model_count  = ARRAY_SIZE(_vnd_mods),          \\
+    .vnd_models       = (_vnd_mods),                    \\
+}" 60232 . 60581)))
+          ("ESP_BLE_MESH_ADDR_IS_GROUP" (spp-arg-list ("addr") 4114 . 4120) . ((symbol "BLE_MESH_ADDR_IS_GROUP" 4130 . 4152) (semantic-list "(addr)" 4152 . 4158)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_LEVEL_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_LEVEL_CLI" 5151 . 5182)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_ADMIN_PROP_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_ADMIN_PROP_SRV" 6551 . 6587)))
+          ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_APP_GET" . ((symbol "OP_VND_MOD_APP_GET" 14825 . 14843)))
+          ("ESP_BLE_MESH_MODEL_OP_NETWORK_TRANSMIT_GET" . ((symbol "OP_NET_TRANSMIT_GET" 15334 . 15353)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_OVERWRITE" . ((symbol "OP_MOD_SUB_OVERWRITE" 18313 . 18333)))
+          ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_SUB_SET" . ((symbol "OP_HEARTBEAT_SUB_SET" 20481 . 20501)))
+          ("ESP_BLE_MESH_MODEL_OP_DEFAULT_TTL_STATUS" . ((symbol "OP_DEFAULT_TTL_STATUS" 23066 . 23087)))
+          ("ESP_BLE_MESH_MODEL_OP_RELAY_STATUS" . ((symbol "OP_RELAY_STATUS" 23237 . 23252)))
+          ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_SUB_LIST" . ((symbol "OP_MOD_SUB_LIST_VND" 23561 . 23580)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_CLEAR" . ((symbol "OP_HEALTH_FAULT_CLEAR" 26241 . 26262)))
+          ("ESP_BLE_MESH_MODEL_OP_ATTENTION_SET_UNACK" . ((symbol "OP_ATTENTION_SET_UNREL" 27204 . 27226)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONOFF_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONOFF_SET" 28665 . 28696)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MOVE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_MOVE_SET_UNACK" 29666 . 29702)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONPOWERUP_STATUS" 30384 . 30422)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONPOWERUP_SET_UNACK" 30633 . 30674)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_STATUS" 31087 . 31127)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LAST_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_LAST_STATUS" 31289 . 31328)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_SET_UNACK" 33292 . 33333)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_MANU_PROPERTY_SET_UNACK" 33895 . 33940)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SERIES_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SERIES_STATUS" 36858 . 36896)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_SET" . ((symbol "BLE_MESH_MODEL_OP_TIME_SET" 38545 . 38571)))
+          ("ESP_BLE_MESH_MODEL_OP_TAI_UTC_DELTA_SET" . ((symbol "BLE_MESH_MODEL_OP_TAI_UTC_DELTA_SET" 39394 . 39429)))
+          ("ESP_BLE_MESH_MODEL_OP_TAI_UTC_DELTA_STATUS" . ((symbol "BLE_MESH_MODEL_OP_TAI_UTC_DELTA_STATUS" 39492 . 39530)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_GET" . ((symbol "BLE_MESH_MODEL_OP_SCENE_GET" 39623 . 39650)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_STORE_UNACK" . ((symbol "BLE_MESH_MODEL_OP_SCENE_STORE_UNACK" 40327 . 40362)))
+          ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_GET" . ((symbol "BLE_MESH_MODEL_OP_SCHEDULER_ACT_GET" 40651 . 40686)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_SET_UNACK" 41934 . 41977)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_GET" 43795 . 43826)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_GET" 44870 . 44909)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_SET_UNACK" 45234 . 45279)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_SET" 46602 . 46633)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_SET" 49216 . 49255)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_OM_SET" 50221 . 50254)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_SET" 51097 . 51136)))
+          ("ESP_BLE_MESH_CFG_STATUS_INVALID_MODEL" . ((symbol "STATUS_INVALID_MODEL" 51688 . 51708)))
+          ("ESP_BLE_MESH_MODEL_STATUS_CANNOT_SET_RANGE_MAX" . ((number "0x02" 53422 . 53426)))
+          ("ESP_BLE_MESH_TRANSMIT" (spp-arg-list ("count" "int_ms") 54352 . 54367) . ((symbol "BLE_MESH_TRANSMIT" 54368 . 54385) (semantic-list "(count, int_ms)" 54385 . 54400)))
+          ("ESP_BLE_MESH_PUBLISH_TRANSMIT" (spp-arg-list ("count" "int_ms") 55512 . 55527) . ((symbol "BLE_MESH_PUB_TRANSMIT" 55528 . 55549) (semantic-list "(count, int_ms)" 55549 . 55564)))
+          ("ESP_BLE_MESH_GET_PUBLISH_TRANSMIT_INTERVAL" (spp-arg-list ("transmit") 56234 . 56244) . ((symbol "BLE_MESH_PUB_TRANSMIT_INT" 56245 . 56270) (semantic-list "(transmit)" 56270 . 56280)))
+          ("ESP_BLE_MESH_MODEL_OP_3" (spp-arg-list ("b0" "cid") 58064 . 58073) . ((symbol "BLE_MESH_MODEL_OP_3" 58080 . 58099) (semantic-list "(b0, cid)" 58099 . 58108)))
+          ("ESP_BLE_MESH_PROV" (spp-arg-list ("uuid" "sta_val" "sta_val_len" "out_size" "out_act" "in_size" "in_act") 60608 . 60672) . ((semantic-list "{ \\
+    .uuid           = uuid,         \\
+    .static_val     = sta_val,      \\
+    .static_val_len = sta_val_len,  \\
+    .output_size    = out_size,     \\
+    .output_action  = out_act,      \\
+    .input_size     = in_size,      \\
+    .input_action   = in_act,       \\
+}" 60673 . 60944)))
+          ("_ESP_BLE_MESH_DEFS_H_")
+          ("ESP_BLE_MESH_FEATURE_PROXY" . ((symbol "BLE_MESH_FEAT_PROXY" 3759 . 3778)))
+          ("ESP_BLE_MESH_MODEL_ID_HEALTH_SRV" . ((symbol "BLE_MESH_MODEL_ID_HEALTH_SRV" 4637 . 4665)))
+          ("ESP_BLE_MESH_MODEL_ID_SCENE_CLI" . ((symbol "BLE_MESH_MODEL_ID_SCENE_CLI" 7785 . 7812)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_SETUP_SRV" 8263 . 8306)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_LC_CLI" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_LC_CLI" 9819 . 9849)))
+          ("ESP_BLE_MESH_MODEL_OP_LPN_POLLTIMEOUT_GET" . ((symbol "OP_LPN_TIMEOUT_GET" 15149 . 15167)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND" . ((symbol "OP_MOD_APP_BIND" 19472 . 19487)))
+          ("ESP_BLE_MESH_MODEL_OP_NODE_IDENTITY_SET" . ((symbol "OP_NODE_IDENTITY_SET" 21560 . 21580)))
+          ("ESP_BLE_MESH_MODEL_OP_NET_KEY_STATUS" . ((symbol "OP_NET_KEY_STATUS" 23645 . 23662)))
+          ("ESP_BLE_MESH_MODEL_OP_KEY_REFRESH_PHASE_STATUS" . ((symbol "OP_KRP_STATUS" 24473 . 24486)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_SET" . ((symbol "OP_HEALTH_PERIOD_SET" 26785 . 26805)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LEVEL_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_LEVEL_SET" 29088 . 29119)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_GET" 29821 . 29861)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_STATUS" 31493 . 31535)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_CADENCE_STATUS" 37299 . 37338)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SCENE_STATUS" 39905 . 39935)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_REGISTER_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SCENE_REGISTER_STATUS" 40097 . 40136)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_SET_UNACK" 44643 . 44692)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_SET_UNACK" 47710 . 47755)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_GET" 48116 . 48147)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_STATUS" 48850 . 48892)))
+          ("ESP_BLE_MESH_CFG_STATUS_INVALID_PUBLISH_PARAMETERS" . ((symbol "STATUS_NVAL_PUB_PARAM" 52133 . 52154)))
+          ("ESP_BLE_MESH_CFG_STATUS_CANNOT_BIND" . ((symbol "STATUS_CANNOT_BIND" 52653 . 52671)))
+          ("ESP_BLE_MESH_MODEL_STATUS_CANNOT_SET_RANGE_MIN" . ((number "0x01" 53361 . 53365)))
+          ("ESP_BLE_MESH_DEVICE_NAME_MAX_LEN" . ((symbol "DEVICE_NAME_SIZE" 1298 . 1314)))
+          ("ESP_BLE_MESH_KEY_ANY" . ((symbol "BLE_MESH_KEY_ANY" 2244 . 2260)))
+          ("ESP_BLE_MESH_FEATURE_RELAY" . ((symbol "BLE_MESH_FEAT_RELAY" 3689 . 3708)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_CLI" 5348 . 5388)))
+          ("ESP_BLE_MESH_MODEL_ID_SCENE_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_SCENE_SETUP_SRV" 7689 . 7722)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_HUE_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_HSL_HUE_SRV" 9144 . 9179)))
+          ("ESP_BLE_MESH_MODEL_OP_BEACON_GET" . ((symbol "OP_BEACON_GET" 10370 . 10383)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_GET" . ((symbol "OP_MOD_PUB_GET" 12238 . 12252)))
+          ("ESP_BLE_MESH_MODEL_OP_NET_KEY_GET" . ((symbol "OP_NET_KEY_GET" 13909 . 13923)))
+          ("ESP_BLE_MESH_MODEL_OP_NODE_RESET" . ((symbol "OP_NODE_RESET" 19665 . 19678)))
+          ("ESP_BLE_MESH_MODEL_OP_APP_KEY_STATUS" . ((symbol "OP_APP_KEY_STATUS" 23807 . 23824)))
+          ("ESP_BLE_MESH_MODEL_OP_APP_KEY_LIST" . ((symbol "OP_APP_KEY_LIST" 23889 . 23904)))
+          ("ESP_BLE_MESH_MODEL_OP_NODE_IDENTITY_STATUS" . ((symbol "OP_NODE_IDENTITY_STATUS" 23969 . 23992)))
+          ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_APP_LIST" . ((symbol "OP_VND_MOD_APP_LIST" 24223 . 24242)))
+          ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_SUB_STATUS" . ((symbol "OP_HEARTBEAT_SUB_STATUS" 24639 . 24662)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_PERIOD_STATUS" . ((symbol "OP_HEALTH_PERIOD_STATUS" 27954 . 27977)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_GET" 31391 . 31430)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_SET" 33194 . 33229)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_MANU_PROPERTY_GET" 33679 . 33718)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_MANU_PROPERTY_STATUS" 34009 . 34051)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_GET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_GET" 36169 . 36208)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_COLUMN_GET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_COLUMN_GET" 36561 . 36596)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTINGS_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SETTINGS_STATUS" 37501 . 37541)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_ROLE_GET" . ((symbol "BLE_MESH_MODEL_OP_TIME_ROLE_GET" 38726 . 38757)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_ROLE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_TIME_ROLE_STATUS" 38914 . 38948)))
+          ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SCHEDULER_ACT_STATUS" 40749 . 40787)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_GET" 41728 . 41765)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_GET" 42149 . 42193)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_STATUS" 44092 . 44126)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_SET_UNACK" 46371 . 46419)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_TARGET_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_TARGET_STATUS" 47018 . 47059)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_SET_UNACK" 47930 . 47973)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_SET" 49438 . 49475)))
+          ("ESP_BLE_MESH_CFG_STATUS_INVALID_APPKEY" . ((symbol "STATUS_INVALID_APPKEY" 51775 . 51796)))
+          ("ESP_BLE_MESH_CFG_STATUS_CANNOT_UPDATE" . ((symbol "STATUS_CANNOT_UPDATE" 52479 . 52499)))
+          ("ESP_BLE_MESH_MODEL_OP_END" . ((semantic-list "{0, 0, 0}" 63485 . 63494)))
+          ("PROV_DATA_NET_IDX_FLAG" . ((symbol "BIT" 70320 . 70323) (semantic-list "(0)" 70323 . 70326)))
+          ("ESP_BLE_MESH_KEY_PRIMARY" . ((symbol "BLE_MESH_KEY_PRIMARY" 2173 . 2193)))
+          ("ESP_BLE_MESH_GATT_PROXY_ENABLED" . ((symbol "BLE_MESH_GATT_PROXY_ENABLED" 2958 . 2985)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_CLI" 5657 . 5694)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_LOCATION_SRV" 6255 . 6289)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_MANUFACTURER_PROP_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_MANUFACTURER_PROP_SRV" 6650 . 6693)))
+          ("ESP_BLE_MESH_MODEL_ID_SCHEDULER_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_SCHEDULER_SETUP_SRV" 7969 . 8006)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_CLI" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_LIGHTNESS_CLI" 8369 . 8406)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_CLI" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_CTL_CLI" 8663 . 8694)))
+          ("ESP_BLE_MESH_MODEL_OP_GATT_PROXY_GET" . ((symbol "OP_GATT_PROXY_GET" 11909 . 11926)))
+          ("ESP_BLE_MESH_MODEL_OP_APP_KEY_GET" . ((symbol "OP_APP_KEY_GET" 14048 . 14062)))
+          ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_APP_GET" . ((symbol "OP_SIG_MOD_APP_GET" 14673 . 14691)))
+          ("ESP_BLE_MESH_MODEL_OP_RELAY_SET" . ((symbol "OP_RELAY_SET" 16437 . 16449)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_VIRTUAL_ADDR_ADD" . ((symbol "OP_MOD_SUB_VA_ADD" 17415 . 17432)))
+          ("ESP_BLE_MESH_MODEL_OP_NODE_RESET_STATUS" . ((symbol "OP_NODE_RESET_STATUS" 24307 . 24327)))
+          ("ESP_BLE_MESH_MODEL_OP_FRIEND_STATUS" . ((symbol "OP_FRIEND_STATUS" 24392 . 24408)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_GET" 30781 . 30818)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTIES_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_MANU_PROPERTIES_GET" 33456 . 33497)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_GET" 43042 . 43085)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_SET_UNACK" 45466 . 45521)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_STATUS" 46488 . 46533)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_SET_UNACK" 46702 . 46739)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_GET" 47128 . 47167)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_STATUS" 48422 . 48456)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_DEFAULT_SET_UNACK" 49324 . 49369)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_MODE_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_MODE_SET" 49798 . 49833)))
+          ("ESP_BLE_MESH_CFG_STATUS_KEY_INDEX_ALREADY_STORED" . ((symbol "STATUS_IDX_ALREADY_STORED" 52041 . 52066)))
+          ("ESP_BLE_MESH_CFG_STATUS_STORAGE_FAILURE" . ((symbol "STATUS_STORAGE_FAIL" 52306 . 52325)))
+          ("ESP_BLE_MESH_GET_TRANSMIT_INTERVAL" (spp-arg-list ("transmit") 54998 . 55008) . ((symbol "BLE_MESH_TRANSMIT_INT" 55009 . 55030) (semantic-list "(transmit)" 55030 . 55040)))
+          ("ESP_BLE_MESH_GET_PUBLISH_TRANSMIT_COUNT" (spp-arg-list ("transmit") 55881 . 55891) . ((symbol "BLE_MESH_PUB_TRANSMIT_COUNT" 55892 . 55919) (semantic-list "(transmit)" 55919 . 55929)))
+          ("ADD_DEV_FLUSHABLE_DEV_FLAG" . ((symbol "BIT" 69647 . 69650) (semantic-list "(2)" 69650 . 69653)))
+          ("ESP_BLE_MESH_ADDR_FRIENDS" . ((symbol "BLE_MESH_ADDR_FRIENDS" 1891 . 1912)))
+          ("ESP_BLE_MESH_RELAY_ENABLED" . ((symbol "BLE_MESH_RELAY_ENABLED" 2518 . 2540)))
+          ("ESP_BLE_MESH_GATT_PROXY_DISABLED" . ((symbol "BLE_MESH_GATT_PROXY_DISABLED" 2879 . 2907)))
+          ("ESP_BLE_MESH_GATT_PROXY_NOT_SUPPORTED" . ((symbol "BLE_MESH_GATT_PROXY_NOT_SUPPORTED" 3036 . 3069)))
+          ("ESP_BLE_MESH_MODEL_ID_CONFIG_SRV" . ((symbol "BLE_MESH_MODEL_ID_CFG_SRV" 4461 . 4486)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_POWER_ONOFF_SETUP_SRV" 5551 . 5594)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_CLI" 5963 . 6000)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_BATTERY_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_BATTERY_CLI" 6159 . 6192)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_PROP_CLI" . ((symbol "BLE_MESH_MODEL_ID_GEN_PROP_CLI" 6954 . 6984)))
+          ("ESP_BLE_MESH_MODEL_ID_SENSOR_SRV" . ((symbol "BLE_MESH_MODEL_ID_SENSOR_SRV" 7047 . 7075)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_HSL_SETUP_SRV" 8950 . 8987)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_XYL_CLI" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_XYL_CLI" 9534 . 9565)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_LC_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_LC_SETUPSRV" 9721 . 9756)))
+          ("ESP_BLE_MESH_MODEL_OP_NET_KEY_UPDATE" . ((symbol "OP_NET_KEY_UPDATE" 20993 . 21010)))
+          ("ESP_BLE_MESH_MODEL_OP_NETWORK_TRANSMIT_SET" . ((symbol "OP_NET_TRANSMIT_SET" 22340 . 22359)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_STATUS" . ((symbol "OP_MOD_PUB_STATUS" 23317 . 23334)))
+          ("ESP_BLE_MESH_MODEL_OP_ATTENTION_GET" . ((symbol "OP_ATTENTION_GET" 25639 . 25655)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_CURRENT_STATUS" . ((symbol "OP_HEALTH_CURRENT_STATUS" 27778 . 27802)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_SET_UNACK" 30027 . 30073)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_SET_UNACK" 30981 . 31024)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_STATUS" 32642 . 32681)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTIES_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_USER_PROPERTIES_STATUS" 34945 . 34989)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_GET" 35052 . 35091)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_CLIENT_PROPERTIES_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_CLIENT_PROPERTIES_STATUS" 35623 . 35669)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_GET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_CADENCE_GET" 36996 . 37032)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SETTING_STATUS" 37907 . 37946)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_RECALL" . ((symbol "BLE_MESH_MODEL_OP_SCENE_RECALL" 39713 . 39743)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_RECALL_UNACK" . ((symbol "BLE_MESH_MODEL_OP_SCENE_RECALL_UNACK" 39806 . 39842)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_REGISTER_GET" . ((symbol "BLE_MESH_MODEL_OP_SCENE_REGISTER_GET" 39998 . 40034)))
+          ("ESP_BLE_MESH_MODEL_OP_SCHEDULER_ACT_SET" . ((symbol "BLE_MESH_MODEL_OP_SCHEDULER_ACT_SET" 41081 . 41116)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_STATUS" 42043 . 42083)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_SET_UNACK" 42369 . 42419)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LAST_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LAST_GET" 42598 . 42640)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_SET" 43892 . 43923)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_GET" 44301 . 44350)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_DEFAULT_SET" 45126 . 45165)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_STATUS" 46042 . 46080)))
+          ("ADD_DEV_RM_AFTER_PROV_FLAG" . ((symbol "BIT" 69561 . 69564) (semantic-list "(0)" 69564 . 69567)))
+          ("ESP_BLE_MESH_INVALID_NODE_INDEX" . ((semantic-list "(-1)" 4367 . 4371)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_ONOFF_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_ONOFF_SRV" 4869 . 4900)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_POWER_LEVEL_SETUP_SRV" 5857 . 5900)))
+          ("ESP_BLE_MESH_MODEL_ID_TIME_CLI" . ((symbol "BLE_MESH_MODEL_ID_TIME_CLI" 7510 . 7536)))
+          ("ESP_BLE_MESH_MODEL_ID_SCHEDULER_SRV" . ((symbol "BLE_MESH_MODEL_ID_SCHEDULER_SRV" 7875 . 7906)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_HSL_SRV" 8856 . 8887)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_VIRTUAL_ADDR_DELETE" . ((symbol "OP_MOD_SUB_VA_DEL" 18011 . 18028)))
+          ("ESP_BLE_MESH_MODEL_OP_NET_KEY_DELETE" . ((symbol "OP_NET_KEY_DEL" 21118 . 21132)))
+          ("ESP_BLE_MESH_MODEL_OP_APP_KEY_UPDATE" . ((symbol "OP_APP_KEY_UPDATE" 21262 . 21279)))
+          ("ESP_BLE_MESH_MODEL_OP_COMPOSITION_DATA_STATUS" . ((symbol "OP_DEV_COMP_DATA_STATUS" 22978 . 23001)))
+          ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_SUB_LIST" . ((symbol "OP_MOD_SUB_LIST" 23481 . 23496)))
+          ("ESP_BLE_MESH_MODEL_OP_HEALTH_FAULT_STATUS" . ((symbol "OP_HEALTH_FAULT_STATUS" 27867 . 27889)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_DELTA_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_DELTA_SET_UNACK" 29473 . 29510)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_DEF_TRANS_TIME_SET" 29924 . 29964)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ONPOWERUP_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_ONPOWERUP_GET" 30286 . 30321)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_RANGE_STATUS" 31698 . 31738)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_STATUS" 36467 . 36498)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SETTING_SET_UNACK" 37802 . 37844)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_STATUS" . ((symbol "BLE_MESH_MODEL_OP_TIME_STATUS" 38634 . 38663)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_ZONE_GET" . ((symbol "BLE_MESH_MODEL_OP_TIME_ZONE_GET" 39011 . 39042)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_ZONE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_TIME_ZONE_STATUS" 39199 . 39233)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_DELETE" . ((symbol "BLE_MESH_MODEL_OP_SCENE_DELETE" 40425 . 40455)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_DELETE_UNACK" . ((symbol "BLE_MESH_MODEL_OP_SCENE_DELETE_UNACK" 40518 . 40554)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LAST_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LAST_STATUS" 42706 . 42751)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_GET" 44192 . 44235)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_SATURATION_GET" 46149 . 46191)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_SET" 48216 . 48247)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_OM_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_OM_SET_UNACK" 50323 . 50362)))
+          ("ESP_BLE_MESH_CFG_STATUS_CANNOT_REMOVE" . ((symbol "STATUS_CANNOT_REMOVE" 52566 . 52586)))
+          ("ESP_BLE_MESH_CFG_STATUS_INVALID_BINDING" . ((symbol "STATUS_INVALID_BINDING" 53000 . 53022)))
+          ("DEL_DEV_ADDR_FLAG" . ((symbol "BIT" 69982 . 69985) (semantic-list "(0)" 69985 . 69988)))
+          ("ESP_BLE_MESH_NET_PRIMARY" . ((symbol "BLE_MESH_NET_PRIMARY" 2346 . 2366)))
+          ("ESP_BLE_MESH_FRIEND_DISABLED" . ((symbol "BLE_MESH_FRIEND_DISABLED" 3148 . 3172)))
+          ("ESP_BLE_MESH_NODE_IDENTITY_RUNNING" . ((symbol "BLE_MESH_NODE_IDENTITY_RUNNING" 3493 . 3523)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_LEVEL_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_LEVEL_SRV" 5057 . 5088)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_LOCATION_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_LOCATION_SETUPSRV" 6352 . 6391)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_CLIENT_PROP_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_CLIENT_PROP_SRV" 6854 . 6891)))
+          ("ESP_BLE_MESH_MODEL_ID_SENSOR_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_SENSOR_SETUP_SRV" 7138 . 7172)))
+          ("ESP_BLE_MESH_MODEL_OP_DEFAULT_TTL_GET" . ((symbol "OP_DEFAULT_TTL_GET" 11752 . 11770)))
+          ("ESP_BLE_MESH_MODEL_OP_FRIEND_GET" . ((symbol "OP_FRIEND_GET" 12727 . 12740)))
+          ("ESP_BLE_MESH_MODEL_OP_HEARTBEAT_PUB_GET" . ((symbol "OP_HEARTBEAT_PUB_GET" 12879 . 12899)))
+          ("ESP_BLE_MESH_MODEL_OP_KEY_REFRESH_PHASE_GET" . ((symbol "OP_KRP_GET" 14980 . 14990)))
+          ("ESP_BLE_MESH_MODEL_OP_BEACON_SET" . ((symbol "OP_BEACON_SET" 15938 . 15951)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_PUB_SET" . ((symbol "OP_MOD_PUB_SET" 16621 . 16635)))
+          ("ESP_BLE_MESH_MODEL_OP_APP_KEY_DELETE" . ((symbol "OP_APP_KEY_DEL" 21413 . 21427)))
+          ("ESP_BLE_MESH_MODEL_OP_ATTENTION_STATUS" . ((symbol "OP_ATTENTION_STATUS" 28042 . 28061)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_DEFAULT_SET" 31851 . 31890)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_LOCAL_STATUS" 32842 . 32880)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTY_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_MANU_PROPERTY_SET" 33787 . 33826)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTIES_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTIES_GET" 34161 . 34203)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_STATUS" 34689 . 34732)))
+          ("ESP_BLE_MESH_MODEL_OP_TIME_ROLE_SET" . ((symbol "BLE_MESH_MODEL_OP_TIME_ROLE_SET" 38820 . 38851)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_SET" 41831 . 41868)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_LINEAR_SET" 42259 . 42303)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_SET_UNACK" 43646 . 43695)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_HUE_GET" 45724 . 45759)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_GET" 47347 . 47384)))
+          ("ESP_BLE_MESH_ADDR_UNASSIGNED" . ((symbol "BLE_MESH_ADDR_UNASSIGNED" 1670 . 1694)))
+          ("ESP_BLE_MESH_RELAY_NOT_SUPPORTED" . ((symbol "BLE_MESH_RELAY_NOT_SUPPORTED" 2591 . 2619)))
+          ("ESP_BLE_MESH_MODEL_ID_SCENE_SRV" . ((symbol "BLE_MESH_MODEL_ID_SCENE_SRV" 7599 . 7626)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_LC_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_LC_SRV" 9628 . 9658)))
+          ("ESP_BLE_MESH_MODEL_OP_GATT_PROXY_SET" . ((symbol "OP_GATT_PROXY_SET" 16284 . 16301)))
+          ("ESP_BLE_MESH_MODEL_OP_NET_KEY_ADD" . ((symbol "OP_NET_KEY_ADD" 18968 . 18982)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_STATUS" . ((symbol "OP_MOD_SUB_STATUS" 23399 . 23416)))
+          ("ESP_BLE_MESH_MODEL_OP_SIG_MODEL_APP_LIST" . ((symbol "OP_SIG_MOD_APP_LIST" 24139 . 24158)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_LEVEL_SET" 30881 . 30918)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_MANUFACTURER_PROPERTIES_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_MANU_PROPERTIES_STATUS" 33566 . 33610)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_ADMIN_PROPERTY_GET" 34374 . 34414)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_STATUS" 36271 . 36313)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SERIES_GET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SERIES_GET" 36760 . 36795)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_SETTING_GET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_SETTING_GET" 37604 . 37640)))
+          ("ESP_BLE_MESH_MODEL_OP_SCENE_STORE" . ((symbol "BLE_MESH_MODEL_OP_SCENE_STORE" 40235 . 40264)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_GET" 42817 . 42862)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_DEFAULT_SET_UNACK" 43420 . 43471)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LIGHTNESS_RANGE_SET" 43537 . 43580)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_SET_UNACK" 43989 . 44026)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_TARGET_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_TARGET_GET" 46911 . 46949)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_DEFAULT_SET" 47602 . 47641)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_GET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_GET" 50536 . 50578)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_LIGHT_ONOFF_STATUS" 50875 . 50920)))
+          ("PROV_DATA_IV_INDEX_FLAG" . ((symbol "BIT" 70398 . 70401) (semantic-list "(2)" 70401 . 70404)))
+          ("ESP_BLE_MESH_OCTET8_LEN" . ((number "8" 1553 . 1554)))
+          ("ESP_BLE_MESH_ADDR_RELAYS" . ((symbol "BLE_MESH_ADDR_RELAYS" 1963 . 1983)))
+          ("ESP_BLE_MESH_RELAY_DISABLED" . ((symbol "BLE_MESH_RELAY_DISABLED" 2444 . 2467)))
+          ("ESP_BLE_MESH_FRIEND_ENABLED" . ((symbol "BLE_MESH_FRIEND_ENABLED" 3223 . 3246)))
+          ("ESP_BLE_MESH_FRIEND_NOT_SUPPORTED" . ((symbol "BLE_MESH_FRIEND_NOT_SUPPORTED" 3297 . 3326)))
+          ("ESP_BLE_MESH_NODE_IDENTITY_NOT_SUPPORTED" . ((symbol "BLE_MESH_NODE_IDENTITY_NOT_SUPPORTED" 3574 . 3610)))
+          ("ESP_BLE_MESH_FEATURE_ALL_SUPPORTED" . ((symbol "BLE_MESH_FEAT_SUPPORTED" 3974 . 3997)))
+          ("ESP_BLE_MESH_ADDR_IS_RFU" (spp-arg-list ("addr") 4272 . 4278) . ((symbol "BLE_MESH_ADDR_IS_RFU" 4290 . 4310) (semantic-list "(addr)" 4310 . 4316)))
+          ("ESP_BLE_MESH_MODEL_ID_HEALTH_CLI" . ((symbol "BLE_MESH_MODEL_ID_HEALTH_CLI" 4728 . 4756)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_SRV" 5245 . 5285)))
+          ("ESP_BLE_MESH_MODEL_ID_GEN_USER_PROP_SRV" . ((symbol "BLE_MESH_MODEL_ID_GEN_USER_PROP_SRV" 6756 . 6791)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_SETUP_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_CTL_SETUP_SRV" 8563 . 8600)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_CTL_TEMP_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_CTL_TEMP_SRV" 8757 . 8793)))
+          ("ESP_BLE_MESH_MODEL_ID_LIGHT_HSL_SAT_SRV" . ((symbol "BLE_MESH_MODEL_ID_LIGHT_HSL_SAT_SRV" 9242 . 9277)))
+          ("ESP_BLE_MESH_MODEL_OP_COMPOSITION_DATA_GET" . ((symbol "OP_DEV_COMP_DATA_GET" 10537 . 10557)))
+          ("ESP_BLE_MESH_MODEL_OP_VENDOR_MODEL_SUB_GET" . ((symbol "OP_MOD_SUB_GET_VND" 14505 . 14523)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_SUB_VIRTUAL_ADDR_OVERWRITE" . ((symbol "OP_MOD_SUB_VA_OVERWRITE" 18639 . 18662)))
+          ("ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD" . ((symbol "OP_APP_KEY_ADD" 19150 . 19164)))
+          ("ESP_BLE_MESH_MODEL_OP_MODEL_APP_UNBIND" . ((symbol "OP_MOD_APP_UNBIND" 22192 . 22209)))
+          ("ESP_BLE_MESH_MODEL_OP_ATTENTION_SET" . ((symbol "OP_ATTENTION_SET" 27049 . 27065)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_DELTA_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_DELTA_SET" 29379 . 29410)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_POWER_RANGE_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_POWER_RANGE_GET" 31598 . 31635)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_BATTERY_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_BATTERY_GET" 32307 . 32340)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_BATTERY_STATUS" . ((symbol "BLE_MESH_MODEL_OP_GEN_BATTERY_STATUS" 32403 . 32439)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_GET" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_GET" 32543 . 32579)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_LOC_GLOBAL_SET_UNACK" 33089 . 33131)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_SET" . ((symbol "BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_SET" 35154 . 35193)))
+          ("ESP_BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_GEN_USER_PROPERTY_SET_UNACK" 35256 . 35301)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_GET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_GET" 36376 . 36404)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_COLUMN_STATUS" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_COLUMN_STATUS" 36659 . 36697)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_SET" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_CADENCE_SET" 37095 . 37131)))
+          ("ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_SENSOR_CADENCE_SET_UNACK" 37194 . 37236)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_SET" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_CTL_TEMPERATURE_RANGE_SET" 45348 . 45397)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_STATUS" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_HSL_RANGE_STATUS" 47453 . 47493)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_SET_UNACK" 48316 . 48353)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_XYL_RANGE_SET_UNACK" 49544 . 49587)))
+          ("ESP_BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_SET_UNACK" . ((symbol "BLE_MESH_MODEL_OP_LIGHT_LC_PROPERTY_SET_UNACK" 51205 . 51250)))
+          ("ESP_BLE_MESH_CFG_STATUS_TEMP_UNABLE_TO_CHANGE_STATE" . ((symbol "STATUS_TEMP_STATE_CHG_FAIL" 52738 . 52764)))
+          ("ESP_BLE_MESH_CFG_STATUS_UNSPECIFIED_ERROR" . ((symbol "STATUS_UNSPECIFIED" 52915 . 52933)))
+          ("PROV_DATA_FLAGS_FLAG" . ((symbol "BIT" 70359 . 70362) (semantic-list "(1)" 70362 . 70365)))
+          )
+))
+  :file "!home!zhangte!baidu-space!nezha!baidu!duer!esp-idf!components!bt!ble_mesh!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
