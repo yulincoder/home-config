@@ -1,33 +1,25 @@
-
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-;; load all theme from replace-colorthemes folder
-(add-to-list 'custom-theme-load-path
-             (file-name-as-directory "~/.emacs.d/replace-colorthemes"))
-;(load-theme 'lethe t t) ;; setting default theme from .emacs.d
-;(load-theme 'wheat t t) ;; setting default theme from .emacs.d
-;(enable-theme 'lethe)
-;---- another way to set default color theme --- best theme for me following -----
-;(load-theme 'dracula 1)	;; 默认主题(这个和上面三号都行)
-(load-theme 'goldenrod 1)
-;(load-theme 'blue-mood 1)
-;(load-theme 'blue-sea 1)
 
+;; 猪场代理
+;;-----------------------  Start -------------------------------------
+(setq package-archives
+        '(("melpa-cn" . "http://mirrors.163.com/elpa/melpa/")
+          ("org-cn"   . "http://mirrors.163.com/elpa/org/")
+          ("gnu-cn"   . "http://mirrors.163.com/elpa/gnu/")))
+;;-----------------------  End -------------------------------------
 
-
-(global-linum-mode t)		;; 默认显示行号
-
-;;using proxy
-;;(setq url-gateway-method 'scoks)
-;;(setq scoks-server '("Default server" "127.0.0.1" 1080 5))
-;;(setq url-proxy-services '(
-;;      ("http" . "127.0.0.1:1080")
-;;      ))
+;; 常规配置项
+;;-----------------------  Start -------------------------------------
+(setq make-backup-files nil) ;; 不要生成#开头的备份文件
+(global-linum-mode t) ;; 显示行号
+(tool-bar-mode -1) ;; disable tool-bar
+;;(menu-bar-mode -1) ;; disable menu bar
+;;(toggle-scroll-bar -1) ;; disable scroll bar
 
 (add-hook 'c-mode-hook #'electric-operator-mode);操作符两边自动加空格
 (add-hook 'python-mode-hook #'electric-operator-mode);操作符两边自动加空格
@@ -35,98 +27,209 @@
 (electric-pair-mode 1);自动补全括号
 (show-paren-mode 1);配对括号高亮
 
-
-;; 设置tab缩进，但是没什么用
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-(setq default-tab-width 4)
-
-;; set emacs mode
-(setq load-path (append (list "~/.emacs_lib_tete") load-path))
-(autoload 'nesc-mode "nesc.el")
-(add-to-list 'auto-mode-alist '("\\.nc\\'" . nesc-mode))
-
-;; markdown 编辑器
-(require 'package)
-(add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;;-----------------------  End -------------------------------------
 
 
-;; neotree 一个目录树, F8启动
-(add-to-list 'load-path "~/.emacs.d/neotree")
-(require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
+;; 主题相关
+;;-----------------------  Start -------------------------------------
+;; load all theme from replace-colorthemes folder
+;; A ton of themes, very nice, see: https://github.com/emacs-jp/replace-colorthemes
+
+;;;;;;; Tomorrow, A good theme manager ;;;;;;;;;;;;;;;;;
+;; Github: https://github.com/purcell/color-theme-sanityinc-tomorrow
+;;(require 'color-theme-sanityinc-tomorrow)
+;; M-x color-theme-sanityinc-tomorrow
+;; M-x color-theme-sanityinc-tomorrow-day
+;; M-x color-theme-sanityinc-tomorrow-night
+;; M-x color-theme-sanityinc-tomorrow-blue
+;; M-x color-theme-sanityinc-tomorrow-bright
+;; M-x color-theme-sanityinc-tomorrow-eighties
+;; In newer Emacs versions, just require the library as above, then
+;; M-x customize-themes
 
 
-;; 设置备份文件目录(否则每打开一个文件总会在当前目录下创建filename~文件)
-(setq backup-directory-alist `(("."."~/.emacs_saves_te")))
+(load-theme 'tango-dark 1) ;; set theme
+;;(load-theme  'sanityinc-tomorrow-day 1) ;; set theme
+;;(load-theme 'sanityinc-tomorrow-blue 1) ;; set theme ;; It is disable, because of above color-theme manager has take the setting.
 
-;; 设置nesc支持
-(setq load-path (cons (expand-file-name "~/.emacs.d/nesc") load-path))
-(require 'cl)
-(autoload 'nesc-mode "nesc.el")
-(add-to-list 'auto-mode-alist '("\\.nc\\'" . nesc-mode))
-;;(load "~/.emacs.d/nesc/nesc.el")
-
-
-;; 设置golang-mode
-(add-to-list 'load-path "~/.emacs.d/go-mode")
-(require 'go-mode-autoloads)
-
-
-;; 设置包管理源－清华melpa镜像
-;;(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-;;                         ("marmalade" . "http://marmalade-repo.org/packages/")
-;;                         ("melpa" . "http://melpa.milkbox.net/packages/")))
-(setq package-archives '(("gnu" . "http://elpa.emacs-china.org/gnu/")
-                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
-
-
-
-
-;; 设置golang自动补全,使用gocode（https://github.com/nsf/gocode）
-;; 这依赖于于gocode工具，因此在新平台使用时应当安装gocode(参照以上地址)
-;; gocode的自动补全有时候不能提示库函数，这是因为它找不到库函数
-;; 这时需要设置~/.config/gocode/*.json中的lib-path
-(add-to-list 'load-path "~/.emacs.d/goautocomplete")
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-(ac-config-default)
-
+(elpy-enable)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   (vector "#000000" "#d54e53" "#b9ca4a" "#e7c547" "#7aa6da" "#c397d8" "#70c0b1" "#eaeaea"))
+ '(beacon-color "#d54e53")
  '(custom-safe-themes
    (quote
-    ("6e03b7f86fcca5ce4e63cda5cd0da592973e30b5c5edf198eddf51db7a12b832" "3fe4861111710e42230627f38ebb8f966391eadefb8b809f4bfb8340a4e85529" "0e8c264f24f11501d3f0cabcd05e5f9811213f07149e4904ed751ffdcdc44739" "1f126eb4a1e5d6b96b3faf494c8c490f1d1e5ad4fc5a1ce120034fe140e77b88" "995d0754b79c4940d82bd430d7ebecca701a08631ec46ddcd2c9557059758d33" "0c5204945ca5cdf119390fe7f0b375e8d921e92076b416f6615bbe1bd5d80c88" "39a854967792547c704cbff8ad4f97429f77dfcf7b3b4d2a62679ecd34b608da" "1c10e946f9a22b28613196e4c02b6508970e3b34660282ec92d9a1c293ee81bb" "9d9b2cf2ced850aad6eda58e247cf66da2912e0722302aaa4894274e0ea9f894" "4bcdfc98cf64ce6145684dc8288fd87489cfa839e07f95f6c791d407624d04f8" "63aff36a40f41b28b0265ac506faa098fd552fac0a1813b745ba7c27efa5a943" "d9e811d5a12dec79289c5bacaecd8ae393d168e9a92a659542c2a9bab6102041" "11e5e95bd3964c7eda94d141e85ad08776fbdac15c99094f14a0531f31a156da" "05d009b7979e3887c917ef6796978d1c3bbe617e6aa791db38f05be713da0ba0" "db510eb70cf96e3dbd48f5d24de12b03db30674ea0853f06074d4ccf7403d7d3" "67b11ee5d10f1b5f7638035d1a38f77bca5797b5f5b21d16a20b5f0452cbeb46" "da8e6e5b286cbcec4a1a99f273a466de34763eefd0e84a41c71543b16cd2efac" "a455366c5cdacebd8adaa99d50e37430b0170326e7640a688e9d9ad406e2edfd" "0ca71d3462db28ebdef0529995c2d0fdb90650c8e31631e92b9f02bd1bfc5f36" "28ec8ccf6190f6a73812df9bc91df54ce1d6132f18b4c8fcc85d45298569eb53" "9fcac3986e3550baac55dc6175195a4c7537e8aa082043dcbe3f93f548a3a1e0" "242527ce24b140d304381952aa7a081179a9848d734446d913ca8ef0af3cef21" "3edbdd0ad45cb8f7c2575c0ad8f6625540283c6e928713c328b0bacf4cfbb60f" "eecacf3fb8efc90e6f7478f6143fd168342bbfa261654a754c7d47761cec07c8" default)))
- '(font-use-system-font t)
+    ("d86ddb4126c19487edd10a0f1a16f77fdaadafbdac9f4fcd695cf1c0a215117b" "8ca8fbaeaeff06ac803d7c42de1430b9765d22a439efc45b5ac572c2d9d09b16" "cab317d0125d7aab145bc7ee03a1e16804d5abdfa2aa8738198ac30dc5f7b569" "39dd7106e6387e0c45dfce8ed44351078f6acd29a345d8b22e7b8e54ac25bac4" "450f3382907de50be905ae8a242ecede05ea9b858a8ed3cc8d1fbdf2d57090af" "57290e991bf30a375509b74ea7ecfdb5de5150e0a14130c925582726f003c919" "f738c3eb5cfc7e730fea413f9cd8ba0624bd8b4837451660fe169f13f77c7814" "f9aede508e587fe21bcfc0a85e1ec7d27312d9587e686a6f5afdbb0d220eab50" "2679db166117d5b26b22a8f12a940f5ac415d76b004de03fcd34483505705f62" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "2540689fd0bc5d74c4682764ff6c94057ba8061a98be5dd21116bf7bf301acfb" "d8dc153c58354d612b2576fea87fe676a3a5d43bcc71170c62ddde4a1ad9e1fb" default)))
+ '(fci-rule-color "#424242")
+ '(flycheck-color-mode-line-face-to-color (quote mode-line-buffer-id))
+ '(frame-background-mode (quote dark))
  '(package-selected-packages
    (quote
-    (transpose-frame flycheck-pycheckers flycheck electric-operator dired-subtree afternoon-theme eziam-theme exotica-theme dracula-theme exec-path-from-shell load-dir jedi-direx jedi auto-complete neotree))))
+    (color-theme-modern auto-complete-sage flymake-shell company-shell toml-mode dts-mode cargo flycheck-rust lsp-java flycheck lsp-ui imenu-anywhere pylint monochrome-theme twilight-theme mood-one-theme monotropic-theme monokai-theme magic-latex-buffer humanoid-themes company-erlang racer rust-mode rustic ppd-sr-speedbar function-args color-theme-sanityinc-tomorrow afternoon-theme abyss-theme grip-mode flymd auto-complete-c-headers auto-complete company dired-icon dired-explorer dired-subtree dired-sidebar elpy)))
+ '(tool-bar-mode nil)
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#d54e53")
+     (40 . "#e78c45")
+     (60 . "#e7c547")
+     (80 . "#b9ca4a")
+     (100 . "#70c0b1")
+     (120 . "#7aa6da")
+     (140 . "#c397d8")
+     (160 . "#d54e53")
+     (180 . "#e78c45")
+     (200 . "#e7c547")
+     (220 . "#b9ca4a")
+     (240 . "#70c0b1")
+     (260 . "#7aa6da")
+     (280 . "#c397d8")
+     (300 . "#d54e53")
+     (320 . "#e78c45")
+     (340 . "#e7c547")
+     (360 . "#b9ca4a"))))
+ '(vc-annotate-very-old-color nil)
+ '(window-divider-mode nil))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Noto Sans CJK SC" :foundry "adobe" :slant normal :weight bold :height 143 :width normal)))))
-(put 'downcase-region 'disabled nil)
+ '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant italic :weight normal :height 128 :width normal)))))
+;;-----------------------  End -------------------------------------
 
-;; for python auto-complete using jedi plugin
-(autoload 'jedi:setup "jedi" nil t)
-(setq jedi:setup-keys t)
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+;; 目录侧边栏
+;;-----------------------  Start -------------------------------------
+(global-set-key (kbd "<f8>") 'dired-sidebar-toggle-sidebar)
+;; (use-package dired-sidebar
+;;   :bind (("C-x C-n" . dired-sidebar-toggle-sidebar))
+;;   :ensure t
+;;   :commands (dired-sidebar-toggle-sidebar)
+;;   :init
+;;   (add-hook 'dired-sidebar-mode-hook
+;;             (lambda ()
+;;               (unless (file-remote-p default-directory)
+;;                 (auto-revert-mode))))
+;;   :config
+;;   (push 'toggle-window-split dired-sidebar-toggle-hidden-commands)
+;;   (push 'rotate-windows dired-sidebar-toggle-hidden-commands)
+
+;;   (setq dired-sidebar-subtree-line-prefix "__")
+;;   (setq dired-sidebar-theme 'vscode)
+;;   (setq dired-sidebar-use-term-integration t)
+;;   (setq dired-sidebar-use-custom-font t))
+;;-----------------------  End -------------------------------------
+
+;; For whitespcae-mode, 可以显示tab，空格等不可见符号
+;;-----------------------  Start -------------------------------------
+(global-set-key (kbd "<f9>") 'whitespace-mode)
+;;-----------------------  End -------------------------------------
+
+;; set 4 space instead of a tab
+;;-----------------------  Start -------------------------------------
+(setq-default indent-tabs-mode nil) ;; disable tab
+(setq default-tab-width 4) 
+(setq c-basic-offset 4) ;; set c/c++ indent 4
+(setq c-default-style "linux") ;; if have no this
+;;-----------------------  End -------------------------------------
 
 
-;; org-mode configure
-;; 复选框变化自动执行org-update-checkbox-count 以更新进度
-;; 定义函数调用checkbox-count
-(defun custom-org-auto-check()
-  (org-update-checkbox-count t)
-  )
-;; 添加钩子到保存文件
-(add-hook 'org-mode-hook
-          (lambda ()
-            (add-hook 'after-save-hook 'custom-org-auto-check nil 'make-it-local)))
+;; for cscope
+;;-----------------------  Start -------------------------------------
+;;(load-file "~/.emacs.d/site-lisp")
+(add-to-list 'load-path' "~/.emacs.d/site-lisp")
+(add-hook 'c-mode-common-hook
+	  '(lambda ()
+	    (require 'xcscope)))
+;;-----------------------  End -------------------------------------
+
+;; for taglist
+;;-----------------------  Start -------------------------------------
+(add-hook 'c-mode-common-hook
+	  '(lambda ()
+	    (load "taglist")))
+(defun my-c-mode-common-hook ()
+ (define-key c-mode-base-map (kbd "M-o") 'taglist-switch-h-cpp)
+ (define-key c-mode-base-map (kbd "M-m") 'taglist-list-tags))
+(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+(defun my-python-mode-hook ()
+ (define-key python-mode-map (kbd "M-m") 'taglist-list-tags))
+(add-hook 'python-mode-hook 'my-python-mode-hook)
+
+(define-key lisp-mode-shared-map (kbd "M-m") 'taglist-list-tags)
+;;-----------------------  End -------------------------------------
+
+;; For Rust
+;;-----------------------  Start -------------------------------------
+;; irony-mode for c auto complete
+;;(add-hook 'c++-mode-hook 'irony-mode)
+;;(add-hook 'c-mode-hook 'irony-mode)
+;;(add-hook 'objc-mode-hook 'irony-mode)
+;;(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+
+(add-hook 'c-mode-hook 'auto-complete-mode)
+;;(add-hook 'c-mode-hook 'show-paren-mode)
+
+;; add in your commonly used packages/include directories here, for
+;; example, SDL or OpenGL. this shouldn't slow down cpp, even if
+;; you've got a lot of them
+;;(add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
+;;(add-hook 'c++-mode-hook 'c-turn-on-eldoc-mode)
+;;-----------------------  End -------------------------------------
+
+
+;; For Rust
+;;-----------------------  Start -------------------------------------
+;; Link https://github.com/rust-lang/rust-mode
+(require 'rust-mode)
+
+(add-hook 'rust-mode-hook
+          (lambda () (setq indent-tabs-mode nil)))
+(setq rust-format-on-save t)
+(define-key rust-mode-map (kbd "C-c C-c") 'rust-run)
+
+;; Link https://github.com/racer-rust/emacs-racer
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
+
+(add-hook 'racer-mode-hook #'company-mode)
+(add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+(add-hook 'rust-mode-hook 'cargo-minor-mode)
+
+(define-key rust-mode-map (kbd "C-x 4") 'racer-find-definition-other-frame)
+
+(define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+(setq company-tooltip-align-annotations t)
+;;-----------------------  End -------------------------------------
+
+
+;; lsp(language server protocol) (目前只用到imenu功能)
+;; 显示文件内函数或变量
+;; 自动调用imenu(生成当前文件缓冲器的符号索引，emacs自带)
+;;-----------------------  Start -------------------------------------
+;; 设置font-lock-mode，任何模式都会调用
+(setq global-font-lock-mode t)
+
+;; 在font-lock-mode-hook上调用imenu
+;; 在顶部菜单栏显示
+(defun try-to-add-imenu ()
+  (condition-case nil (imenu-add-to-menubar "Imenu") (error nil)))
+(add-hook 'font-lock-mode-hook 'try-to-add-imenu)
+
+;; 自带imenu不好用，使用imenu-anywhere,从elpy安装
+(global-set-key (kbd "C-c M-.") 'ivy-imenu-anywhere)
+
+
+;; 又安装了lsp-ui, 其带有一系列工具，包括lsp-ui-imenu, 更好用
+;; https://github.com/emacs-lsp/lsp-ui
+(add-hook 'after-init-hook 'lsp-ui-mode) ;; 启动执行lsp-mode(还有其他lsp插件，进入lsp-ui-mode才能执行下面命令)
+(global-set-key (kbd "M-.") 'lsp-ui-imenu)
+;;-----------------------  End -------------------------------------------
